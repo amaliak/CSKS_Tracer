@@ -1,0 +1,186 @@
+ ndk: RMesh1 NEL=       29806  NCON=       88865  MNCON=     8300000
+  nex2adj:: rank=           0  MNCON=NCON=       88865  MNEL=NEL=        29806
+ Calling METIS (Version5)METIS_Kway               
+ Runtime parameters:
+   Objective type: METIS_OBJTYPE_CUT
+   Coarsening type: METIS_CTYPE_SHEM
+   Initial partitioning type: METIS_IPTYPE_METISRB
+   Refinement type: METIS_RTYPE_GREEDY
+   Number of balancing constraints: 1
+   Number of refinement iterations: 10
+   Random number seed: -1
+   Number of partitions: 24
+   Number of cuts: 1
+   User-supplied ufactor: 50
+   Minimize connectivity: No
+   Create contigous partitions: No
+   Target partition weights: 
+        0=[4.17e-02]   1=[4.17e-02]   2=[4.17e-02]   3=[4.17e-02]   4=[4.17e-02]
+        5=[4.17e-02]   6=[4.17e-02]   7=[4.17e-02]   8=[4.17e-02]   9=[4.17e-02]
+       10=[4.17e-02]  11=[4.17e-02]  12=[4.17e-02]  13=[4.17e-02]  14=[4.17e-02]
+       15=[4.17e-02]  16=[4.17e-02]  17=[4.17e-02]  18=[4.17e-02]  19=[4.17e-02]
+       20=[4.17e-02]  21=[4.17e-02]  22=[4.17e-02]  23=[4.17e-02]
+   Allowed maximum load imbalance: 1.050 
+
+ 29806  177730     177730 [720] [     62: 29806 ]
+ 15567  122370     149254 [720] [     62: 29806 ]
+  8186   81078     125762 [720] [     62: 29806 ]
+  4270   48060     106708 [720] [     62: 29806 ]
+  2225   27004      90556 [720] [     62: 29806 ]
+  1160   14452      76488 [720] [     62: 29806 ]
+   597    7508      64418 [720] [     62: 29806 ]
+
+ gk_mcore statistics
+           coresize:       477912         nmops:         2048  cmop:      0
+        num_callocs:           39   num_hallocs:            0
+       size_callocs:      1026560  size_hallocs:            0
+        cur_callocs:            0   cur_hallocs:            0
+        max_callocs:       365864   max_hallocs:            0
+ nbrpool statistics
+        nbrpoolsize:            0   nbrpoolcpos:            0
+    nbrpoolreallocs:            0
+
+Initial 24-way partitioning cut: 0
+GRC: [  1193   1309]-[  1182   1304], Bal: 1.054, Nv-Nb[   597     89], Cut:   9492
+	[  1184   1307], Bal: 1.052, Nb:     88. Nmoves:     8, Cut:   9438, Vol:   1064
+	[  1184   1328], Bal: 1.069, Nb:     84. Nmoves:     6, Cut:   9338, Vol:   1055
+	[  1184   1328], Bal: 1.069, Nb:     84. Nmoves:     0, Cut:   9338, Vol:   1055
+GRC: [  1184   1328]-[  1182   1304], Bal: 1.069, Nv-Nb[  1160    130], Cut:   9338
+	[  1183   1317], Bal: 1.060, Nb:    102. Nmoves:    43, Cut:   8957, Vol:   1555
+	[  1183   1335], Bal: 1.075, Nb:     93. Nmoves:    14, Cut:   8812, Vol:   1538
+	[  1183   1335], Bal: 1.075, Nb:     93. Nmoves:     0, Cut:   8812, Vol:   1538
+GRC: [  1183   1335]-[  1182   1304], Bal: 1.075, Nv-Nb[  2225    195], Cut:   8812
+	[  1185   1316], Bal: 1.060, Nb:    150. Nmoves:    70, Cut:   8477, Vol:   2257
+	[  1182   1340], Bal: 1.079, Nb:    144. Nmoves:    11, Cut:   8420, Vol:   2240
+	[  1182   1340], Bal: 1.079, Nb:    145. Nmoves:     3, Cut:   8420, Vol:   2240
+GBC: [  1182   1340]-[  1182   1304], Bal: 1.079, Nv-Nb[  4270   2598], Cut:   8420
+	[  1183   1301], Bal: 1.048, Nb:   2531. Nmoves:   134, Cut:   8085, Vol:   3261
+GRC: [  1183   1301]-[  1182   1304], Bal: 1.048, Nv-Nb[  4270    221], Cut:   8085
+	[  1183   1310], Bal: 1.055, Nb:    195. Nmoves:    76, Cut:   7810, Vol:   3155
+	[  1183   1310], Bal: 1.055, Nb:    188. Nmoves:    22, Cut:   7763, Vol:   3143
+	[  1183   1310], Bal: 1.055, Nb:    191. Nmoves:     7, Cut:   7763, Vol:   3146
+GRC: [  1183   1310]-[  1182   1304], Bal: 1.055, Nv-Nb[  8186    436], Cut:   7763
+	[  1183   1298], Bal: 1.045, Nb:    290. Nmoves:   333, Cut:   7186, Vol:   4367
+	[  1184   1304], Bal: 1.050, Nb:    248. Nmoves:   118, Cut:   7030, Vol:   4320
+	[  1182   1295], Bal: 1.043, Nb:    243. Nmoves:    66, Cut:   7013, Vol:   4283
+	[  1182   1303], Bal: 1.049, Nb:    250. Nmoves:    60, Cut:   7006, Vol:   4290
+	[  1182   1302], Bal: 1.048, Nb:    245. Nmoves:    50, Cut:   7002, Vol:   4294
+	[  1182   1297], Bal: 1.044, Nb:    244. Nmoves:    44, Cut:   6996, Vol:   4286
+	[  1182   1303], Bal: 1.049, Nb:    240. Nmoves:    47, Cut:   6996, Vol:   4290
+GRC: [  1182   1303]-[  1182   1304], Bal: 1.049, Nv-Nb[ 15567    605], Cut:   6996
+	[  1191   1299], Bal: 1.046, Nb:    314. Nmoves:   547, Cut:   6391, Vol:   5919
+	[  1183   1302], Bal: 1.048, Nb:    247. Nmoves:   190, Cut:   6229, Vol:   5852
+	[  1182   1302], Bal: 1.048, Nb:    233. Nmoves:   112, Cut:   6200, Vol:   5821
+	[  1182   1302], Bal: 1.048, Nb:    226. Nmoves:    94, Cut:   6187, Vol:   5842
+	[  1182   1304], Bal: 1.050, Nb:    222. Nmoves:    84, Cut:   6170, Vol:   5816
+	[  1182   1303], Bal: 1.049, Nb:    223. Nmoves:    61, Cut:   6169, Vol:   5813
+	[  1182   1304], Bal: 1.050, Nb:    220. Nmoves:    70, Cut:   6163, Vol:   5826
+	[  1182   1304], Bal: 1.050, Nb:    212. Nmoves:    55, Cut:   6153, Vol:   5825
+	[  1182   1303], Bal: 1.049, Nb:    213. Nmoves:    51, Cut:   6142, Vol:   5814
+	[  1182   1304], Bal: 1.050, Nb:    216. Nmoves:    40, Cut:   6142, Vol:   5816
+GRC: [  1182   1304]-[  1182   1304], Bal: 1.050, Nv-Nb[ 29806    387], Cut:   6142
+	[  1182   1302], Bal: 1.048, Nb:    166. Nmoves:   428, Cut:   5872, Vol:  10004
+	[  1182   1302], Bal: 1.048, Nb:    113. Nmoves:   146, Cut:   5808, Vol:   9987
+	[  1182   1302], Bal: 1.048, Nb:     97. Nmoves:    68, Cut:   5781, Vol:   9995
+	[  1182   1302], Bal: 1.048, Nb:     95. Nmoves:    28, Cut:   5775, Vol:   9999
+	[  1182   1307], Bal: 1.052, Nb:     93. Nmoves:    27, Cut:   5769, Vol:   9991
+	[  1182   1307], Bal: 1.052, Nb:     91. Nmoves:    22, Cut:   5767, Vol:   9991
+	[  1182   1307], Bal: 1.052, Nb:     90. Nmoves:    24, Cut:   5766, Vol:   9996
+	[  1182   1307], Bal: 1.052, Nb:     97. Nmoves:    18, Cut:   5766, Vol:   9993
+GBC: [  1182   1307]-[  1182   1304], Bal: 1.052, Nv-Nb[ 29806   9104], Cut:   5766
+	[  1183   1302], Bal: 1.048, Nb:   9106. Nmoves:    85, Cut:   5760, Vol:   9995
+GRC: [  1183   1302]-[  1182   1304], Bal: 1.048, Nv-Nb[ 29806     94], Cut:   5760
+	[  1182   1302], Bal: 1.048, Nb:     72. Nmoves:    36, Cut:   5737, Vol:  10013
+	[  1182   1302], Bal: 1.048, Nb:     73. Nmoves:    12, Cut:   5737, Vol:  10010
+
+Timing Information -------------------------------------------------
+ Multilevel: 		   0.190
+     Coarsening: 		   0.043
+            Matching: 			   0.016
+            Contract: 			   0.017
+     Initial Partition: 	   0.057
+     Uncoarsening: 		   0.090
+          Refinement: 			   0.070
+          Projection: 			   0.006
+     Splitting: 		   0.000
+********************************************************************
+
+ gk_mcore statistics
+           coresize:       477912         nmops:         2048  cmop:      0
+        num_callocs:           86   num_hallocs:            0
+       size_callocs:      2015552  size_hallocs:            0
+        cur_callocs:            0   cur_hallocs:            0
+        max_callocs:       477280   max_hallocs:            0
+ nbrpool statistics
+        nbrpoolsize:        76018   nbrpoolcpos:        67003
+    nbrpoolreallocs:            4
+
+  rank=           0  done calling Metis istatus=           1  edgecut=
+        5737
+   0sending to pid=   1    1216   29807    1216    8787    8788    1215
+   1recving           1    1216   29807    1216    8787    8788    1215
+   0sending to pid=   2    1195   29807    1195    8187    8188    1194
+   2recving           2    1195   29807    1195    8187    8188    1194
+   0sending to pid=   3    1259   29807    1259    8673    8674    1258
+   3recving           3    1259   29807    1259    8673    8674    1258
+   0sending to pid=   4    1215   29807    1215    8422    8423    1214
+   4recving           4    1215   29807    1215    8422    8423    1214
+   0sending to pid=   5    1303   29807    1303    9065    9066    1302
+   5recving           5    1303   29807    1303    9065    9066    1302
+   0sending to pid=   6    1186   29807    1186    8067    8068    1185
+   6recving           6    1186   29807    1186    8067    8068    1185
+   0sending to pid=   7    1258   29807    1258    9097    9098    1257
+   7recving           7    1258   29807    1258    9097    9098    1257
+   0sending to pid=   8    1275   29807    1275    8697    8698    1274
+   8recving           8    1275   29807    1275    8697    8698    1274
+   0sending to pid=   9    1303   29807    1303    9080    9081    1302
+   9recving           9    1303   29807    1303    9080    9081    1302
+   0sending to pid=  10    1243   29807    1243    8623    8624    1242
+  10recving          10    1243   29807    1243    8623    8624    1242
+   0sending to pid=  11    1198   29807    1198    8262    8263    1197
+  11recving          11    1198   29807    1198    8262    8263    1197
+   0sending to pid=  12    1184   29807    1184    8224    8225    1183
+  12recving          12    1184   29807    1184    8224    8225    1183
+   0sending to pid=  13    1183   29807    1183    8117    8118    1182
+  13recving          13    1183   29807    1183    8117    8118    1182
+   0sending to pid=  14    1236   29807    1236    8437    8438    1235
+  14recving          14    1236   29807    1236    8437    8438    1235
+   0sending to pid=  15    1198   29807    1198    8310    8311    1197
+  15recving          15    1198   29807    1198    8310    8311    1197
+   0sending to pid=  16    1303   29807    1303    9094    9095    1302
+  16recving          16    1303   29807    1303    9094    9095    1302
+   0sending to pid=  17    1285   29807    1285    8952    8953    1284
+  17recving          17    1285   29807    1285    8952    8953    1284
+   0sending to pid=  18    1183   29807    1183    8156    8157    1182
+  18recving          18    1183   29807    1183    8156    8157    1182
+   0sending to pid=  19    1272   29807    1272    9119    9120    1271
+  19recving          19    1272   29807    1272    9119    9120    1271
+   0sending to pid=  20    1300   29807    1300    8944    8945    1299
+  20recving          20    1300   29807    1300    8944    8945    1299
+   0sending to pid=  21    1269   29807    1269    9088    9089    1268
+  21recving          21    1269   29807    1269    9088    9089    1268
+   0sending to pid=  22    1222   29807    1222    8809    8810    1221
+  22recving          22    1222   29807    1222    8809    8810    1221
+   0sending to pid=  23    1271   29807    1271    8676    8677    1270
+  23recving          23    1271   29807    1271    8676    8677    1270
+ time for preprocessing ---- including data input, partition, distribution:
+   14.6016390323639     
+  
+ Time performing model computation =    74.7328271865845     
+   of which spent in lin. solv.    =    40.9922072887421     
+   and spent on other              =    33.7406198978424     
+  
+ Total number of time steps =           27
+ EEE Linear Solver Used: BICGSTAB
+ EEE Scaling method: Block Jacobi
+ EEE Preconditioner: Domain Decomposition
+ EEE    with overlap type: Standard
+ EEE    and size of overlap:           0
+ EEE    and subdomain solver: ILUT
+ EEE    without RCM reordering
+ EEE Residual norm: ||r||2 / ||b||2
+ EEE Max. number of iterations:         500
+ EEE Tolerance:  1.000000000000000E-006
+ Distribution + Calculation time =    87.7738449573517     
+ Tough2-mp wall-clock times AVERAGE(seconds) Np=    24   : init=    3.92892E+00 solve=    8.77708E+01 all=    9.16998E+01
+ Tough2-mp wall-clock times RANK0  (seconds)             : init=    3.93580E+00 solve=    8.77726E+01 all=    9.17092E+01

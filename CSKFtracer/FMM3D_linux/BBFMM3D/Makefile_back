@@ -1,0 +1,83 @@
+#
+# File: Makefile
+# Description: Makefile for BBFMM
+# ------------------------------------------------------------------
+# Use "make" to compile the code.
+#
+# Black-Box Fast Multipole Method (BBFMM)
+# William Fong
+# Stanford University
+#
+#
+
+CC = icpc
+LD = icpc
+CFLAGS  = -c -Wall -fpermissive -O3 -I ./include/ -I/usr/include
+LDPATH = -L/usr/lib -I/usr/include 
+LDFLAGS = -llapack -lblas -lrfftw -lfftw
+MFLAGS = -lm 
+PFLAG  =
+SOURCES =  ./src/kernel_Types.cpp ./src/H2_3D_Tree.cpp ./src/read_metadata.cpp ./src/read_sources.cpp ./src/write_Into_Binary_File.cpp
+
+SOURCEA = ./examples/get_input_through_routine_standard_kernel.cpp
+SOURCEB = ./examples/binary_file_standard_kernel.cpp
+SOURCEC = ./examples/get_input_through_routine_mykernel.cpp
+SOURCED = ./examples/binary_file_mykernel.cpp
+SOURCEE = ./examples/binary_file_exp_kernel.cpp
+SOURCEF = ./examples/get_input_through_routine_exp.cpp
+SOURCEG = ./examples/get_input_through_routine_gau.cpp
+
+OBJECTA=$(SOURCES:.cpp=.o) $(SOURCEA:.cpp=.o)
+OBJECTB=$(SOURCES:.cpp=.o) $(SOURCEB:.cpp=.o)
+OBJECTC=$(SOURCES:.cpp=.o) $(SOURCEC:.cpp=.o)
+OBJECTD=$(SOURCES:.cpp=.o) $(SOURCED:.cpp=.o)
+OBJECTE=$(SOURCES:.cpp=.o) $(SOURCEE:.cpp=.o)
+OBJECTF=$(SOURCES:.cpp=.o) $(SOURCEF:.cpp=.o)
+OBJECTG=$(SOURCES:.cpp=.o) $(SOURCEG:.cpp=.o)
+
+EXECUTABLEA= ./exec/get_input_through_routine_standard_kernel
+EXECUTABLEB=  ./exec/binary_file_standard_kernel
+EXECUTABLEC=  ./exec/get_input_through_routine_mykernel
+EXECUTABLED=  ./exec/binary_file_mykernel
+EXECUTABLEE=  ./exec/binary_file_exp_kernel
+EXECUTABLEF=  ./exec/get_input_through_routine_exp
+EXECUTABLEG=  ./exec/get_input_through_routine_gau
+
+get_input_through_routine_standard_kernel: $(SOURCES) $(SOURCEA) $(EXECUTABLEA)
+$(EXECUTABLEA): $(OBJECTA)
+	$(CC)  $(LDPATH) $(LDFLAGS)  $(OBJECTA) -o $@ $(MFLAGS)
+
+binary_file_standard_kernel: $(SOURCES) $(SOURCEB) $(EXECUTABLEB)
+$(EXECUTABLEB): $(OBJECTB)
+	$(CC)  $(LDPATH) $(LDFLAGS)  $(OBJECTB) -o $@ $(MFLAGS)
+
+get_input_through_routine_mykernel: $(SOURCES) $(SOURCEC) $(EXECUTABLEC)
+$(EXECUTABLEC): $(OBJECTC)
+	$(CC)  $(LDPATH) $(LDFLAGS)  $(OBJECTC) -o $@ $(MFLAGS)
+
+binary_file_mykernel: $(SOURCES) $(SOURCED) $(EXECUTABLED)
+$(EXECUTABLED): $(OBJECTD)
+	$(CC)  $(LDPATH) $(LDFLAGS)  $(OBJECTD) -o $@ $(MFLAGS)
+
+binary_file_exp_kernel: $(SOURCES) $(SOURCEE) $(EXECUTABLEE)
+$(EXECUTABLEE): $(OBJECTE)
+	$(CC)  $(LDPATH) $(LDFLAGS)  $(OBJECTE) -o $@ $(MFLAGS)
+
+get_input_through_routine_exp: $(SOURCES) $(SOURCEF) $(EXECUTABLEF)
+$(EXECUTABLEF): $(OBJECTF)
+	$(CC)  $(LDPATH) $(LDFLAGS)  $(OBJECTF) -o $@ $(MFLAGS)
+
+
+get_input_through_routine_gau: $(SOURCES) $(SOURCEG) $(EXECUTABLEG)
+$(EXECUTABLEG): $(OBJECTG)
+	$(CC)  $(LDPATH) $(LDFLAGS)  $(OBJECTG) -o $@ $(MFLAGS)
+
+.cpp.o:
+	$(CC) $(CFLAGS) $< -o $@
+
+
+clean:
+	rm -rf *.o *~ ./src/*.o ./examples/*.o ./exec/*
+
+tar:
+	tar -zcvf BBFMM3D.tar.gz ./exec ./src ./include ./examples ./Makefile ./input ./output ./README.md

@@ -1,0 +1,669 @@
+
+       @@@@@   @@   @  @   @@@  @  @   @@       @@@  @  @   @  @  @  @      @@   @@@@@  @   @@   @   @     @@@   @  @  @   @
+         @    @  @  @  @  @     @  @  @  @     @     @  @@ @@  @  @  @     @  @    @    @  @  @  @@  @     @  @  @  @  @@  @
+         @    @  @  @  @  @ @@  @@@@    @       @@   @  @ @ @  @  @  @     @@@@    @    @  @  @  @ @ @     @@@   @  @  @ @ @
+         @    @  @  @  @  @  @  @  @   @          @  @  @   @  @  @  @     @  @    @    @  @  @  @  @@     @ @   @  @  @  @@
+         @     @@    @@    @@@  @  @  @@@@     @@@   @  @   @   @@   @@@@  @  @    @    @   @@   @   @     @  @   @@   @   @
+
+
+                    TOUGH2 IS A PROGRAM FOR MULTIPHASE MULTICOMPONENT FLOW IN PERMEABLE MEDIA, INCLUDING HEAT FLOW.
+              IT IS A MEMBER OF THE MULKOM FAMILY OF CODES, DEVELOPED  AT LAWRENCE BERKELEY LABORATORY BY KARSTEN PRUESS ET AL.
+                                    PARALLELIZATION OF THE TOUGH FAMILY CODES WAS DONE BY KENI ZHANG ET AL.
+
+                          ********************************************************************************
+                          ********************   TOUGH2-MP VER. 2.0 (October 2005)  ********************
+                          **************   using iterative solvers from AZTEC   *************
+                          ********************************************************************************
+
+
+ SUMMARY OF DISK FILES
+
+ FILE *VERS*  EXISTS --- OPEN AS AN OLD FILE
+ FILE *MESH*  EXISTS --- OPEN AS AN OLD FILE
+ FILE *INCON* EXISTS --- OPEN AS AN OLD FILE
+ FILE *GENER* DOES NOT EXIST --- OPEN AS A NEW FILE
+ FILE *SAVE*  EXISTS --- OPEN AS AN OLD FILE
+ FILE *TABLE* DOES NOT EXIST --- OPEN AS A NEW FILE
+
+ ===================================================================================================================================
+
+     PROBLEM TITLE:  CCSHypo_H2ORun2: 1-Phase Forward Model 2 for Stochastic Inversion (July 25, 2014
+
+
+ HAVE READ UNKNOWN BLOCK LABEL " With" --- IGNORE THIS, AND CONTINUE READING INPUT DATA
+ HAVE READ UNKNOWN BLOCK LABEL " and " --- IGNORE THIS, AND CONTINUE READING INPUT DATA
+ HAVE READ UNKNOWN BLOCK LABEL " With" --- IGNORE THIS, AND CONTINUE READING INPUT DATA
+ HAVE READ UNKNOWN BLOCK LABEL "-----" --- IGNORE THIS, AND CONTINUE READING INPUT DATA
+ HAVE READ UNKNOWN BLOCK LABEL "C OUT" --- IGNORE THIS, AND CONTINUE READING INPUT DATA
+ HAVE READ UNKNOWN BLOCK LABEL "C HOM" --- IGNORE THIS, AND CONTINUE READING INPUT DATA
+ HAVE READ UNKNOWN BLOCK LABEL "C HET" --- IGNORE THIS, AND CONTINUE READING INPUT DATA
+ HAVE READ UNKNOWN BLOCK LABEL "C MWE" --- IGNORE THIS, AND CONTINUE READING INPUT DATA
+ HAVE READ UNKNOWN BLOCK LABEL "C WEL" --- IGNORE THIS, AND CONTINUE READING INPUT DATA
+ HAVE READ UNKNOWN BLOCK LABEL "C WEL" --- IGNORE THIS, AND CONTINUE READING INPUT DATA
+
+ DOMAIN NO.  1     MATERIAL NAME -- OUTB1
+
+ DOMAIN NO.  2     MATERIAL NAME -- HOMO1
+
+ DOMAIN NO.  3     MATERIAL NAME -- HETE1
+
+ DOMAIN NO.  4     MATERIAL NAME -- MWELL
+
+ DOMAIN NO.  5     MATERIAL NAME -- WELL1
+
+ DOMAIN NO.  6     MATERIAL NAME -- WELL2
+
+ DOMAIN NO.  7     MATERIAL NAME -- WELL3
+
+ DOMAIN NO.  8     MATERIAL NAME -- WELL4
+
+ DOMAIN NO.  9     MATERIAL NAME -- WELL5
+
+ DOMAIN NO. 10     MATERIAL NAME -- CFBED
+
+ DOMAIN NO. 11     MATERIAL NAME -- SEED 
+ HAVE READ UNKNOWN BLOCK LABEL "     " --- IGNORE THIS, AND CONTINUE READING INPUT DATA
+ HAVE READ UNKNOWN BLOCK LABEL "     " --- IGNORE THIS, AND CONTINUE READING INPUT DATA
+ HAVE READ UNKNOWN BLOCK LABEL "     " --- IGNORE THIS, AND CONTINUE READING INPUT DATA
+ HAVE READ UNKNOWN BLOCK LABEL "SOLVR" --- IGNORE THIS, AND CONTINUE READING INPUT DATA
+ HAVE READ UNKNOWN BLOCK LABEL "5  Z1" --- IGNORE THIS, AND CONTINUE READING INPUT DATA
+ HAVE READ UNKNOWN BLOCK LABEL "     " --- IGNORE THIS, AND CONTINUE READING INPUT DATA
+ HAVE READ UNKNOWN BLOCK LABEL "     " --- IGNORE THIS, AND CONTINUE READING INPUT DATA
+ HAVE READ UNKNOWN BLOCK LABEL "     " --- IGNORE THIS, AND CONTINUE READING INPUT DATA
+     
+ WRITE FILE *GENER* FROM INPUT DATA
+
+                        ************************************************************************************
+                        *                       EVALUATE FLOATING POINT ARITHMETIC                         *
+                        ************************************************************************************
+                        *                                                                                  *
+                        * FLOATING POINT PROCESSOR HAS APPROXIMATELY 15 SIGNIFICANT DIGITS                 *
+                        *                                                                                  *
+                        * DEFAULT VALUE OF INCREMENT FACTOR FOR NUMERICAL DERIVATIVES IS DFAC = 0.1051E-07 *
+                        * DEFAULT VALUE FOR DFAC WILL BE USED                                              *
+                        * USER-SPECIFIED VALUE DFAC = 0.1051E-07 WILL BE USED                              *
+                        *                                                                                  *
+                        ************************************************************************************
+
+ 
+
+
+ PARAMETERS FOR FLEXIBLE DIMENSIONING OF MAJOR ARRAYS (MAIN PROGRAM) ARE AS FOLLOWS
+
+ MNEL =  29806  MNCON =   88865  MNEQ =  3  MNK =  2   MNPH =  2   MNB =  6   MNOGN =    2   MGTAB =    2
+ ===================================================================================================================================
+
+ MAXIMUM NUMBER OF VOLUME ELEMENTS (GRID BLOCKS):            MNEL  =   29806
+ MAXIMUM NUMBER OF CONNECTIONS (INTERFACES):                 MNCON =   88865
+ MAXIMUM LENGTH OF PRIMARY VARIABLE ARRAYS:                  MPRIM =   89418
+ MAXIMUM NUMBER OF GENERATION ITEMS (SINKS/SOURCES):         MNOGN =      2
+ MAXIMUM NUMBER OF TABULAR (TIME-DEPENDENT) GENERATION DATA: MGTAB =      2
+ LENGTH OF SECONDARY PARAMETER ARRAY:                        MNSEC  =     2146032
+
+ MESH HAS    29806 ELEMENTS AND    88865 CONNECTIONS (INTERFACES) BETWEEN THEM
+ GENER HAS     2 SINKS/SOURCES
+ Runing Module: EOS1       Including components:
+ WATER     WATER(2)  HEAT                                    
+
+     TOUGH2 INPUT DATA
+
+     PROBLEM TITLE: CCSHypo_H2ORun2: 1-Phase Forward Model 2 for Stochastic Inversion (July 25, 2014
+
+     *********************************************************************************************************************
+
+     PROBLEM SPECIFICATIONS
+
+     NOITE     KDATA      MCYC      MSEC     MCYPR MOP                   DIFF0          TEXP            BE
+        8         1      9000         0      9000       100030100022000400001000     0.0000E+00     0.0000E+00     0.0000E+00
+
+       TSTART         TIMAX          DELTEN         DELTMX            ELST        GF             REDLT         SCALE 
+     0.0000E+00     0.2592E+07     0.6000E+01     0.3600E+06          dummy     0.0000E+00     0.3000E+01     0.1000E+01
+
+      A CONSTANT TIME STEP OF DELTEN IS PRESCRIBED
+
+            RE1            RE2            U              WUP            WNR            DFAC           FOR
+          0.5000E-05     0.1000E+01     0.1000E+00     0.1000E+01     0.1000E+01     0.1051E-07     0.1000E+01
+
+             DEP(1)              DEP(2)              DEP(3)              DEP(4)
+           0.10000000E+08      0.76000000E+02      0.00000000E+00      0.00000000E+00
+     *********************************************************************************************************************
+
+     ROCK PROPERTIES
+
+     DOMAIN     MAT        DENSITY        POROSITY     CONDUCTIVITY     HEAT CAP       COMPR          EXPAN
+        1      OUTB1     0.2600E+04     0.2500E+00     0.2510E+01     0.2000E+05     0.6000E-09     0.0000E+00
+
+            PERM1          PERM2          PERM3
+          0.1000E-12     0.1000E-12     0.1000E-12
+
+     DOMAIN     MAT        DENSITY        POROSITY     CONDUCTIVITY     HEAT CAP       COMPR          EXPAN
+        2      HOMO1     0.2600E+04     0.2500E+00     0.2510E+01     0.9200E+03     0.6000E-09     0.0000E+00
+
+            PERM1          PERM2          PERM3
+          0.1000E-12     0.1000E-12     0.1000E-12
+
+     DOMAIN     MAT        DENSITY        POROSITY     CONDUCTIVITY     HEAT CAP       COMPR          EXPAN
+        3      HETE1     0.2600E+04     0.2500E+00     0.2510E+01     0.9200E+03     0.6000E-09     0.0000E+00
+
+            PERM1          PERM2          PERM3
+          0.1000E-12     0.1000E-12     0.1000E-12
+
+     DOMAIN     MAT        DENSITY        POROSITY     CONDUCTIVITY     HEAT CAP       COMPR          EXPAN
+        4      MWELL     0.2600E+04     0.2500E+00     0.2510E+01     0.9200E+03     0.6000E-09     0.0000E+00
+
+            PERM1          PERM2          PERM3
+          0.1000E-12     0.1000E-12     0.1000E-12
+
+     DOMAIN     MAT        DENSITY        POROSITY     CONDUCTIVITY     HEAT CAP       COMPR          EXPAN
+        5      WELL1     0.2600E+04     0.2500E+00     0.2510E+01     0.9200E+03     0.6000E-09     0.0000E+00
+
+            PERM1          PERM2          PERM3
+          0.2000E-09     0.2000E-09     0.2000E-06
+
+     DOMAIN     MAT        DENSITY        POROSITY     CONDUCTIVITY     HEAT CAP       COMPR          EXPAN
+        6      WELL2     0.2600E+04     0.2500E+00     0.2510E+01     0.9200E+03     0.6000E-09     0.0000E+00
+
+            PERM1          PERM2          PERM3
+          0.2000E-09     0.2000E-09     0.2000E-06
+
+     DOMAIN     MAT        DENSITY        POROSITY     CONDUCTIVITY     HEAT CAP       COMPR          EXPAN
+        7      WELL3     0.2600E+04     0.2500E+00     0.2510E+01     0.9200E+03     0.6000E-09     0.0000E+00
+
+            PERM1          PERM2          PERM3
+          0.2000E-09     0.2000E-09     0.2000E-06
+
+     DOMAIN     MAT        DENSITY        POROSITY     CONDUCTIVITY     HEAT CAP       COMPR          EXPAN
+        8      WELL4     0.2600E+04     0.2500E+00     0.2510E+01     0.9200E+03     0.6000E-09     0.0000E+00
+
+            PERM1          PERM2          PERM3
+          0.2000E-09     0.2000E-09     0.2000E-06
+
+     DOMAIN     MAT        DENSITY        POROSITY     CONDUCTIVITY     HEAT CAP       COMPR          EXPAN
+        9      WELL5     0.2600E+04     0.2500E+00     0.2510E+01     0.9200E+03     0.6000E-09     0.0000E+00
+
+            PERM1          PERM2          PERM3
+          0.2000E-09     0.2000E-09     0.2000E-06
+
+     DOMAIN     MAT        DENSITY        POROSITY     CONDUCTIVITY     HEAT CAP       COMPR          EXPAN
+       10      CFBED     0.2600E+04     0.0000E+00     0.2510E+01     0.9200E+03     0.0000E+00     0.0000E+00
+
+            PERM1          PERM2          PERM3
+          0.0000E+00     0.0000E+00     0.0000E+00
+
+     DOMAIN     MAT        DENSITY        POROSITY     CONDUCTIVITY     HEAT CAP       COMPR          EXPAN
+       11      SEED      0.0000E+00     0.0000E+00     0.0000E+00     0.0000E+00     0.0000E+00     0.0000E+00
+
+            PERM1          PERM2          PERM3
+          0.0000E+00     0.0000E+00     0.0000E+00
+
+     *********************************************************************************************************************
+
+     ELEMENTS
+
+              ELEMENT         MATERIAL         VOLUME
+     *********************************************************************************************************************
+
+     CONNECTIONS
+
+                ELEM1            ELEM2             ISO             DEL1           DEL2            AREA           BETA
+
+     *********************************************************************************************************************
+     *********************************************************************************************************************
+
+     INITIAL CONDITIONS
+
+               ELEMENT       POROSITY         X1             X2             X3             X4
+
+               02AAA        0.2500E+00     0.1000E+08     0.7600E+02     0.3956E-39
+               2AAAA        0.2500E+00     0.1000E+08     0.7600E+02     0.2398E-38
+               2BAAA        0.2500E+00     0.1000E+08     0.7600E+02     0.7506E-39
+               2CAAA        0.2500E+00     0.1000E+08     0.7600E+02     0.1947E-39
+               2DAAA        0.2500E+00     0.1000E+08     0.7600E+02     0.4672E-40
+     *********************************************************************************************************************
+
+     END OF INPUT DATA
+
+     *********************************************************************************************************************
+     *********************************************************************************************************************
+
+
+END OF PART 1 INPUT JOB --- ELAPSED TIME =   2.8730 SEC ONDS
+
+
+ ***********************************************************************************************************************************
+ *          ARRAY *MOP* ALLOWS TO GENERATE MORE PRINTOUT IN VARIOUS SUBROUTINES, AND TO MAKE SOME CALCULATIONAL CHOICES.           *
+ ***********************************************************************************************************************************
+
+   MOP(1)  = 1 *** ALLOWS TO GENERATE A SHORT PRINTOUT FOR EACH NEWTON-RAPHSON ITERATION
+           = 0, 1, OR 2: GENERATE 0, 1, OR 2 LINES OF PRINTOUT
+
+            MORE PRINTOUT IS GENERATED FOR MOP(I) > 0 IN THE FOLLOWING SUBROUTINES (THE LARGER MOP IS, THE MORE WILL BE PRINTED).
+
+   MOP(2)  = 0 *** CYCIT       MOP(3) = 0 *** MULTI       MOP(4) = 0 *** QU       MOP(5) = 3 *** EOS       MOP(6) = 0 *** LINEQ    
+
+   MOP(7)  = 1 *** IF UNEQUAL ZERO, WILL GENERATE A PRINTOUT OF INPUT DATA
+
+            CALCULATIONAL CHOICES OFFERED BY MOP ARE AS FOLLOWS:
+
+   MOP(9)  = 0 *** CHOOSES FLUID COMPOSITION ON WITHDRAWAL (PRODUCTION).
+           = 0: ACCORDING TO RELATIVE MOBILITIES.
+           = 1: ACCORDING TO COMPOSITION IN PRODUCING ELEMENT.
+
+   MOP(10) = 0 *** CHOOSES INTERPOLATION FORMULA FOR DEPENDENCE OF THERMAL CONDUCTIVITY ON LIQUID SATURATION (SL).
+           = 0: K = KDRY + SQRT(SL)*(KWET-KDRY)
+           = 1: K = KDRY + SL*(KWET-KDRY)
+           = 2: K = C0+C1*T+C2*Sw+C3*POR.
+
+   MOP(11) = 2 *** CHOOSES EVALUATION OF MOBILITY AND ABSOLUTE PERMEABILITY AT INTERFACES.
+           = 0: MOBILITIES ARE UPSTREAM WEIGHTED WITH WUP. (DEFAULT IS WUP = 1.0). PERMEABILITY IS UPSTREAM WEIGHTED.
+           = 1: MOBILITIES ARE AVERAGED BETWEEN ADJACENT ELEMENTS. PERMEABILITY IS UPSTREAM WEIGHTED.
+           = 2: MOBILITIES ARE UPSTREAM WEIGHTED WITH WUP. (DEFAULT IS WUP = 1.0). PERMEABILITY IS HARMONIC WEIGHTED.
+           = 3: MOBILITIES ARE AVERAGED BETWEEN ADJACENT ELEMENTS. PERMEABILITY IS HARMONIC WEIGHTED.
+           = 4: MOBILITY * PERMEABILITY PRODUCT IS HARMONIC WEIGHTED.
+
+   MOP(12) = 2 *** CHOOSES PROCEDURE FOR INTERPOLATING GENERATION RATES FROM A TIME TABLE.
+           = 0: TRIPLE LINEAR INTERPOLATION.
+           = 1: "STEP FUNCTION" OPTION.
+
+   MOP(14) = 0 *** SPECIFIES IF A 5- OR 8-CHARACTER ELEMENT NAME IS USED
+           = 0: 5-CHARACTER ELEMENT NAME,
+           = 1: 8-CHARACTER ELEMENT NAME.
+
+   MOP(15) = 0 *** ALLOWS TO SELECT A SEMI-ANALYTICAL HEAT EXCHANGE CALCULATION WITH CONFINING BEDS.
+           = 0: NO SEMI-ANALYTICAL HEAT EXCHANGE
+           > 0: SEMI-ANALYTICAL HEAT EXCHANGE ENGAGED (WHEN A SPECIAL SUBROUTINE MODULE *QLOSS* IS PRESENT)
+
+   MOP(16) = 4 *** PERMITS TO CHOOSE TIME STEP SELECTION OPTION
+           = 0: USE TIME STEPS EXPLICITLY PROVIDED AS INPUT.
+           > 0: INCREASE TIME STEP BY AT LEAST A FACTOR 2, IF CONVERGENCE OCCURS IN .LE. MOP(16) ITERATIONS.
+
+   MOP(17) = 0 *** HANDLES SCALING OPTIONS.
+           = 0: NO SCALING.
+           = 7: SCALING.
+
+   MOP(18) = 0 *** ALLOWS TO SELECT HANDLING OF INTERFACE DENSITY.
+           = 0: PERFORM UPSTREAM WEIGHTING FOR INTERFACE DENSITY. 
+           > 0: COMPUTE INTERFACE DENSITY AS AVERAGE OF THE TWO GRID BLOCK DENSITIES.
+                HOWEVER, WHEN ONE OF THE TWO PHASE SATURATIONS IS ZERO, DO UPSTREAM WEIGHTING.
+
+   MOP(20) = 0 *** ALLOWS DIFFERENT FORMAT FOR CONNE AND GENER INDEXES.
+           = 0: USING FORMAT(16I5),
+           = 1: USING FORMAT(10I8).
+
+   MOP(21) = 1 *** ALLOWS ONE MORE ITERATION AFTER SOLUTION CONVERGES WITH ONLY 1 N/R ITERATION.
+           = 0: NO NEED FOR ONE MORE ITERATION,
+           = 1: PERFORM ONE MORE ITERATION AFTER CONVEGENCE.
+
+   MOP(23) = 0 *** Not be used in this version
+           = 0: 
+           = 1: 
+           = 2:    
+
+   MOP(24) = 0 *** PERMITS TO SELECT HANDLING OF MULTIPHASE DIFFUSIVE FLUXES AT INTERFACES
+           = 0: HARMONIC WEIGHTING OF FULLY-COUPLED EFFECTIVE MULTIPHASE DIFFUSIVITY
+           = 1: SEPARATE HARMONIC WEIGHTING OF GAS AND LIQUID PHASE DIFFUSIVITIES.
+
+ ***********************************************************************************************************************************
+
+ &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+ &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&   Summary of capabilities for random permeability modification   &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+ &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+ Modification of absolute permeability on a grid block-by-grid block basis will be made when a domain "SEED " is present in data
+ block "ROCKS", as follows.
+                                    k    --->    k' = k*m
+
+ Here, k is the absolute permeability specified for the reservoir domain to which the grid block belongs. Parameter m is a
+ "permeability modifier" which can be internally generated or externally prescribed by the user on a block-by-block basis.
+
+ When permeability modification is in effect, the strength of capillary pressure will, following Leverett (1941), automatically be
+ scaled as   Pcap ---> Pcap' = Pcap/SQRT(m).
+
+ User-supplied permeability modifiers have to be entered as parameter "PMX" in columns 41-50 of an ELEMEnt record.
+ Permeability modification options are selected through parameters in data block "ROCKS".
+
+ &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+ Summary of available permeability modification options
+          (with s - random number between 0 and 1; PMX - user-supplied modifiers in data block "ELEME"):
+      (1) externally supplied:        m = PMX - PER(2)
+      (2) "linear"      (DROK.ne.0):  m = PER(1) * s - PER(2)
+      (3) "logarithmic" (DROK.eq.0):  m = exp(- PER(1) * s) - PER(2)
+ &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+            &&&& if a domain "SEED " is present, permeability modification will be made
+            &&&& if no domain "SEED " is present, no permeability modification will be made
+ >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+ >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  domain = "SEED " is present, permeability modification will be made  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+ >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+ Data provided in domain "SEED " are used to select the following options.
+
+ DROK   = 0.000000E+00 *** random number seed for internal generation of "linear" permeability modifiers.
+        = 0: (default) no internal generation of "linear" permeability modifiers.
+        > 0: perform "linear" permeability modification; random modifiers are generated internally with DROK as seed.
+
+ POR    = 0.000000E+00 *** random number seed for internal generation of "logarithmic" permeability modifiers,
+        = 0: (default) no internal generation of "logarithmic" permeability modifiers.
+        > 0: perform "logarithmic" permeability modification; random modifiers are generated internally with POR as seed.
+
+            &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+            &&&&& note: if both DROK and POR are specified as non-zero, DROK takes precedence                                  &&&&&
+            &&&&&       if both DROK and POR are zero, permeability modifiers as supplied through "ELEME" data will be used    &&&&&
+            &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+ PER(1) = 0.000000E+00 *** scale factor (optional) for internally generated  permeability modifiers.
+        = 0: (defaults to PER(1) = 1): permeability modifiers are generated as random numbers in the interval (0, 1).
+        > 0: permeability modifiers are generated as random numbers in the interval (0, PER(1)).
+
+ PER(2) = 0.000000E+00 *** shift (optional) for internal or external permeability modifiers.
+        = 0: (default) no shift is applied to permeability modifiers.
+        > 0: permeability modifiers are shifted according to m' = m - PER(2). All m' < 0 are set equal to zero.
+
+ &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+ &&&                            Option 1: Externally supplied permeability modification is in effect                             &&&
+ &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+
+ ***********************************************************************************************************************************
+ *                    EOS1: EQUATION OF STATE FOR WATER (OPTIONAL: TWO-WATER MIXTURES)                                             *
+ ***********************************************************************************************************************************
+
+
+    OPTIONS SELECTED ARE: (NK,NEQ,NPH,NB) = (2,3,2,6)
+
+                           NK  =  2   - NUMBER OF FLUID COMPONENTS
+                           NEQ =  3   - NUMBER OF EQUATIONS PER GRID BLOCK
+                           NPH =  2   - NUMBER OF PHASES THAT CAN BE PRESENT
+                           NB  =  6   - NUMBER OF SECONDARY PARAMETERS (OTHER THAN COMPONENT MASS FRACTIONS)
+
+                   For NK = 1 or NB = 6, diffusion is "off", for NK = 2 and NB = 8, diffusion is "on"
+
+
+    AVAILABLE OPTIONS ARE: (NK,NEQ,NPH,NB) = (1,2,2,6 or 8) - ONE WATER COMPONENT, NON-ISOTHERMAL
+                                             (1,1,2,6 or 8) - ONLY LIQUID, OR ONLY VAPOR, ISOTHERMAL
+                                             (2,3,2,6 or 8) - TWO WATERS, NON-ISOTHERMAL
+
+    Default options are (1,2,2,6) - "one" water, diffusion "off"
+
+ ***********************************************************************************************************************************
+
+
+ THE PRIMARY VARIABLES ARE
+  P - PRESSURE         T - TEMPERATURE         X2 - MASS FRACTION OF WATER "2"         S - GAS PHASE SATURATION
+
+ _______________________________________________________
+
+     PHASE CONDITION               PRIMARY VARIABLES
+ _______________________________________________________
+
+     SINGLE-PHASE GAS                P, T, [X2]
+
+     SINGLE-PHASE LIQUID             P, T, [X2]
+
+     TWO-PHASE                       P, S, [X2]
+
+ _______________________________________________________
+
+
+ ..... NEGLECT VAPOR PRESSURE LOWERING .....
+
+ ***********************************************************************************************************************************
+
+ ********** VOLUME- AND MASS-BALANCES ********************************************************************************************
+
+ ********** [KCYC,ITER] = [ 141,  0] *****                                  THE TIME IS  0.21600E+07 SECONDS, OR  0.25000E+02 DAYS
+
+
+ PHASE VOLUMES IN PLACE
+ GAS 0.00000E+00 M**3;  AQUEOUS 0.13109E+07 M**3
+
+ MASS IN PLACE
+ GAS 0.00000E+00 KG;    AQUEOUS 0.12828E+10 KG;  TOTAL H2O 0.12828E+10 KG;  H2O(2) 0.10752E+08 KG;  INT. ENERGY 0.11199E+16 J
+
+ *********************************************************************************************************************************
+
+
+ ...ITERATING... AT [  142, 1] --- DELTEX = 0.600000E+01  MAX. RES. = 0.551884E-04 AT ELEMENT 02Ajb     EQUATION   2
+ 01AtJ   (  142, 2) ST = 0.216001E+07 DT = 0.600000E+01 DX 1=0.112988E-01 DX2= -.415296E-05 T =  75.216 P = 10399886. S = 0.000000E+00
+    
+   average inner-iteration/solve    =   5.543237250554324E-002
+ ...ITERATING... AT [  143, 1] --- DELTEX = 0.900000E+01  MAX. RES. = 0.827827E-04 AT ELEMENT 02Ajb     EQUATION   2
+ 01Art   (  143, 2) ST = 0.216002E+07 DT = 0.900000E+01 DX 1=0.306245E-01 DX2= -.655029E-05 T =  74.978 P = 10902808. S = 0.000000E+00
+    
+   average inner-iteration/solve    =   0.101769911504425     
+ ...ITERATING... AT [  144, 1] --- DELTEX = 0.135000E+02  MAX. RES. = 0.124174E-03 AT ELEMENT 02Ajb     EQUATION   2
+ 01Art   (  144, 2) ST = 0.216003E+07 DT = 0.135000E+02 DX 1=0.416647E-01 DX2= -.821862E-05 T =  75.015 P = 10712217. S = 0.000000E+00
+    
+   average inner-iteration/solve    =   0.152317880794702     
+ ...ITERATING... AT [  145, 1] --- DELTEX = 0.202500E+02  MAX. RES. = 0.186262E-03 AT ELEMENT 02Ajb     EQUATION   2
+ 01Art   (  145, 2) ST = 0.216005E+07 DT = 0.202500E+02 DX 1=0.629867E-01 DX2= -.151809E-04 T =  74.924 P = 10836316. S = 0.000000E+00
+    
+   average inner-iteration/solve    =   0.207048458149780     
+ ...ITERATING... AT [  146, 1] --- DELTEX = 0.303750E+02  MAX. RES. = 0.279395E-03 AT ELEMENT 02Ajb     EQUATION   2
+ 01Art   (  146, 2) ST = 0.216008E+07 DT = 0.303750E+02 DX 1=0.826615E-01 DX2= -.182002E-04 T =  75.487 P = 10732531. S = 0.000000E+00
+    
+   average inner-iteration/solve    =   0.259340659340659     
+ ...ITERATING... AT [  147, 1] --- DELTEX = 0.455625E+02  MAX. RES. = 0.419097E-03 AT ELEMENT 02Ajb     EQUATION   2
+ 01Art   (  147, 2) ST = 0.216012E+07 DT = 0.455625E+02 DX 1=0.571048E-01 DX2= -.333761E-04 T =  75.330 P = 10237923. S = 0.000000E+00
+    
+   average inner-iteration/solve    =   0.328947368421053     
+ ...ITERATING... AT [  148, 1] --- DELTEX = 0.683438E+02  MAX. RES. = 0.628655E-03 AT ELEMENT 02Ajb     EQUATION   2
+ 01Art   (  148, 2) ST = 0.216019E+07 DT = 0.683438E+02 DX 1=0.883891E-01 DX2= -.458455E-04 T =  75.451 P = 10275830. S = 0.000000E+00
+    
+   average inner-iteration/solve    =   0.404814004376368     
+ ...ITERATING... AT [  149, 1] --- DELTEX = 0.102516E+03  MAX. RES. = 0.943002E-03 AT ELEMENT 02Ajb     EQUATION   2
+ 01Art   (  149, 2) ST = 0.216030E+07 DT = 0.102516E+03 DX 1=0.313869E+00 DX2= -.715016E-04 T =  75.087 P = 10619731. S = 0.000000E+00
+    
+   average inner-iteration/solve    =   0.482532751091703     
+ ...ITERATING... AT [  150, 1] --- DELTEX = 0.153773E+03  MAX. RES. = 0.141455E-02 AT ELEMENT 02Ajb     EQUATION   2
+ 2BArO   (  150, 2) ST = 0.216045E+07 DT = 0.153773E+03 DX 1=0.521833E+00 DX2= -.108533E-03 T =  74.677 P = 10838204. S = 0.000000E+00
+    
+   average inner-iteration/solve    =   0.559912854030501     
+ ...ITERATING... AT [  151, 1] --- DELTEX = 0.230660E+03  MAX. RES. = 0.212192E-02 AT ELEMENT 02Ajb     EQUATION   2
+ 2DArO   (  151, 2) ST = 0.216068E+07 DT = 0.230660E+03 DX 1=0.322374E+00 DX2= -.187886E-03 T =  75.102 P = 10282431. S = 0.000000E+00
+    
+   average inner-iteration/solve    =   0.641304347826087     
+ ...ITERATING... AT [  152, 1] --- DELTEX = 0.345990E+03  MAX. RES. = 0.318311E-02 AT ELEMENT 02Ajb     EQUATION   2
+ 2DArO   (  152, 2) ST = 0.216103E+07 DT = 0.345990E+03 DX 1=0.716827E+00 DX2= -.273151E-03 T =  74.732 P = 10295482. S = 0.000000E+00
+    
+   average inner-iteration/solve    =   0.731019522776573     
+ ...ITERATING... AT [  153, 1] --- DELTEX = 0.518985E+03  MAX. RES. = 0.477518E-02 AT ELEMENT 02Ajb     EQUATION   2
+ 2BArO   (  153, 2) ST = 0.216154E+07 DT = 0.518985E+03 DX 1=0.107230E+01 DX2= -.409532E-03 T =  74.732 P = 10295483. S = 0.000000E+00
+    
+   average inner-iteration/solve    =   0.835497835497836     
+ ...ITERATING... AT [  154, 1] --- DELTEX = 0.778478E+03  MAX. RES. = 0.716390E-02 AT ELEMENT 02Ajb     EQUATION   2
+ 03ArO   (  154, 2) ST = 0.216232E+07 DT = 0.778478E+03 DX 1=0.160455E+01 DX2= -.613857E-03 T =  74.731 P = 10295485. S = 0.000000E+00
+    
+   average inner-iteration/solve    =   0.939524838012959     
+ ...ITERATING... AT [  155, 1] --- DELTEX = 0.116772E+04  MAX. RES. = 0.107484E-01 AT ELEMENT 02Ajb     EQUATION   2
+ 03ArO   (  155, 2) ST = 0.216349E+07 DT = 0.116772E+04 DX 1=0.240211E+01 DX2= -.919785E-03 T =  74.730 P = 10295487. S = 0.000000E+00
+    
+   average inner-iteration/solve    =    1.06681034482759     
+ ...ITERATING... AT [  156, 1] --- DELTEX = 0.175158E+04  MAX. RES. = 0.161281E-01 AT ELEMENT 02Ajb     EQUATION   2
+ ...ITERATING... AT [  156, 2] --- DELTEX = 0.175158E+04  MAX. RES. = 0.750470E-05 AT ELEMENT 2DArO     EQUATION   2
+ 01Aqd   (  156, 3) ST = 0.216524E+07 DT = 0.175158E+04 DX 1=0.486024E+01 DX2= -.764693E-03 T =  75.248 P = 10572784. S = 0.000000E+00
+    
+   average inner-iteration/solve    =    1.35836909871245     
+ ...ITERATING... AT [  157, 1] --- DELTEX = 0.262736E+04  MAX. RES. = 0.242041E-01 AT ELEMENT 02Ajb     EQUATION   2
+ 3BArO   (  157, 2) ST = 0.216787E+07 DT = 0.262736E+04 DX 1=0.829025E+01 DX2= -.643050E-04 T =  73.940 P = 10890572. S = 0.000000E+00
+    
+   average inner-iteration/solve    =    1.50107066381156     
+ ...ITERATING... AT [  158, 1] --- DELTEX = 0.394105E+04  MAX. RES. = 0.363319E-01 AT ELEMENT 02Ajb     EQUATION   2
+ ...ITERATING... AT [  158, 2] --- DELTEX = 0.394105E+04  MAX. RES. = 0.137760E-04 AT ELEMENT 3BArO     EQUATION   2
+ 01Art   (  158, 3) ST = 0.217181E+07 DT = 0.394105E+04 DX 1=0.113340E+02 DX2= -.115438E-03 T =  74.013 P = 10566983. S = 0.000000E+00
+    
+   average inner-iteration/solve    =    1.81236673773987     
+ ...ITERATING... AT [  159, 1] --- DELTEX = 0.591157E+04  MAX. RES. = 0.545511E-01 AT ELEMENT 02Ajb     EQUATION   2
+ ...ITERATING... AT [  159, 2] --- DELTEX = 0.591157E+04  MAX. RES. = 0.345389E-02 AT ELEMENT 2BArO     EQUATION   2
+ 01Aqd   (  159, 3) ST = 0.217772E+07 DT = 0.591157E+04 DX 1=0.187928E+02 DX2= -.581301E-04 T =  73.898 P = 11042450. S = 0.000000E+00
+    
+   average inner-iteration/solve    =    2.12951167728238     
+ ...ITERATING... AT [  160, 1] --- DELTEX = 0.886735E+04  MAX. RES. = 0.819318E-01 AT ELEMENT 02Ajb     EQUATION   2
+ ...ITERATING... AT [  160, 2] --- DELTEX = 0.886735E+04  MAX. RES. = 0.134496E-01 AT ELEMENT 2BArO     EQUATION   2
+ 01Art   (  160, 3) ST = 0.218659E+07 DT = 0.886735E+04 DX 1=0.280102E+02 DX2= -.200971E-04 T =  73.870 P = 11165189. S = 0.000000E+00
+    
+   average inner-iteration/solve    =    2.45877378435518     
+ ...ITERATING... AT [  161, 1] --- DELTEX = 0.133010E+05  MAX. RES. = 0.116795E+00 AT ELEMENT 02Ajc     EQUATION   2
+ ...ITERATING... AT [  161, 2] --- DELTEX = 0.133010E+05  MAX. RES. = 0.232446E+00 AT ELEMENT 2CArO     EQUATION   2
+ 2CArO   (  161, 3) ST = 0.219989E+07 DT = 0.133010E+05 DX 1=0.417460E+02 DX2= -.292612E-04 T =  73.870 P = 11165230. S = 0.000000E+00
+    
+   average inner-iteration/solve    =    2.79578947368421     
+ ...ITERATING... AT [  162, 1] --- DELTEX = 0.199515E+05  MAX. RES. = 0.175696E+00 AT ELEMENT 02Ajc     EQUATION   2
+ ...ITERATING... AT [  162, 2] --- DELTEX = 0.199515E+05  MAX. RES. = 0.228460E+00 AT ELEMENT 2CArO     EQUATION   2
+ ...ITERATING... AT [  162, 3] --- DELTEX = 0.199515E+05  MAX. RES. = 0.942116E-05 AT ELEMENT 2BArO     EQUATION   2
+ 01Art   (  162, 4) ST = 0.221984E+07 DT = 0.199515E+05 DX 1=0.624470E+02 DX2= -.425258E-04 T =  73.881 P = 11108030. S = 0.000000E+00
+    
+   average inner-iteration/solve    =    3.28870292887029     
+ ...ITERATING... AT [  163, 1] --- DELTEX = 0.299273E+05  MAX. RES. = 0.252527E+00 AT ELEMENT 02Ajd     EQUATION   2
+ ...ITERATING... AT [  163, 2] --- DELTEX = 0.299273E+05  MAX. RES. = 0.883905E-01 AT ELEMENT 2CArO     EQUATION   2
+ ...ITERATING... AT [  163, 3] --- DELTEX = 0.299273E+05  MAX. RES. = 0.489259E-04 AT ELEMENT 2CArO     EQUATION   2
+ 01Art   (  163, 4) ST = 0.224977E+07 DT = 0.299273E+05 DX 1=0.918406E+02 DX2= -.125446E-03 T =  73.888 P = 11080172. S = 0.000000E+00
+    
+   average inner-iteration/solve    =    3.81288981288981     
+ ...ITERATING... AT [  164, 1] --- DELTEX = 0.448910E+05  MAX. RES. = 0.380614E+00 AT ELEMENT 02Ajd     EQUATION   2
+ ...ITERATING... AT [  164, 2] --- DELTEX = 0.448910E+05  MAX. RES. = 0.130666E+02 AT ELEMENT 2CArO     EQUATION   2
+ 01Art   (  164, 3) ST = 0.229466E+07 DT = 0.448910E+05 DX 1=0.135454E+03 DX2= -.747248E-04 T =  73.871 P = 11162373. S = 0.000000E+00
+    
+   average inner-iteration/solve    =    4.19047619047619     
+ ...ITERATING... AT [  165, 1] --- DELTEX = 0.673364E+05  MAX. RES. = 0.550710E+00 AT ELEMENT 02Aje     EQUATION   2
+ ...ITERATING... AT [  165, 2] --- DELTEX = 0.673364E+05  MAX. RES. = 0.822744E+00 AT ELEMENT 2BArO     EQUATION   2
+ ...ITERATING... AT [  165, 3] --- DELTEX = 0.673364E+05  MAX. RES. = 0.405692E-03 AT ELEMENT 2CArO     EQUATION   2
+ 01AtJ   (  165, 4) ST = 0.236200E+07 DT = 0.673364E+05 DX 1=0.197062E+03 DX2= -.990494E-04 T =  73.870 P = 11162570. S = 0.000000E+00
+    
+   average inner-iteration/solve    =    4.73045267489712     
+ ...ITERATING... AT [  166, 1] --- DELTEX = 0.101005E+06  MAX. RES. = 0.795364E+00 AT ELEMENT 02Ajf     EQUATION   2
+ ...ITERATING... AT [  166, 2] --- DELTEX = 0.101005E+06  MAX. RES. = 0.669835E+01 AT ELEMENT 2BArO     EQUATION   2
+ ...ITERATING... AT [  166, 3] --- DELTEX = 0.101005E+06  MAX. RES. = 0.996406E-03 AT ELEMENT 2CArO     EQUATION   2
+ 01AtJ   (  166, 4) ST = 0.246300E+07 DT = 0.101005E+06 DX 1=0.281834E+03 DX2= -.629497E-03 T =  73.902 P = 11011776. S = 0.000000E+00
+    
+   average inner-iteration/solve    =    5.26380368098159     
+ ...ITERATING... AT [  167, 1] --- DELTEX = 0.128998E+06  MAX. RES. = 0.953235E+00 AT ELEMENT 02Alb     EQUATION   2
+ ...ITERATING... AT [  167, 2] --- DELTEX = 0.128998E+06  MAX. RES. = 0.237760E+01 AT ELEMENT 2DArO     EQUATION   2
+ ...ITERATING... AT [  167, 3] --- DELTEX = 0.128998E+06  MAX. RES. = 0.780115E-05 AT ELEMENT 2BArO     EQUATION   2
+ 01AtJ   (  167, 4) ST = 0.259200E+07 DT = 0.128998E+06 DX 1=0.340737E+03 DX2= -.646824E-03 T =  73.902 P = 11012117. S = 0.000000E+00
+    
+   average inner-iteration/solve    =    5.84552845528455     
+ EEE  
+ EEE Time perform model computaion  =    38.8829960823059     
+ EEE   of which spent in lin. solv. =    15.5539977550507     
+ EEE   and spent on other           =    23.3289983272552     
+ EEE  
+ EEE Total number of time steps =           26
+
+ ********** VOLUME- AND MASS-BALANCES ********************************************************************************************
+
+ ********** [KCYC,ITER] = [ 167,  4] *****                                  THE TIME IS  0.25920E+07 SECONDS, OR  0.30000E+02 DAYS
+
+
+ PHASE VOLUMES IN PLACE
+ GAS 0.00000E+00 M**3;  AQUEOUS 0.13109E+07 M**3
+
+ MASS IN PLACE
+ GAS 0.00000E+00 KG;    AQUEOUS 0.12828E+10 KG;  TOTAL H2O 0.12828E+10 KG;  H2O(2) 0.98521E+07 KG;  INT. ENERGY 0.11199E+16 J
+
+ *********************************************************************************************************************************
+
+
+
+ WRITE FILE *SAVE* AFTER  167 TIME STEPS  ---  THE TIME IS 0.259200E+07 SECONDS
+
+ EEE  
+ EEE  Number of processors =           24
+ EEE Time perform model computaion  =    38.8829960823059     
+ EEE   of which spent in lin. solv. =    15.5539977550507     
+ EEE   and spent on other           =    23.3289983272552     
+ EEE  
+ EEE Total number of time steps =           26
+ EEE Average time in Aztec per time step =   0.598230682886564     
+ EEE Average time spent on other per time step =   0.897269166432894     
+ EEE  
+ EEE Total number Newton steps =           42
+ EEE Average number of Newton steps per time step   1.61538461538462     
+ EEE Average time per Newton step =   0.370333279882159     
+ EEE Average time spent on other per Newton st =   0.555452341125125     
+ EEE  
+ EEE Total number of iter in Aztec =         2876
+ EEE Average number of iter per call to Aztec   68.4761904761905     
+ EEE Average time per iter in Aztec =   5.408205060866015E-003
+ EEE  
+ EEE Partitioning algorithm used: METIS_Kway               
+ EEE Number of edges cut =         5737
+ EEE  
+ EEE Average number elements per proc =    1241.91666666667     
+ EEE Maximum number elements at any proc =         1302
+ EEE Minimum number elements at any proc =         1182
+ EEE Allocated LNEL =         1698
+ EEE Average number connections per proc =  -3.856649671604673E+060
+ EEE Minimum number connections at any proc =  -9.255959211747410E+061
+ EEE Maximum number connections at any proc =         4170
+ EEE Allocated LMNCON =         4170
+ EEE  
+ EEE Average number of neighbors per proc =    5.66666666666667     
+ EEE Maximum number of neighbors at any proc =            9
+ EEE Minimum number of neighbors at any proc =            4
+ EEE  
+ EEE Average number of external elem. per proc =    417.083333333333     
+ EEE Maximum number of external elem. per proc =          520
+ EEE Minimum number of external elem. per proc =          344
+ EEE  
+ EEE Maximum size for local matrix (in Kbyte) =    841.929687500000     
+ EEE Maximum size data in matvec (in Kbyte) =    912.390625000000     
+ EEE  
+ EEE  ====
+ EEE  
+ EEE Linear Solver Used: BICGSTAB
+ EEE Scaling method: Block Jacobi
+ EEE Preconditioner: Domain Decomposition
+ EEE    with overlap type: Standard
+ EEE    and size of overlap:           0
+ EEE    and subdomain solver: ILUT
+ EEE    without RCM reordering
+ EEE Residual norm: ||r||2 / ||b||2
+ EEE Max. number of iterations:         500
+ EEE Tolerance:  1.000000000000000E-006
+ EEE  =============================================
+ EEE  
+ EEE  
+
+ ***********************************************************************************************************************************
+ *                                                                                                                                 *
+ *                                                 SUMMARY OF PROGRAM UNITS USED                                                   *
+ *                                                                                                                                 *
+ ***********************************************************************************************************************************
+
+       UNIT    VERSION     DATE                 COMMENTS
+ ___________________________________________________________________________________________________________________________________
+
+      IO       1.0      15 APRIL     1991      OPEN FILES *VERS*, *MESH*, *INCON*, *GENER*, *SAVE*, *LINEQ*, AND *TABLE*          
+      TOUGH2-MP 2.0  October  2005       Using AZTEC iterative solvers                                                            
+                                                                                                                                  
+      INPUT    1.1       28 April    2000      READ ALL DATA PROVIDED THROUGH FILE *INPUT*                                        
+      FLOP     1.0      11 APRIL     1991      CALCULATE NUMBER OF SIGNIFICANT DIGITS FOR FLOATING POINT ARITHMETIC               
+      RFILE    1.1       28 April    2000      INITIALIZE DATA FROM FILES *MESH* OR *MINC*, *GENER*, AND *INCON*                  
+      INDATA   1.1       3 August    1998      PROVIDE PRINTOUT OF MOST DATA PROVIDED THROUGH FILE *INPUT*                        
+                                                                                                                                  
+      CYCIT    1.1       1 May       2000      EXECUTIVE ROUTINE FOR MARCHING IN TIME                                             
+      PMIN     1.0      26 September 1997      initialize block-by-block permeability modifiers                                   
+                                                                                                                                  
+      EOS      1.0      23 August    1999      *EOS1* ... THERMOPHYSICAL PROPERTIES MODULE FOR WATER                              
+      SAT      1.0      22 JANUARY   1990      STEAM TABLE EQUATION: SATURATION PRESSURE AS FUNCTION OF TEMPERATURE               
+      VISW     1.0      22 JANUARY   1990      VISCOSITY OF LIQUID WATER AS FUNCTION OF TEMPERATURE AND PRESSURE                  
+      COWAT    1.0      22 JANUARY   1990      LIQUID WATER DENSITY AND INT. ENERGY AS FUNCTION OF TEMPERATURE AND PRESSURE       
+      SUPST    1.0      29 JANUARY   1990      VAPOR DENSITY AND INTERNAL ENERGY AS FUNCTION OF TEMPERATURE AND PRESSURE          
+      PCAP     2.1      12 JANUARY   1997      CAPILLARY PRESSURE AS FUNCTION OF SATURATION                                       
+                                                                                                                                  
+      BALLA    1.0       5 MARCH     1991      PERFORM SUMMARY BALANCES FOR VOLUME, MASS, AND ENERGY                              
+                                                                                                                                  
+      MULTI    1.05     3  August    1998      ASSEMBLE ALL ACCUMULATION AND FLOW TERMS                                           
+      LINEQ 2.00, parallel solver, Sep 2005       Interface for linear equation solvers                                           
+      CONVER   1.1       1 December  1995      UPDATE PRIMARY VARIABLES AFTER CONVERGENCE IS ACHIEVED                             
+                                                                                                                                  
+      OUT      2.2       2 February  2000       FOR EOS1: PRINT RESULTS FOR ELEMENTS, CONNECTIONS, AND SINKS/SOURCES              
+      WRIFI    1.0      22 JANUARY   1990      AT THE COMPLETION OF A TOUGH2 RUN, WRITE PRIMARY VARIABLES ON FILE *SAVE*          
+
+
+ ***********************************************************************************************************************************
+
+
+ END OF TOUGH2 SIMULATION RUN---ELAPSED TIME =     52.664 SEC-- Distribution + CALCULATION TIME =     49.791 SEC-- Part 1 DATA INPUT TIME =    2.873 SEC
+

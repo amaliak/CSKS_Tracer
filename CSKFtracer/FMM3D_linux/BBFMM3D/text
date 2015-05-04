@@ -1,0 +1,1 @@
+gcc  -L/usr/lib -I/usr/include  -llapack -lblas -lrfftw -lfftw -lm    ./src/kernel_Types.o ./src/H2_3D_Tree.o ./src/read_metadata.o ./src/read_sources.o ./src/write_Into_Binary_File.o ./examples/get_input_through_routine_standard_kernel.o -o exec/get_input_through_routine_standard_kernel

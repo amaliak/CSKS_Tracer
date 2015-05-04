@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>README.md</title>
+<meta name="description" content="This file was exported from WriteMonkey editor.">
+<style type="text/css">
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, code,
+del, dfn, em, img, q, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+
+/* Tables still need 'cellspacing="0"' in the markup. */
+table { border-collapse: separate; border-spacing: 0; }
+caption, th, td { text-align: left; font-weight: normal; }
+table, td, th { vertical-align: middle; }
+
+/* Remove possible quote marks (") from <q>, <blockquote>. */
+blockquote:before, blockquote:after, q:before, q:after { content: ""; }
+blockquote, q { quotes: "" ""; }
+
+/* Remove annoying border on linked images. */
+a img { border: none; }
+
+
+body {
+ 
+  margin: 10px;
+}
+
+
+body { font:1em/1.625em "lucida grande","lucida sans unicode", sans-serif; background-color:#FFFEF0;  
+font-size-adjust:none;
+font-style:normal;
+font-variant:normal;
+font-weight:normal;
+width:960px;
+margin-left:auto;
+margin-right:auto;
+}
+
+p { padding:0 0  0.8125em 0; color:#111; font-weight:300;}
+
+p + p { text-indent:1.625em;}
+
+p.first:first-letter{ float:left;font-family: baskerville,"palatino linotype",serif;font-size:3em;font-weight:700;line-height:1em;margin-bottom:-0.2em;padding:0.2em 0.1em 0 0; }
+
+
+h1,h2{ font-weight:normal; color: #333; font-family:Georgia, serif;  }
+h3,h4,h5,h6 { font-weight: normal; color: #333; font-family:Georgia, serif; }
+
+
+h1 { font-size: 2.125em; margin-bottom: 0.765em; }
+h2 { font-size: 1.9em;  margin-bottom: 0.855em; }
+h3 { font-size: 1.7em;  margin-bottom: 0.956em; }
+h4 { font-size: 1.4em;  margin-bottom: 1.161em; }
+h5,h6 { font-size: 1.313em;  margin-bottom: 1.238em; }
+
+
+
+ul{list-style-position:outside;}
+li ul, 
+li ol  { margin:0 1.625em;  }
+ul, ol { margin: 0 0 1.625em 0; }
+
+
+dl { margin: 0 0 1.625em 0; }
+dl dt { font-weight: bold; }
+dl dd { margin-left: 1.625em; }
+
+a { color:#005AF2; text-decoration:none; }
+a:hover { text-decoration: underline; }
+
+
+table { margin-bottom:1.625em; border-collapse: collapse; }
+th { font-weight:bold; }
+tr,th,td { margin:0; padding:0 1.625em 0 1em; height:26px; }
+tfoot { font-style: italic; }
+caption { text-align:center; font-family:Georgia, serif; }
+
+
+abbr, acronym { border-bottom:1px dotted #000; }
+address { margin-top:1.625em; font-style: italic; }
+del {color:#000;}
+
+
+blockquote { padding:1em 1em 1.625em 1em; font-family:georgia,serif;font-style: italic;  }
+blockquote:before { content:"\201C";font-size:3em;margin-left:-.625em; font-family:georgia,serif;color:#aaa;line-height:0;}/* From Tripoli  */
+blockquote > p {padding:0; margin:0; }
+
+strong { font-weight: bold; }
+em, dfn { font-style: italic; }
+dfn { font-weight: bold; }
+pre, code { margin: 1.625em 0; white-space: pre; }
+pre, code, tt { font: 1em monospace; line-height: 1.5; } 
+tt { display: block; margin: 1.625em 0; }
+hr { margin-bottom:1.625em; }
+
+
+
+.oldbook { font-family:"Warnock Pro","Goudy Old Style","Book Antiqua","Palatino",Georgia,serif; }
+.note { font-family:Georgia, "Times New Roman", Times, serif; font-style:italic; font-size:0.9em; margin:0.1em; color:#333; } 
+.mono { font-family:"Courier New", Courier, monospace; }
+
+
+</style>
+</head>
+<body>
+<h1>mexBBFMM3D</h1>
+<h3>1. INTRODUCTION</h3>
+<p>mexBBFMM3D is MATLAB interface for an open source package (BBFMM3D) of the <a href="http://www.sciencedirect.com/science/ article/pii/S0021999109004665">Black-box Fast Multipole Method</a> in 3 dimensions. <br />
+The Black-box Fast Multipole Method is an O(N) fast multipole method, which is a technique to calculate sums of the form  
+</p>
+<img src="http://latex.codecogs.com/svg.latex? $f(x_i) = \displaystyle \sum_{j=1}^N K(x_i,y_j) \sigma_j, \,\,\, \forall i \in\{1,2,\ldots,N\}$ " border="0"/>  
+<p>where <img src="http://latex.codecogs.com/svg.latex? $K(x_i,y_j)$" border="0"/> is kernel function, <img src="http://latex.codecogs.com/svg.latex? $x_i$" border="0"/> are observation points, <img src="http://latex.codecogs.com/svg.latex? $y_i$" border="0"/> are locations of sources, and <img src="http://latex.codecogs.com/svg.latex? $\sigma_i$" border="0"/> are charges at corresponding locations.
+BBFMM3D provides an O(N) solution to matrix-vector products of the type <img src="http://latex.codecogs.com/svg.latex? $Ax$" border="0"/>. In that case the relation between A and K is:</p>
+<img src="http://latex.codecogs.com/svg.latex? $A_{ij} = K(x_i,y_j)$ " border="0"/><p>.</p>
+<p>This implementation of the FMM differs from other methods by the fact that it is applicable to all smooth kernels K. [Give examples of RBF kernels, 1/r, log r, Stokes, etc.].</p>
+<p>The approximation scheme used in the FMM relies on Chebyshev interplation to construct low-rank approximations for well-separated clusters. In addition the use of Singular Value Decomposition ensures that the computational cost is minimal. In particular the rank is optimally chosen for a given error. </p>
+<p>Please cite the following paper if you use this code:</p>
+<p>Fong, William, and Eric Darve. &quot;The black-box fast multipole methodshod.&quot; Journal of Computational Physics 228, no. 23 (2009): 8712-8725. You can see details <a href="http://www.sciencedirect.com/science/article/pii/S0021999109004665">here</a>.</p>
+<h3>2. DIRECTORIES AND FILES</h3>
+<pre><code>./example.m :   :   Example of how to use mexBBFMM3D 
+./make.m        :   Makefile 
+./include/      :   Relevant header files  
+./mexFMM3D.cpp  :   mex function  
+./eigen/        :   Eigen Library  
+./BBFMM3D/      :   BBFMM3D library
+./README.md     :   This file  
+</code></pre>
+
+<h3>3. TUTORIAL</h3>
+<h4>3.1 To Get Started</h4>
+<p>To check whether things are set up correctly, you can go to the directory where this README.m is and run example.m.  Going through example.m should be self-explanatory, but more details are provided below. </p>
+<h4>3.2 Basic usage</h4>
+<h5>3.2.1 Complie</h5>
+<p>To use mexFMM3D, you need to compile first.  
+</p>
+<pre><code>syms r;                          
+kernel = 1 ./ r.^2;                
+outputfile = 'mexFMM3D';
+homogen = -2;                    
+symmetry = 1;                     
+
+make(r,kernel,homogen,symmetry,outputfile);
+</code></pre>
+
+<p>where </p>
+<ul>
+<li>
+r: 		
+the distance of two points (radius)
+</li>
+<li>
+kernel:	
+ the kernel function (radius basis function)
+</li>
+<li>
+outputfile: 	
+ the name of the routine you need to run
+</li>
+<li>
+homogen:		
+The homogeneous property of kernel.(The cost and memory requirements of the pre-computation step can be reduced for the case of homogeneous kernels.)
+<ul>
+<li>homogen = 0: if the kernel funtion is not homogeneous.</li>
+<li>homogen = m: if the kernel funtion is homogeneous of degree m, i.e. <img src="http://latex.codecogs.com/gif.latex? $K(\alpha x, \alpha y) = \alpha^m K(x,y)$." border="0"/></li>
+</ul>
+</li>
+<li>
+symmetry: <br />
+The symmetry property of the kernel.
+<ul>
+<li>symmetry = 0:  no symmetric property; </li>
+<li>symmetry = 1: symmetric kernel; 		[K(x,y) = K(y,x)]</li>
+<li>symmetry = -1: anti-symmetric kernel.[K(x,y) = - K(y,x)]</li>
+</ul>
+</li>
+</ul>
+<h5>3.2.2 Set up problems and parameters for BBFMM3D</h5>
+<p>This is a sample problem, make sure your points stay in the cell of length L.</p>
+<pre><code>% Info on dimensions
+Ns  = 10000;    % Number of sources in simulation cell
+Nf  = 10000;    % Number of fields in simulation cell
+m   = 2;        % number of columns of H
+
+% 3-D locations, stored column-wise i.e. (x | y | z)
+source = rand(Ns,3) - 0.5;
+% field = rand(Nf,3) - 0.5; 
+field = source;
+
+H = rand(Ns,m); 
+
+L = 1.0;            % Length of simulation cell (assumed to be a cube)
+nCheb = 4;          % Number of Chebyshev nodes per dimension
+level = 3;          % Level of FMM tree
+use_chebyshev = 1;  % 1: chebyshev interpolation; 0: uniform interpolation
+</code></pre>
+
+<ul>
+<li>
+L: <br />
+Length of simulation cell (assumed to be a cube).
+</li>
+<li>
+level:<br />
+The number of levels in the hierarchy tree
+</li>
+<li>
+nCheb:<br />
+Number of Chebyshev nodes per dimension ( the larger nCheb is, the better accuracy it will achive)
+</li>
+<li>
+use_chebyshev(int):<br />
+Label to indicate whether using chebyshev frame or uniform frame.<br />
+use_chebyshev = 1: chebyshev interplation frame (recommended if there is no memory concern)
+use_chebyshev = 0: uniform frame.
+</li>
+</ul>
+<h5>3.2.3 Compute matrix-vector(s) multiplication</h5>
+<pre><code>QH = mexFMM3D(source, field,H,nCheb, level, L, use_chebyshev);
+</code></pre>
+
+<p>If you want to compare it with exact computation:  
+</p>
+<pre><code>[QH, QH_exact] = mexFMM3D(source, field,H,nCheb, level, L, use_chebyshev);
+</code></pre>
+
+<h4>3.3 Pre-computation</h4>
+<p>The power of this package is in the pre-computing part, which is much more computationally expensive than computing part. This package takes advantage of the fact that for a given kernel and number of chebyshev nodes, the precomputing part is the same, so for a fixed kernel and number of chebyshev nodes, it generates 3 files storing information of FMM tree in the folder /output. Everytime when we use the same kernel type and number of chebyshev nodes, we can directly read from the files, which would save a lot of time.</p>
+<p>Note: it is true that sometimes with the pre-computation step, the code will be slower than direct calculation. But if the file already exists, then when doing more computations it will be faster than direct calculation. If you change the kernel, make sure to delete the existed file in BBFMM3D/output/ before you run the code.</p>
+<h3>3.4</h3>
+<p>The C++ version of BBFMM3D has more options, and is faster than using this MATLAB interface.</p>
+
+</body>
+</html>

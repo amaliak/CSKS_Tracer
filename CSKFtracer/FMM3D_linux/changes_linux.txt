@@ -1,0 +1,207 @@
+1. icc 
+
+
+gcc  -o exec/get_input_through_routine_standard_kernel ./src/kernel_Types.o ./src/H2_3D_Tree.o ./src/read_metadata.o ./src/read_sources.o ./src/write_Into_Binary_File.o ./examples/get_input_through_routine_standard_kernel.o -L/usr/lib -I/usr/include  -llapack -lblas -lrfftw -lfftw  -lm
+    
+
+     -L/usr/lib -I/usr/include  -llapack -lblas -lrfftw -lfftw
+    
+    '-L/usr/local/lib', '-lrfftw', '-lfftw', '-lm','-g',  ...
+
+    
+    '-I/opt/intel/Compiler/11.1/084/Frameworks/mkl/include/fftw',...
+
+
+
+2. size 
+
+for large-scale problem (Nf=Ns >= 1 mil, multiple m column vectors)
+
+dynamically ( ex  double* q = new double[1000000]);
+
+in the exec file 
+as well as compute.hpp : H2_3D_Compute<T>::UpwardPass 
+vector3 sourcet[Ns], Ss[n*Ns], scenter = (*A)->center;
+
+integer overflow
+Kcell = (double*) malloc(LDA * N * sizeof(double));
+
+3. typos 
+interplation -> interpolation
+
+4. timing
+121,500 grids
+chebyshev/level/Pre-Comp T/Interaction/Down / FMM T/ 
+4 5 1 4  4 : 4 - 10s(16 cores!)
+4 6 1 23 1 : 25s
+4 7 - 1000?
+
+1,000,000 grids
+chebyshev/level/Pre-Comp T/ FMM T/ 
+3       4	0.13    167.19	(up 0.24/fm_it 1.28/d.p 166)
+3       5	0.24	33.21	(up 10/fm_it 10/d.p. 23.47)
+4       4       1.39    171.36  ()
+4	5	1.69	68.26	(up 0.3/fm_it 48/d.p. 15)
+4	6	3.24	413.25
+5	4	9.84    184.07	(up 1/int 18/d.p 175)
+5       5      13.25    184.69	(up 0.5/int 160/d.p 23)
+5       6      17.66    1420.82	(up 2/int 1410/d.p 8)
+
+
+%%
+300,000 grids
+chebyshev/level/Pre-Comp T/ FMM T/ 
+
+chebyshev/level/Pre-Comp/	/FMM T/Total/	abs err 
+4	5	0.1	3	12	15               
+5	7	0.1		 
+
+%%
+180x180x60 = 2M
+4	5	1	2	520	540	20		
+4	6	1	20	70	96	20
+4	7	1	200	15	240
+
+5	5	1	2	500	510	20
+5	6	1	80	80	180	20	
+5	7	1	
+
+6	5	1	1	540	540	10
+6	6	60	370	60	510	10
+6	7	60	3000	30	3100	10
+
+7	4				3600
+7	5	60	60	540	660	0.7	
+7       6	60	600	60	720
+%%
+180*180*84 = 
+
+4	6	1	(16 cores)
+4	7	1	100	240	300
+4	8	60/40	4min	1min	5min
+
+5	6	60	150	???	forever
+5	7	1	6min >>
+
+%%
+401284
+403317
+405326
+407309
+409264
+
+
+
+    1000 2.05  0.83      1
+    8000 1.92  8.42      9
+  125000 2.49 50.08(47) 50
+ 1000000 2.07 74.56     74
+
+    1000 2.05  0.83      1
+    8000 1.92    5       3
+  125000 2.49 50.08(47) 25 / 1596.22
+ 1000000 2.07 74.56     70
+
+
+
+125000
+50545.9791850052
+51053.3716525097
+51547.4439909755
+52027.1145974772
+52491.3704830714
+Direct calculation starts from: 0 to 0.
+print out 5 vals from direct calc
+50546.0047460727
+51053.4025523054
+51547.4848912074
+52027.1660882803
+52491.4290340643
+2011.91564176524
+Relative Error: 1.90094204267586e-06
+
+
+
+1000000
+aggresive 
+401283.991523035
+403317.25126912
+405325.801844316
+407308.514867348
+409264.296586339
+
+no agressive
+401283.991523034
+403317.251269119
+405325.801844314
+407308.514867346
+409264.296586337
+
+6:47...
+1994000
+5/6 3 min
+4/5 forever
+4/6 2 min
+4/7 7 min
+6/6
+
+1 
+
+4/6
+10559.2384913441
+10824.5383085823
+11088.554186507
+11350.6646074525
+11610.5133135286
+
+5/6
+10616.2206156849
+10881.6820428843
+11146.1847627272
+11409.1551065926
+11670.1306180768
+
+10616.2206156849
+10881.6820428843
+11146.1847627272
+11409.1551065926
+11670.1306180768
+
+6/6
+10577.404741985
+10841.3390875265
+11104.2158440752
+11365.4690347459
+11624.6001473087
+
+8/6
+10589.0073691401
+10853.4677662813
+11116.889514864
+11378.7102681417
+11638.4344372108
+
+
+
+-----
+
+5/6 27 min (fast FMM, slow downward)
+12018.491883057
+12687.2766456339
+13370.5557704025
+14067.0494489417
+14775.9911236858
+
+5/7 13 min (FMM / Downward ) //
+12428.2063308997
+13124.7883106939
+13836.8240688105
+14562.623017412
+15301.5290141895
+
+5/8 20 min (high FMMinteraction/ downward 30 sec)
+12018.4962407546
+12687.2819406807
+13370.5597638836
+14067.0552774586
+14775.9964146658

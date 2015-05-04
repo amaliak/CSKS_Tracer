@@ -1,0 +1,3721 @@
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2014 The MathWorks, Inc.
+                    R2014a (8.3.0.532) 64-bit (glnxa64)
+                             February 11, 2014
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+
+param = 
+
+    rank: 30
+
+21-Apr-2015 12:15:33Initialization started ... 
+
+foldername =
+
+TestingNewIO_Rank30_test
+
+[Warning: Directory already exists.] 
+[> In exp3inv at 14] 
+21-Apr-2015 12:15:33Case: TestingNewIO_Rank30_test
+removed all directories
+created state_update and obs_update
+the total # of processors available is 720 
+
+24 of nodes are assigned to each simulation
+
+# of Gaussian basis for each state variable is 30, 30, 30
+Elapsed time is 57.123806 seconds.
+[Warning: File 'Omega.mat' not found.] 
+[> In COV_comp_FMM at 37
+  In exp3inv at 34] 
+New covariance kernel being created
+/home/amaliak/Tracer/INV/mexBBFMM3DU
+Building with 'g++'.
+MEX completed successfully.
+mex compiling is successful!
+Displaying correlation lengths from kernelfun.hpp - Modify file directly if needed
+        double lx = 100; 
+
+	double ly = 100;
+
+	double lz = 100;
+
+Covariance function
+	t0 = exp(-r*r);
+
+Running test for accuracy
+Also creating the Pre-computation files
+
+Starting FMM computation...
+Pre-Compute files do not exist. Creating now ...
+
+Pre-computation time: 16.0000
+FMM computing time: 2.6100
+FMM total time: 18.6100
+FMM error is not being computed
+Starting randSVD
+Setting up parfor
+[Warning: Cannot cancel or destroy a job that was not created by this Local
+cluster.] 
+[> In Local.cancelOrDestroyJob at 34
+  In Local.Local>Local.hDestroyJob at 237
+  In CJSJobMethods>CJSJobMethods.destroyOneJob at 70
+  In CJSCommunicatingJob>CJSCommunicatingJob.destroyOneJob at 94
+  In Job.Job>Job.delete at 1037
+  In RandomizedCondSVDFMM at 137
+  In COV_comp_FMM at 38
+  In exp3inv at 34] 
+Starting parallel pool (parpool) using the 'local' profile ... connected to 12 workers.
+N is 30
+a is 9
+noproc is 12
+Adjusting a in randSVD to fit number of processors
+New a is 6 and N+a is 36
+
+Starting FMM computation...
+
+Pre-computation time: 0.1600
+FMM computing time: 4.9800
+FMM total time: 5.1400
+Multiplication of colums from 22 to 24
+
+Starting FMM computation...
+
+Pre-computation time: 0.1400
+FMM computing time: 5.1500
+FMM total time: 5.2900
+
+Starting FMM computation...
+
+Pre-computation time: 0.1500
+FMM computing time: 5.1500
+FMM total time: 5.3000
+
+Starting FMM computation...
+
+Pre-computation time: 0.1600
+FMM computing time: 5.0200
+FMM total time: 5.1800
+Multiplication of colums from 1 to 3
+
+Starting FMM computation...
+
+Pre-computation time: 0.2100
+FMM computing time: 4.9700
+FMM total time: 5.1800
+Multiplication of colums from 31 to 33
+Multiplication of colums from 16 to 18
+Multiplication of colums from 4 to 6
+
+Starting FMM computation...
+
+Pre-computation time: 0.1900
+FMM computing time: 5.0700
+FMM total time: 5.2600
+Multiplication of colums from 19 to 21
+
+Starting FMM computation...
+
+Pre-computation time: 0.1600
+FMM computing time: 5.5100
+FMM total time: 5.6700
+Multiplication of colums from 13 to 15
+
+Starting FMM computation...
+
+Pre-computation time: 0.1600
+FMM computing time: 5.5600
+FMM total time: 5.7200
+Multiplication of colums from 28 to 30
+
+Starting FMM computation...
+
+Pre-computation time: 0.1800
+FMM computing time: 5.6000
+FMM total time: 5.7800
+Multiplication of colums from 34 to 36
+
+Starting FMM computation...
+
+Pre-computation time: 0.2000
+FMM computing time: 5.6800
+FMM total time: 5.8800
+Multiplication of colums from 25 to 27
+
+Starting FMM computation...
+
+Pre-computation time: 0.1500
+FMM computing time: 6.5400
+FMM total time: 6.6900
+Multiplication of colums from 7 to 9
+
+Starting FMM computation...
+
+Pre-computation time: 0.1300
+FMM computing time: 6.7000
+FMM total time: 6.8300
+Multiplication of colums from 10 to 12
+Computation of Y, Step 1/5 finished
+
+Starting FMM computation...
+
+Pre-computation time: 0.0100
+FMM computing time: 4.8600
+FMM total time: 4.8700
+Multiplication of colums from 16 to 18
+
+Starting FMM computation...
+
+Pre-computation time: 0.0200
+FMM computing time: 4.9000
+FMM total time: 4.9200
+Multiplication of colums from 7 to 9
+
+Starting FMM computation...
+
+Pre-computation time: 0.0400
+FMM computing time: 4.9100
+FMM total time: 4.9500
+Multiplication of colums from 4 to 6
+
+Starting FMM computation...
+
+Pre-computation time: 0.0300
+FMM computing time: 4.9300
+FMM total time: 4.9600
+Multiplication of colums from 31 to 33
+
+Starting FMM computation...
+
+Pre-computation time: 0.0400
+FMM computing time: 5.1700
+FMM total time: 5.2100
+Multiplication of colums from 1 to 3
+
+Starting FMM computation...
+
+Pre-computation time: 0.0300
+FMM computing time: 5.3200
+FMM total time: 5.3500
+Multiplication of colums from 13 to 15
+
+Starting FMM computation...
+
+Pre-computation time: 0.0300
+FMM computing time: 5.6100
+FMM total time: 5.6400
+Multiplication of colums from 25 to 27
+
+Starting FMM computation...
+
+Pre-computation time: 0.0400
+FMM computing time: 5.6200
+FMM total time: 5.6600
+
+Starting FMM computation...
+
+Pre-computation time: 0.0400
+FMM computing time: 5.6100
+FMM total time: 5.6500
+Multiplication of colums from 34 to 36
+Multiplication of colums from 28 to 30
+
+Starting FMM computation...
+
+Pre-computation time: 0.0300
+FMM computing time: 5.6900
+FMM total time: 5.7200
+Multiplication of colums from 22 to 24
+
+Starting FMM computation...
+
+Pre-computation time: 0.0300
+FMM computing time: 5.7300
+FMM total time: 5.7600
+Multiplication of colums from 19 to 21
+
+Starting FMM computation...
+
+Pre-computation time: 0.0300
+FMM computing time: 6.5000
+FMM total time: 6.5300
+Multiplication of colums from 10 to 12
+Computation of Y, Step 2/5 finished
+
+Starting FMM computation...
+
+Pre-computation time: 0.0400
+FMM computing time: 4.9000
+FMM total time: 4.9400
+Multiplication of colums from 7 to 9
+
+Starting FMM computation...
+
+Pre-computation time: 0.0400
+FMM computing time: 4.9600
+FMM total time: 5.0000
+Multiplication of colums from 31 to 33
+
+Starting FMM computation...
+
+Pre-computation time: 0.0700
+FMM computing time: 4.9400
+FMM total time: 5.0100
+Multiplication of colums from 16 to 18
+
+Starting FMM computation...
+
+Pre-computation time: 0.0800
+FMM computing time: 4.9600
+FMM total time: 5.0400
+Multiplication of colums from 4 to 6
+
+Starting FMM computation...
+
+Pre-computation time: 0.0600
+FMM computing time: 4.9800
+FMM total time: 5.0400
+Multiplication of colums from 1 to 3
+
+Starting FMM computation...
+
+Pre-computation time: 0.0500
+FMM computing time: 5.1900
+FMM total time: 5.2400
+Multiplication of colums from 22 to 24
+
+Starting FMM computation...
+
+Pre-computation time: 0.0500
+FMM computing time: 5.2600
+FMM total time: 5.3100
+Multiplication of colums from 19 to 21
+
+Starting FMM computation...
+
+Pre-computation time: 0.0600
+FMM computing time: 5.3000
+FMM total time: 5.3600
+Multiplication of colums from 10 to 12
+
+Starting FMM computation...
+
+Pre-computation time: 0.0500
+FMM computing time: 5.5600
+FMM total time: 5.6100
+Multiplication of colums from 25 to 27
+
+Starting FMM computation...
+
+Pre-computation time: 0.0400
+FMM computing time: 5.7900
+FMM total time: 5.8300
+Multiplication of colums from 34 to 36
+
+Starting FMM computation...
+
+Pre-computation time: 0.0400
+FMM computing time: 6.0000
+FMM total time: 6.0400
+Multiplication of colums from 13 to 15
+
+Starting FMM computation...
+
+Pre-computation time: 0.0500
+FMM computing time: 7.0400
+FMM total time: 7.0900
+Multiplication of colums from 28 to 30
+Computation of Y, Step 3/5 finished
+Computation of B, Last Step Started
+
+Starting FMM computation...
+
+Pre-computation time: 0.0300
+FMM computing time: 4.9500
+FMM total time: 4.9800
+Multiplication of colums from 7 to 9
+
+Starting FMM computation...
+
+Pre-computation time: 0.0200
+FMM computing time: 4.9800
+FMM total time: 5.0000
+Multiplication of colums from 4 to 6
+
+Starting FMM computation...
+
+Pre-computation time: 0.0400
+FMM computing time: 5.2700
+FMM total time: 5.3100
+Multiplication of colums from 13 to 15
+
+Starting FMM computation...
+
+Pre-computation time: 0.0400
+FMM computing time: 5.4900
+FMM total time: 5.5300
+Multiplication of colums from 19 to 21
+
+Starting FMM computation...
+
+Pre-computation time: 0.0200
+FMM computing time: 6.3400
+FMM total time: 6.3600
+Multiplication of colums from 31 to 33
+
+Starting FMM computation...
+
+Pre-computation time: 0.0300
+FMM computing time: 6.4600
+FMM total time: 6.4900
+Multiplication of colums from 34 to 36
+
+Starting FMM computation...
+
+Pre-computation time: 0.0300
+FMM computing time: 6.6600
+FMM total time: 6.6900
+Multiplication of colums from 28 to 30
+
+Starting FMM computation...
+
+Pre-computation time: 0.0300
+FMM computing time: 6.8000
+FMM total time: 6.8300
+Multiplication of colums from 25 to 27
+
+Starting FMM computation...
+
+Pre-computation time: 0.0200
+FMM computing time: 6.7200
+FMM total time: 6.7400
+Multiplication of colums from 10 to 12
+
+Starting FMM computation...
+
+Pre-computation time: 0.0400
+FMM computing time: 6.8300
+FMM total time: 6.8700
+Multiplication of colums from 22 to 24
+
+Starting FMM computation...
+
+Pre-computation time: 0.0200
+FMM computing time: 6.8800
+FMM total time: 6.9000
+Multiplication of colums from 16 to 18
+
+Starting FMM computation...
+
+Pre-computation time: 0.0400
+FMM computing time: 7.7200
+FMM total time: 7.7600
+Multiplication of colums from 1 to 3
+Computation of B, Final Step finished
+Parallel pool using the 'local' profile is shutting down.
+Elapsed time is 62.595366 seconds.
+New covariance kernel being created
+/home/amaliak/Tracer/INV/mexBBFMM3DU
+Building with 'g++'.
+MEX completed successfully.
+mex compiling is successful!
+Displaying correlation lengths from kernelfun.hpp - Modify file directly if needed
+        double lx = 100; 
+
+	double ly = 100;
+
+	double lz = 100;
+
+Covariance function
+	t0 = exp(-r*r);
+
+Running test for accuracy
+Also creating the Pre-computation files
+
+Starting FMM computation...
+Pre-Compute files do not exist. Creating now ...
+
+Pre-computation time: 14.8400
+FMM computing time: 2.8700
+FMM total time: 17.7100
+FMM error is not being computed
+Starting randSVD
+Setting up parfor
+Starting parallel pool (parpool) using the 'local' profile ... connected to 12 workers.
+N is 30
+a is 9
+noproc is 12
+Adjusting a in randSVD to fit number of processors
+New a is 6 and N+a is 36
+
+Starting FMM computation...
+
+Pre-computation time: 0.1900
+FMM computing time: 5.1400
+FMM total time: 5.3300
+Multiplication of colums from 7 to 9
+
+Starting FMM computation...
+
+Pre-computation time: 0.1600
+FMM computing time: 5.2300
+FMM total time: 5.3900
+Multiplication of colums from 10 to 12
+
+Starting FMM computation...
+
+Pre-computation time: 0.1600
+FMM computing time: 5.2000
+FMM total time: 5.3600
+
+Starting FMM computation...
+
+Pre-computation time: 0.1600
+FMM computing time: 5.2000
+FMM total time: 5.3600
+Multiplication of colums from 16 to 18
+Multiplication of colums from 28 to 30
+
+Starting FMM computation...
+
+Pre-computation time: 0.1400
+FMM computing time: 5.3900
+FMM total time: 5.5300
+Multiplication of colums from 19 to 21
+
+Starting FMM computation...
+
+Pre-computation time: 0.2200
+FMM computing time: 5.4000
+FMM total time: 5.6200
+
+Starting FMM computation...
+
+Pre-computation time: 0.2200
+FMM computing time: 5.3700
+FMM total time: 5.5900
+
+Starting FMM computation...
+
+Pre-computation time: 0.1400
+FMM computing time: 5.4700
+FMM total time: 5.6100
+
+Starting FMM computation...
+
+Pre-computation time: 0.1900
+FMM computing time: 5.3200
+FMM total time: 5.5100
+Multiplication of colums from 31 to 33
+Multiplication of colums from 1 to 3
+Multiplication of colums from 34 to 36
+Multiplication of colums from 25 to 27
+
+Starting FMM computation...
+
+Pre-computation time: 0.1800
+FMM computing time: 6.2700
+FMM total time: 6.4500
+Multiplication of colums from 13 to 15
+
+Starting FMM computation...
+
+Pre-computation time: 0.2100
+FMM computing time: 6.4800
+FMM total time: 6.6900
+Multiplication of colums from 4 to 6
+
+Starting FMM computation...
+
+Pre-computation time: 0.1600
+FMM computing time: 6.7100
+FMM total time: 6.8700
+Multiplication of colums from 22 to 24
+Computation of Y, Step 1/5 finished
+
+Starting FMM computation...
+
+Pre-computation time: 0.0400
+FMM computing time: 5.0000
+FMM total time: 5.0400
+Multiplication of colums from 31 to 33
+
+Starting FMM computation...
+
+Pre-computation time: 0.0500
+FMM computing time: 4.9800
+FMM total time: 5.0300
+Multiplication of colums from 19 to 21
+
+Starting FMM computation...
+
+Pre-computation time: 0.0300
+FMM computing time: 5.0500
+FMM total time: 5.0800
+Multiplication of colums from 1 to 3
+
+Starting FMM computation...
+
+Pre-computation time: 0.0400
+FMM computing time: 5.0400
+FMM total time: 5.0800
+Multiplication of colums from 28 to 30
+
+Starting FMM computation...
+
+Pre-computation time: 0.0300
+FMM computing time: 5.0200
+FMM total time: 5.0500
+Multiplication of colums from 22 to 24
+
+Starting FMM computation...
+
+Pre-computation time: 0.0300
+FMM computing time: 5.1000
+FMM total time: 5.1300
+Multiplication of colums from 7 to 9
+
+Starting FMM computation...
+
+Pre-computation time: 0.0300
+FMM computing time: 5.0500
+FMM total time: 5.0800
+Multiplication of colums from 34 to 36
+
+Starting FMM computation...
+
+Pre-computation time: 0.0400
+FMM computing time: 5.0900
+FMM total time: 5.1300
+Multiplication of colums from 4 to 6
+
+Starting FMM computation...
+
+Pre-computation time: 0.0400
+FMM computing time: 5.0800
+FMM total time: 5.1200
+Multiplication of colums from 25 to 27
+
+Starting FMM computation...
+
+Pre-computation time: 0.0500
+FMM computing time: 5.0900
+FMM total time: 5.1400
+Multiplication of colums from 13 to 15
+
+Starting FMM computation...
+
+Pre-computation time: 0.0600
+FMM computing time: 5.1000
+FMM total time: 5.1600
+Multiplication of colums from 16 to 18
+
+Starting FMM computation...
+
+Pre-computation time: 0.0600
+FMM computing time: 5.1300
+FMM total time: 5.1900
+Multiplication of colums from 10 to 12
+Computation of Y, Step 2/5 finished
+
+Starting FMM computation...
+
+Pre-computation time: 0.0200
+FMM computing time: 4.9600
+FMM total time: 4.9800
+Multiplication of colums from 13 to 15
+
+Starting FMM computation...
+
+Pre-computation time: 0.0500
+FMM computing time: 4.9900
+FMM total time: 5.0400
+Multiplication of colums from 4 to 6
+
+Starting FMM computation...
+
+Pre-computation time: 0.0500
+FMM computing time: 4.9900
+FMM total time: 5.0400
+Multiplication of colums from 16 to 18
+
+Starting FMM computation...
+
+Pre-computation time: 0.0400
+FMM computing time: 5.0000
+FMM total time: 5.0400
+Multiplication of colums from 10 to 12
+
+Starting FMM computation...
+
+Pre-computation time: 0.0200
+FMM computing time: 5.1700
+FMM total time: 5.1900
+Multiplication of colums from 1 to 3
+
+Starting FMM computation...
+
+Pre-computation time: 0.0500
+FMM computing time: 5.1200
+FMM total time: 5.1700
+Multiplication of colums from 34 to 36
+
+Starting FMM computation...
+
+Pre-computation time: 0.0400
+FMM computing time: 5.3300
+FMM total time: 5.3700
+Multiplication of colums from 22 to 24
+
+Starting FMM computation...
+
+Pre-computation time: 0.0600
+FMM computing time: 5.3500
+FMM total time: 5.4100
+Multiplication of colums from 28 to 30
+
+Starting FMM computation...
+
+Pre-computation time: 0.0800
+FMM computing time: 5.3600
+FMM total time: 5.4400
+Multiplication of colums from 19 to 21
+
+Starting FMM computation...
+
+Pre-computation time: 0.0600
+FMM computing time: 5.5000
+FMM total time: 5.5600
+Multiplication of colums from 31 to 33
+
+Starting FMM computation...
+
+Pre-computation time: 0.0400
+FMM computing time: 6.7400
+FMM total time: 6.7800
+Multiplication of colums from 7 to 9
+
+Starting FMM computation...
+
+Pre-computation time: 0.0600
+FMM computing time: 7.2900
+FMM total time: 7.3500
+Multiplication of colums from 25 to 27
+Computation of Y, Step 3/5 finished
+Computation of B, Last Step Started
+
+Starting FMM computation...
+
+Pre-computation time: 0.0200
+FMM computing time: 5.1600
+FMM total time: 5.1800
+Multiplication of colums from 4 to 6
+
+Starting FMM computation...
+
+Pre-computation time: 0.0300
+FMM computing time: 5.1100
+FMM total time: 5.1400
+Multiplication of colums from 16 to 18
+
+Starting FMM computation...
+
+Pre-computation time: 0.0500
+FMM computing time: 5.1100
+FMM total time: 5.1600
+Multiplication of colums from 10 to 12
+
+Starting FMM computation...
+
+Pre-computation time: 0.0300
+FMM computing time: 5.2000
+FMM total time: 5.2300
+Multiplication of colums from 28 to 30
+
+Starting FMM computation...
+
+Pre-computation time: 0.0100
+FMM computing time: 5.3600
+FMM total time: 5.3700
+Multiplication of colums from 22 to 24
+
+Starting FMM computation...
+
+Pre-computation time: 0.0300
+FMM computing time: 5.7900
+FMM total time: 5.8200
+Multiplication of colums from 31 to 33
+
+Starting FMM computation...
+
+Pre-computation time: 0.0300
+FMM computing time: 5.8800
+FMM total time: 5.9100
+Multiplication of colums from 7 to 9
+
+Starting FMM computation...
+
+Pre-computation time: 0.0300
+FMM computing time: 5.8900
+FMM total time: 5.9200
+Multiplication of colums from 13 to 15
+
+Starting FMM computation...
+
+Pre-computation time: 0.0300
+FMM computing time: 5.8800
+FMM total time: 5.9100
+Multiplication of colums from 25 to 27
+
+Starting FMM computation...
+
+Pre-computation time: 0.0200
+FMM computing time: 6.0200
+FMM total time: 6.0400
+Multiplication of colums from 1 to 3
+
+Starting FMM computation...
+
+Pre-computation time: 0.0300
+FMM computing time: 6.0700
+FMM total time: 6.1000
+Multiplication of colums from 19 to 21
+
+Starting FMM computation...
+
+Pre-computation time: 0.0400
+FMM computing time: 6.8400
+FMM total time: 6.8800
+Multiplication of colums from 34 to 36
+Computation of B, Final Step finished
+Parallel pool using the 'local' profile is shutting down.
+Elapsed time is 46.149259 seconds.
+New covariance kernel being created
+/home/amaliak/Tracer/INV/mexBBFMM3DU
+Building with 'g++'.
+MEX completed successfully.
+mex compiling is successful!
+Displaying correlation lengths from kernelfun.hpp - Modify file directly if needed
+        double lx = 100; 
+
+	double ly = 100;
+
+	double lz = 100;
+
+Covariance function
+	t0 = exp(-r*r);
+
+Running test for accuracy
+Also creating the Pre-computation files
+
+Starting FMM computation...
+Pre-Compute files do not exist. Creating now ...
+
+Pre-computation time: 14.5400
+FMM computing time: 3.8000
+FMM total time: 18.3400
+FMM error is not being computed
+Starting randSVD
+Setting up parfor
+Starting parallel pool (parpool) using the 'local' profile ... connected to 12 workers.
+N is 30
+a is 9
+noproc is 12
+Adjusting a in randSVD to fit number of processors
+New a is 6 and N+a is 36
+
+Starting FMM computation...
+
+Pre-computation time: 0.1900
+FMM computing time: 4.9500
+FMM total time: 5.1400
+Multiplication of colums from 4 to 6
+
+Starting FMM computation...
+
+Pre-computation time: 0.1900
+FMM computing time: 5.1100
+FMM total time: 5.3000
+Multiplication of colums from 10 to 12
+
+Starting FMM computation...
+
+Pre-computation time: 0.2000
+FMM computing time: 5.3400
+FMM total time: 5.5400
+Multiplication of colums from 19 to 21
+
+Starting FMM computation...
+
+Pre-computation time: 0.2000
+FMM computing time: 5.4700
+FMM total time: 5.6700
+Multiplication of colums from 13 to 15
+
+Starting FMM computation...
+
+Pre-computation time: 0.1300
+FMM computing time: 5.6200
+FMM total time: 5.7500
+Multiplication of colums from 25 to 27
+
+Starting FMM computation...
+
+Pre-computation time: 0.1400
+FMM computing time: 5.6500
+FMM total time: 5.7900
+Multiplication of colums from 1 to 3
+
+Starting FMM computation...
+
+Pre-computation time: 0.1200
+FMM computing time: 5.8800
+FMM total time: 6.0000
+Multiplication of colums from 31 to 33
+
+Starting FMM computation...
+
+Pre-computation time: 0.1500
+FMM computing time: 6.0800
+FMM total time: 6.2300
+Multiplication of colums from 16 to 18
+
+Starting FMM computation...
+
+Pre-computation time: 0.2000
+FMM computing time: 6.1800
+FMM total time: 6.3800
+Multiplication of colums from 34 to 36
+
+Starting FMM computation...
+
+Pre-computation time: 0.2000
+FMM computing time: 6.3300
+FMM total time: 6.5300
+Multiplication of colums from 28 to 30
+
+Starting FMM computation...
+
+Pre-computation time: 0.2000
+FMM computing time: 6.3000
+FMM total time: 6.5000
+Multiplication of colums from 22 to 24
+
+Starting FMM computation...
+
+Pre-computation time: 0.2000
+FMM computing time: 7.1400
+FMM total time: 7.3400
+Multiplication of colums from 7 to 9
+Computation of Y, Step 1/5 finished
+
+Starting FMM computation...
+
+Pre-computation time: 0.0500
+FMM computing time: 4.9100
+FMM total time: 4.9600
+Multiplication of colums from 25 to 27
+
+Starting FMM computation...
+
+Pre-computation time: 0.0400
+FMM computing time: 5.0300
+FMM total time: 5.0700
+Multiplication of colums from 31 to 33
+
+Starting FMM computation...
+
+Pre-computation time: 0.0500
+FMM computing time: 5.0600
+FMM total time: 5.1100
+Multiplication of colums from 10 to 12
+
+Starting FMM computation...
+
+Pre-computation time: 0.0400
+FMM computing time: 5.2000
+FMM total time: 5.2400
+Multiplication of colums from 34 to 36
+
+Starting FMM computation...
+
+Pre-computation time: 0.0300
+FMM computing time: 5.2100
+FMM total time: 5.2400
+Multiplication of colums from 22 to 24
+
+Starting FMM computation...
+
+Pre-computation time: 0.0500
+FMM computing time: 5.2000
+FMM total time: 5.2500
+Multiplication of colums from 16 to 18
+
+Starting FMM computation...
+
+Pre-computation time: 0.0500
+FMM computing time: 5.2700
+FMM total time: 5.3200
+Multiplication of colums from 4 to 6
+
+Starting FMM computation...
+
+Pre-computation time: 0.0400
+FMM computing time: 5.2800
+FMM total time: 5.3200
+Multiplication of colums from 7 to 9
+
+Starting FMM computation...
+
+Pre-computation time: 0.0500
+FMM computing time: 5.4200
+FMM total time: 5.4700
+Multiplication of colums from 19 to 21
+
+Starting FMM computation...
+
+Pre-computation time: 0.0400
+FMM computing time: 5.5500
+FMM total time: 5.5900
+Multiplication of colums from 13 to 15
+
+Starting FMM computation...
+
+Pre-computation time: 0.0400
+FMM computing time: 5.6900
+FMM total time: 5.7300
+Multiplication of colums from 28 to 30
+
+Starting FMM computation...
+
+Pre-computation time: 0.0300
+FMM computing time: 5.8500
+FMM total time: 5.8800
+Multiplication of colums from 1 to 3
+Computation of Y, Step 2/5 finished
+
+Starting FMM computation...
+
+Pre-computation time: 0.0200
+FMM computing time: 4.9600
+FMM total time: 4.9800
+Multiplication of colums from 31 to 33
+
+Starting FMM computation...
+
+Pre-computation time: 0.0400
+FMM computing time: 4.9800
+FMM total time: 5.0200
+Multiplication of colums from 28 to 30
+
+Starting FMM computation...
+
+Pre-computation time: 0.0500
+FMM computing time: 5.0200
+FMM total time: 5.0700
+Multiplication of colums from 13 to 15
+
+Starting FMM computation...
+
+Pre-computation time: 0.0300
+FMM computing time: 5.1800
+FMM total time: 5.2100
+Multiplication of colums from 16 to 18
+
+Starting FMM computation...
+
+Pre-computation time: 0.0500
+FMM computing time: 5.1800
+FMM total time: 5.2300
+Multiplication of colums from 4 to 6
+
+Starting FMM computation...
+
+Pre-computation time: 0.0400
+FMM computing time: 5.2900
+FMM total time: 5.3300
+Multiplication of colums from 7 to 9
+
+Starting FMM computation...
+
+Pre-computation time: 0.0700
+FMM computing time: 5.6300
+FMM total time: 5.7000
+Multiplication of colums from 19 to 21
+
+Starting FMM computation...
+
+Pre-computation time: 0.0700
+FMM computing time: 5.6400
+FMM total time: 5.7100
+Multiplication of colums from 1 to 3
+
+Starting FMM computation...
+
+Pre-computation time: 0.0700
+FMM computing time: 5.6500
+FMM total time: 5.7200
+Multiplication of colums from 10 to 12
+
+Starting FMM computation...
+
+Pre-computation time: 0.0700
+FMM computing time: 5.7300
+FMM total time: 5.8000
+Multiplication of colums from 25 to 27
+
+Starting FMM computation...
+
+Pre-computation time: 0.0700
+FMM computing time: 5.7300
+FMM total time: 5.8000
+Multiplication of colums from 22 to 24
+
+Starting FMM computation...
+
+Pre-computation time: 0.0600
+FMM computing time: 5.8000
+FMM total time: 5.8600
+Multiplication of colums from 34 to 36
+Computation of Y, Step 3/5 finished
+Computation of B, Last Step Started
+
+Starting FMM computation...
+
+Pre-computation time: 0.0400
+FMM computing time: 4.9400
+FMM total time: 4.9800
+Multiplication of colums from 25 to 27
+
+Starting FMM computation...
+
+Pre-computation time: 0.0300
+FMM computing time: 5.0000
+FMM total time: 5.0300
+Multiplication of colums from 31 to 33
+
+Starting FMM computation...
+
+Pre-computation time: 0.0500
+FMM computing time: 5.0500
+FMM total time: 5.1000
+Multiplication of colums from 13 to 15
+
+Starting FMM computation...
+
+Pre-computation time: 0.0400
+FMM computing time: 5.1800
+FMM total time: 5.2200
+Multiplication of colums from 10 to 12
+
+Starting FMM computation...
+
+Pre-computation time: 0.0400
+FMM computing time: 5.7000
+FMM total time: 5.7400
+Multiplication of colums from 28 to 30
+
+Starting FMM computation...
+
+Pre-computation time: 0.0300
+FMM computing time: 5.7900
+FMM total time: 5.8200
+Multiplication of colums from 7 to 9
+
+Starting FMM computation...
+
+Pre-computation time: 0.0300
+FMM computing time: 5.7800
+FMM total time: 5.8100
+Multiplication of colums from 16 to 18
+
+Starting FMM computation...
+
+Pre-computation time: 0.0300
+FMM computing time: 6.2000
+FMM total time: 6.2300
+Multiplication of colums from 4 to 6
+
+Starting FMM computation...
+
+Pre-computation time: 0.0200
+FMM computing time: 6.4600
+FMM total time: 6.4800
+Multiplication of colums from 22 to 24
+
+Starting FMM computation...
+
+Pre-computation time: 0.0400
+FMM computing time: 6.4500
+FMM total time: 6.4900
+Multiplication of colums from 19 to 21
+
+Starting FMM computation...
+
+Pre-computation time: 0.0300
+FMM computing time: 6.8200
+FMM total time: 6.8500
+Multiplication of colums from 34 to 36
+
+Starting FMM computation...
+
+Pre-computation time: 0.0300
+FMM computing time: 6.8900
+FMM total time: 6.9200
+Multiplication of colums from 1 to 3
+Computation of B, Final Step finished
+Parallel pool using the 'local' profile is shutting down.
+Elapsed time is 45.939549 seconds.
+[Warning: File 'Omega.mat' not found.] 
+[> In COV_comp_FMM at 41
+  In exp3inv at 34] 
+Recompiling
+/home/amaliak/Tracer/INV/mexBBFMM3DU
+Building with 'g++'.
+MEX completed successfully.
+mex compiling is successful!
+
+Starting FMM computation...
+Pre-Compute files do not exist. Creating now ...
+
+Pre-computation time: 14.6500
+FMM computing time: 3.0900
+FMM total time: 17.7400
+Setting up parfor
+Starting parallel pool (parpool) using the 'local' profile ... connected to 12 workers.
+
+Starting FMM computation...
+
+Pre-computation time: 0.1500
+FMM computing time: 3.2600
+FMM total time: 3.4100
+Multiplication of columns from 26 to 27
+
+Starting FMM computation...
+
+Pre-computation time: 0.1500
+FMM computing time: 3.6200
+FMM total time: 3.7700
+Multiplication of columns from 11 to 12
+
+Starting FMM computation...
+
+Pre-computation time: 0.1600
+FMM computing time: 4.7100
+FMM total time: 4.8700
+Multiplication of columns from 23 to 25
+
+Starting FMM computation...
+
+Pre-computation time: 0.1600
+FMM computing time: 4.8400
+FMM total time: 5.0000
+
+Starting FMM computation...
+
+Pre-computation time: 0.1600
+FMM computing time: 4.8400
+FMM total time: 5.0000
+Multiplication of columns from 6 to 7
+
+Starting FMM computation...
+
+Pre-computation time: 0.1700
+FMM computing time: 4.9100
+FMM total time: 5.0800
+
+Starting FMM computation...
+
+Pre-computation time: 0.1700
+FMM computing time: 4.9700
+FMM total time: 5.1400
+Multiplication of columns from 16 to 17
+Multiplication of columns from 3 to 5
+Multiplication of columns from 1 to 2
+
+Starting FMM computation...
+
+Pre-computation time: 0.1800
+FMM computing time: 5.1000
+FMM total time: 5.2800
+Multiplication of columns from 13 to 15
+
+Starting FMM computation...
+
+Pre-computation time: 0.1500
+FMM computing time: 5.1000
+FMM total time: 5.2500
+Multiplication of columns from 8 to 10
+
+Starting FMM computation...
+
+Pre-computation time: 0.1500
+FMM computing time: 5.1700
+FMM total time: 5.3200
+Multiplication of columns from 21 to 22
+
+Starting FMM computation...
+
+Pre-computation time: 0.1700
+FMM computing time: 6.4000
+FMM total time: 6.5700
+Multiplication of columns from 28 to 30
+
+Starting FMM computation...
+
+Pre-computation time: 0.1400
+FMM computing time: 6.7800
+FMM total time: 6.9200
+Multiplication of columns from 18 to 20
+Matrix vector multiplication done
+Recompiling
+/home/amaliak/Tracer/INV/mexBBFMM3DU
+Building with 'g++'.
+MEX completed successfully.
+mex compiling is successful!
+
+Starting FMM computation...
+Pre-Compute files do not exist. Creating now ...
+
+Pre-computation time: 16.3100
+FMM computing time: 2.9200
+FMM total time: 19.2300
+Setting up parfor
+Parallel pool using the 'local' profile is shutting down.
+Starting parallel pool (parpool) using the 'local' profile ... connected to 12 workers.
+
+Starting FMM computation...
+
+Pre-computation time: 0.1500
+FMM computing time: 4.0000
+FMM total time: 4.1500
+Multiplication of columns from 11 to 12
+
+Starting FMM computation...
+
+Pre-computation time: 0.2100
+FMM computing time: 4.6200
+FMM total time: 4.8300
+Multiplication of columns from 26 to 27
+
+Starting FMM computation...
+
+Pre-computation time: 0.2000
+FMM computing time: 4.6600
+FMM total time: 4.8600
+Multiplication of columns from 16 to 17
+
+Starting FMM computation...
+
+Pre-computation time: 0.1800
+FMM computing time: 4.7500
+FMM total time: 4.9300
+Multiplication of columns from 21 to 22
+
+Starting FMM computation...
+
+Pre-computation time: 0.1900
+FMM computing time: 5.1700
+FMM total time: 5.3600
+Multiplication of columns from 6 to 7
+
+Starting FMM computation...
+
+Pre-computation time: 0.1300
+FMM computing time: 5.3200
+FMM total time: 5.4500
+Multiplication of columns from 1 to 2
+
+Starting FMM computation...
+
+Pre-computation time: 0.1500
+FMM computing time: 5.6900
+FMM total time: 5.8400
+Multiplication of columns from 3 to 5
+
+Starting FMM computation...
+
+Pre-computation time: 0.1700
+FMM computing time: 5.7400
+FMM total time: 5.9100
+Multiplication of columns from 23 to 25
+
+Starting FMM computation...
+
+Pre-computation time: 0.1400
+FMM computing time: 6.3200
+FMM total time: 6.4600
+Multiplication of columns from 13 to 15
+
+Starting FMM computation...
+
+Pre-computation time: 0.1400
+FMM computing time: 6.7600
+FMM total time: 6.9000
+Multiplication of columns from 28 to 30
+
+Starting FMM computation...
+
+Pre-computation time: 0.1800
+FMM computing time: 7.0100
+FMM total time: 7.1900
+Multiplication of columns from 18 to 20
+
+Starting FMM computation...
+
+Pre-computation time: 0.1900
+FMM computing time: 6.9700
+FMM total time: 7.1600
+Multiplication of columns from 8 to 10
+Matrix vector multiplication done
+Recompiling
+/home/amaliak/Tracer/INV/mexBBFMM3DU
+Building with 'g++'.
+MEX completed successfully.
+mex compiling is successful!
+
+Starting FMM computation...
+Pre-Compute files do not exist. Creating now ...
+
+Pre-computation time: 18.1600
+FMM computing time: 3.3600
+FMM total time: 21.5200
+Setting up parfor
+Parallel pool using the 'local' profile is shutting down.
+Starting parallel pool (parpool) using the 'local' profile ... connected to 12 workers.
+
+Starting FMM computation...
+
+Pre-computation time: 0.1600
+FMM computing time: 3.3200
+FMM total time: 3.4800
+Multiplication of columns from 1 to 2
+
+Starting FMM computation...
+
+Pre-computation time: 0.1500
+FMM computing time: 3.3900
+FMM total time: 3.5400
+Multiplication of columns from 21 to 22
+
+Starting FMM computation...
+
+Pre-computation time: 0.1700
+FMM computing time: 3.3600
+FMM total time: 3.5300
+Multiplication of columns from 26 to 27
+
+Starting FMM computation...
+
+Pre-computation time: 0.1500
+FMM computing time: 3.4100
+FMM total time: 3.5600
+Multiplication of columns from 11 to 12
+
+Starting FMM computation...
+
+Pre-computation time: 0.1800
+FMM computing time: 3.5900
+FMM total time: 3.7700
+Multiplication of columns from 16 to 17
+
+Starting FMM computation...
+
+Pre-computation time: 0.1800
+FMM computing time: 3.4600
+FMM total time: 3.6400
+Multiplication of columns from 6 to 7
+
+Starting FMM computation...
+
+Pre-computation time: 0.1900
+FMM computing time: 4.8900
+FMM total time: 5.0800
+Multiplication of columns from 3 to 5
+
+Starting FMM computation...
+
+Pre-computation time: 0.1400
+FMM computing time: 5.1500
+FMM total time: 5.2900
+Multiplication of columns from 8 to 10
+
+Starting FMM computation...
+
+Pre-computation time: 0.1500
+FMM computing time: 5.1100
+FMM total time: 5.2600
+
+Starting FMM computation...
+
+Pre-computation time: 0.1500
+FMM computing time: 5.0900
+FMM total time: 5.2400
+Multiplication of columns from 23 to 25
+
+Starting FMM computation...
+
+Pre-computation time: 0.1700
+FMM computing time: 5.1500
+FMM total time: 5.3200
+Multiplication of columns from 28 to 30
+Multiplication of columns from 13 to 15
+
+Starting FMM computation...
+
+Pre-computation time: 0.1600
+FMM computing time: 5.1500
+FMM total time: 5.3100
+Multiplication of columns from 18 to 20
+Matrix vector multiplication done
+the relative approximation error of P0 is 7.993215e-04
+9.981529e-01 of the total variance is explained
+Initial permeability error is:
+   0.790018863782058
+
+[Warning: File 'GENER' not found.] 
+[> In TOUGH2obs at 20
+  In exp3inv at 48] 
+[Warning: File 'TABLE' not found.] 
+[> In TOUGH2obs at 20
+  In exp3inv at 48] 
+[Warning: File 'MESHA' not found.] 
+[> In TOUGH2obs at 20
+  In exp3inv at 48] 
+[Warning: File 'MESHB' not found.] 
+[> In TOUGH2obs at 20
+  In exp3inv at 48] 
+[Warning: File 'INCON' not found.] 
+[> In TOUGH2obs at 20
+  In exp3inv at 48] 
+[Warning: File 'OUTPUT_DATA' not found.] 
+[> In TOUGH2obs at 20
+  In exp3inv at 48] 
+[Warning: File 'OUTPUT' not found.] 
+[> In TOUGH2obs at 20
+  In exp3inv at 48] 
+Modified file created
+[Warning: File 'MESHA' not found.] 
+[> In callTOUGH2 at 2
+  In TOUGH2obs at 33
+  In exp3inv at 48] 
+[Warning: File 'MESHB' not found.] 
+[> In callTOUGH2 at 2
+  In TOUGH2obs at 33
+  In exp3inv at 48] 
+[Warning: File 'GENER' not found.] 
+[> In callTOUGH2 at 2
+  In TOUGH2obs at 33
+  In exp3inv at 48] 
+ ndk: RMesh1 NEL=       29806  NCON=       88865  MNCON=     8300000
+  nex2adj:: rank=           0  MNCON=NCON=       88865  MNEL=NEL=        29806
+ Calling METIS (Version5)METIS_Kway               
+ Runtime parameters:
+   Objective type: METIS_OBJTYPE_CUT
+   Coarsening type: METIS_CTYPE_SHEM
+   Initial partitioning type: METIS_IPTYPE_METISRB
+   Refinement type: METIS_RTYPE_GREEDY
+   Number of balancing constraints: 1
+   Number of refinement iterations: 10
+   Random number seed: -1
+   Number of partitions: 24
+   Number of cuts: 1
+   User-supplied ufactor: 50
+   Minimize connectivity: No
+   Create contigous partitions: No
+   Target partition weights: 
+        0=[4.17e-02]   1=[4.17e-02]   2=[4.17e-02]   3=[4.17e-02]   4=[4.17e-02]
+        5=[4.17e-02]   6=[4.17e-02]   7=[4.17e-02]   8=[4.17e-02]   9=[4.17e-02]
+       10=[4.17e-02]  11=[4.17e-02]  12=[4.17e-02]  13=[4.17e-02]  14=[4.17e-02]
+       15=[4.17e-02]  16=[4.17e-02]  17=[4.17e-02]  18=[4.17e-02]  19=[4.17e-02]
+       20=[4.17e-02]  21=[4.17e-02]  22=[4.17e-02]  23=[4.17e-02]
+   Allowed maximum load imbalance: 1.050 
+
+ 29806  177730     177730 [720] [     62: 29806 ]
+ 15567  122370     149254 [720] [     62: 29806 ]
+  8186   81078     125762 [720] [     62: 29806 ]
+  4270   48060     106708 [720] [     62: 29806 ]
+  2225   27004      90556 [720] [     62: 29806 ]
+  1160   14452      76488 [720] [     62: 29806 ]
+   597    7508      64418 [720] [     62: 29806 ]
+
+ gk_mcore statistics
+           coresize:       477912         nmops:         2048  cmop:      0
+        num_callocs:           39   num_hallocs:            0
+       size_callocs:      1026560  size_hallocs:            0
+        cur_callocs:            0   cur_hallocs:            0
+        max_callocs:       365864   max_hallocs:            0
+ nbrpool statistics
+        nbrpoolsize:            0   nbrpoolcpos:            0
+    nbrpoolreallocs:            0
+
+Initial 24-way partitioning cut: 0
+GRC: [  1193   1309]-[  1182   1304], Bal: 1.054, Nv-Nb[   597     89], Cut:   9492
+	[  1184   1307], Bal: 1.052, Nb:     88. Nmoves:     8, Cut:   9438, Vol:   1064
+	[  1184   1328], Bal: 1.069, Nb:     84. Nmoves:     6, Cut:   9338, Vol:   1055
+	[  1184   1328], Bal: 1.069, Nb:     84. Nmoves:     0, Cut:   9338, Vol:   1055
+GRC: [  1184   1328]-[  1182   1304], Bal: 1.069, Nv-Nb[  1160    130], Cut:   9338
+	[  1183   1317], Bal: 1.060, Nb:    102. Nmoves:    43, Cut:   8957, Vol:   1555
+	[  1183   1335], Bal: 1.075, Nb:     93. Nmoves:    14, Cut:   8812, Vol:   1538
+	[  1183   1335], Bal: 1.075, Nb:     93. Nmoves:     0, Cut:   8812, Vol:   1538
+GRC: [  1183   1335]-[  1182   1304], Bal: 1.075, Nv-Nb[  2225    195], Cut:   8812
+	[  1185   1316], Bal: 1.060, Nb:    150. Nmoves:    70, Cut:   8477, Vol:   2257
+	[  1182   1340], Bal: 1.079, Nb:    144. Nmoves:    11, Cut:   8420, Vol:   2240
+	[  1182   1340], Bal: 1.079, Nb:    145. Nmoves:     3, Cut:   8420, Vol:   2240
+GBC: [  1182   1340]-[  1182   1304], Bal: 1.079, Nv-Nb[  4270   2598], Cut:   8420
+	[  1183   1301], Bal: 1.048, Nb:   2531. Nmoves:   134, Cut:   8085, Vol:   3261
+GRC: [  1183   1301]-[  1182   1304], Bal: 1.048, Nv-Nb[  4270    221], Cut:   8085
+	[  1183   1310], Bal: 1.055, Nb:    195. Nmoves:    76, Cut:   7810, Vol:   3155
+	[  1183   1310], Bal: 1.055, Nb:    188. Nmoves:    22, Cut:   7763, Vol:   3143
+	[  1183   1310], Bal: 1.055, Nb:    191. Nmoves:     7, Cut:   7763, Vol:   3146
+GRC: [  1183   1310]-[  1182   1304], Bal: 1.055, Nv-Nb[  8186    436], Cut:   7763
+	[  1183   1298], Bal: 1.045, Nb:    290. Nmoves:   333, Cut:   7186, Vol:   4367
+	[  1184   1304], Bal: 1.050, Nb:    248. Nmoves:   118, Cut:   7030, Vol:   4320
+	[  1182   1295], Bal: 1.043, Nb:    243. Nmoves:    66, Cut:   7013, Vol:   4283
+	[  1182   1303], Bal: 1.049, Nb:    250. Nmoves:    60, Cut:   7006, Vol:   4290
+	[  1182   1302], Bal: 1.048, Nb:    245. Nmoves:    50, Cut:   7002, Vol:   4294
+	[  1182   1297], Bal: 1.044, Nb:    244. Nmoves:    44, Cut:   6996, Vol:   4286
+	[  1182   1303], Bal: 1.049, Nb:    240. Nmoves:    47, Cut:   6996, Vol:   4290
+GRC: [  1182   1303]-[  1182   1304], Bal: 1.049, Nv-Nb[ 15567    605], Cut:   6996
+	[  1191   1299], Bal: 1.046, Nb:    314. Nmoves:   547, Cut:   6391, Vol:   5919
+	[  1183   1302], Bal: 1.048, Nb:    247. Nmoves:   190, Cut:   6229, Vol:   5852
+	[  1182   1302], Bal: 1.048, Nb:    233. Nmoves:   112, Cut:   6200, Vol:   5821
+	[  1182   1302], Bal: 1.048, Nb:    226. Nmoves:    94, Cut:   6187, Vol:   5842
+	[  1182   1304], Bal: 1.050, Nb:    222. Nmoves:    84, Cut:   6170, Vol:   5816
+	[  1182   1303], Bal: 1.049, Nb:    223. Nmoves:    61, Cut:   6169, Vol:   5813
+	[  1182   1304], Bal: 1.050, Nb:    220. Nmoves:    70, Cut:   6163, Vol:   5826
+	[  1182   1304], Bal: 1.050, Nb:    212. Nmoves:    55, Cut:   6153, Vol:   5825
+	[  1182   1303], Bal: 1.049, Nb:    213. Nmoves:    51, Cut:   6142, Vol:   5814
+	[  1182   1304], Bal: 1.050, Nb:    216. Nmoves:    40, Cut:   6142, Vol:   5816
+GRC: [  1182   1304]-[  1182   1304], Bal: 1.050, Nv-Nb[ 29806    387], Cut:   6142
+	[  1182   1302], Bal: 1.048, Nb:    166. Nmoves:   428, Cut:   5872, Vol:  10004
+	[  1182   1302], Bal: 1.048, Nb:    113. Nmoves:   146, Cut:   5808, Vol:   9987
+	[  1182   1302], Bal: 1.048, Nb:     97. Nmoves:    68, Cut:   5781, Vol:   9995
+	[  1182   1302], Bal: 1.048, Nb:     95. Nmoves:    28, Cut:   5775, Vol:   9999
+	[  1182   1307], Bal: 1.052, Nb:     93. Nmoves:    27, Cut:   5769, Vol:   9991
+	[  1182   1307], Bal: 1.052, Nb:     91. Nmoves:    22, Cut:   5767, Vol:   9991
+	[  1182   1307], Bal: 1.052, Nb:     90. Nmoves:    24, Cut:   5766, Vol:   9996
+	[  1182   1307], Bal: 1.052, Nb:     97. Nmoves:    18, Cut:   5766, Vol:   9993
+GBC: [  1182   1307]-[  1182   1304], Bal: 1.052, Nv-Nb[ 29806   9104], Cut:   5766
+	[  1183   1302], Bal: 1.048, Nb:   9106. Nmoves:    85, Cut:   5760, Vol:   9995
+GRC: [  1183   1302]-[  1182   1304], Bal: 1.048, Nv-Nb[ 29806     94], Cut:   5760
+	[  1182   1302], Bal: 1.048, Nb:     72. Nmoves:    36, Cut:   5737, Vol:  10013
+	[  1182   1302], Bal: 1.048, Nb:     73. Nmoves:    12, Cut:   5737, Vol:  10010
+
+Timing Information -------------------------------------------------
+ Multilevel: 		   0.192
+     Coarsening: 		   0.043
+            Matching: 			   0.013
+            Contract: 			   0.020
+     Initial Partition: 	   0.057
+     Uncoarsening: 		   0.091
+          Refinement: 			   0.069
+          Projection: 			   0.008
+     Splitting: 		   0.000
+********************************************************************
+
+ gk_mcore statistics
+           coresize:       477912         nmops:         2048  cmop:      0
+        num_callocs:           86   num_hallocs:            0
+       size_callocs:      2015552  size_hallocs:            0
+        cur_callocs:            0   cur_hallocs:            0
+        max_callocs:       477280   max_hallocs:            0
+ nbrpool statistics
+        nbrpoolsize:        76018   nbrpoolcpos:        67003
+    nbrpoolreallocs:            4
+
+  rank=           0  done calling Metis istatus=           1  edgecut=
+        5737
+   0sending to pid=   1    1216   29807    1216    8787    8788    1215
+   1recving           1    1216   29807    1216    8787    8788    1215
+   0sending to pid=   2    1195   29807    1195    8187    8188    1194
+   2recving           2    1195   29807    1195    8187    8188    1194
+   0sending to pid=   3    1259   29807    1259    8673    8674    1258
+   3recving           3    1259   29807    1259    8673    8674    1258
+   0sending to pid=   4    1215   29807    1215    8422    8423    1214
+   4recving           4    1215   29807    1215    8422    8423    1214
+   0sending to pid=   5    1303   29807    1303    9065    9066    1302
+   5recving           5    1303   29807    1303    9065    9066    1302
+   0sending to pid=   6    1186   29807    1186    8067    8068    1185
+   6recving           6    1186   29807    1186    8067    8068    1185
+   0sending to pid=   7    1258   29807    1258    9097    9098    1257
+   7recving           7    1258   29807    1258    9097    9098    1257
+   0sending to pid=   8    1275   29807    1275    8697    8698    1274
+   8recving           8    1275   29807    1275    8697    8698    1274
+   0sending to pid=   9    1303   29807    1303    9080    9081    1302
+   9recving           9    1303   29807    1303    9080    9081    1302
+   0sending to pid=  10    1243   29807    1243    8623    8624    1242
+  10recving          10    1243   29807    1243    8623    8624    1242
+   0sending to pid=  11    1198   29807    1198    8262    8263    1197
+  11recving          11    1198   29807    1198    8262    8263    1197
+   0sending to pid=  12    1184   29807    1184    8224    8225    1183
+  12recving          12    1184   29807    1184    8224    8225    1183
+   0sending to pid=  13    1183   29807    1183    8117    8118    1182
+  13recving          13    1183   29807    1183    8117    8118    1182
+   0sending to pid=  14    1236   29807    1236    8437    8438    1235
+  14recving          14    1236   29807    1236    8437    8438    1235
+   0sending to pid=  15    1198   29807    1198    8310    8311    1197
+  15recving          15    1198   29807    1198    8310    8311    1197
+   0sending to pid=  16    1303   29807    1303    9094    9095    1302
+  16recving          16    1303   29807    1303    9094    9095    1302
+   0sending to pid=  17    1285   29807    1285    8952    8953    1284
+  17recving          17    1285   29807    1285    8952    8953    1284
+   0sending to pid=  18    1183   29807    1183    8156    8157    1182
+  18recving          18    1183   29807    1183    8156    8157    1182
+   0sending to pid=  19    1272   29807    1272    9119    9120    1271
+  19recving          19    1272   29807    1272    9119    9120    1271
+   0sending to pid=  20    1300   29807    1300    8944    8945    1299
+  20recving          20    1300   29807    1300    8944    8945    1299
+   0sending to pid=  21    1269   29807    1269    9088    9089    1268
+  21recving          21    1269   29807    1269    9088    9089    1268
+   0sending to pid=  22    1222   29807    1222    8809    8810    1221
+  22recving          22    1222   29807    1222    8809    8810    1221
+   0sending to pid=  23    1271   29807    1271    8676    8677    1270
+  23recving          23    1271   29807    1271    8676    8677    1270
+ time for preprocessing ---- including data input, partition, distribution:
+   12.1946928501129     
+ TEMPERATURE = 0.790150E+04  OUT OF RANGE IN SAT 
+ TEMPERATURE = 0.228795E+04  OUT OF RANGE IN SAT 
+  
+ Time performing model computation =    92.1132910251617     
+   of which spent in lin. solv.    =    31.2372701168060     
+   and spent on other              =    60.8760209083557     
+  
+ Total number of time steps =           39
+ EEE Linear Solver Used: BICGSTAB
+ EEE Scaling method: Block Jacobi
+ EEE Preconditioner: Domain Decomposition
+ EEE    with overlap type: Standard
+ EEE    and size of overlap:           0
+ EEE    and subdomain solver: ILUT
+ EEE    without RCM reordering
+ EEE Residual norm: ||r||2 / ||b||2
+ EEE Max. number of iterations:         500
+ EEE Tolerance:  1.000000000000000E-006
+ Distribution + Calculation time =    103.404588937759     
+ Tough2-mp wall-clock times AVERAGE(seconds) Np=    24   : init=    3.03980E+00 solve=    1.03403E+02 all=    1.06443E+02
+ Tough2-mp wall-clock times RANK0  (seconds)             : init=    3.03968E+00 solve=    1.03403E+02 all=    1.06444E+02
+
+ans =
+
+     0
+
+21-Apr-2015 12:23:57Time for initialization 503.9599 seconds
+21-Apr-2015 12:23:57 Step K = 1 started.
+21-Apr-2015 12:23:57... HU COMPUTATION Step ..1
+Perturbed realization 1
+Perturbed realization 2
+Perturbed realization 3
+Perturbed realization 4
+Perturbed realization 5
+Perturbed realization 6
+Perturbed realization 7
+Perturbed realization 8
+Perturbed realization 9
+Perturbed realization 10
+Perturbed realization 11
+Perturbed realization 12
+Perturbed realization 13
+Perturbed realization 14
+Perturbed realization 15
+Perturbed realization 16
+Perturbed realization 17
+Perturbed realization 18
+Perturbed realization 19
+Perturbed realization 20
+Perturbed realization 21
+Perturbed realization 22
+Perturbed realization 23
+Perturbed realization 24
+Perturbed realization 25
+Perturbed realization 26
+Perturbed realization 27
+Perturbed realization 28
+Perturbed realization 29
+Perturbed realization 30
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+[Warning: Directory already exists.] 
+[> In TOUGH2obs_parallel>writePBSfile at 76
+  In TOUGH2obs_parallel at 45
+  In JacobTOUGH2obs1st>observation1 at 87
+  In JacobTOUGH2obs1st at 22
+  In exp3inv at 94] 
+PBSParallel.sh is created successfully
+Running MPIEXEC with: mpiexec -hostfile node1 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder1
+Running MPIEXEC with: mpiexec -hostfile node2 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder2
+Running MPIEXEC with: mpiexec -hostfile node3 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder3
+Running MPIEXEC with: mpiexec -hostfile node4 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder4
+Running MPIEXEC with: mpiexec -hostfile node5 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder5
+Running MPIEXEC with: mpiexec -hostfile node6 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder6
+Running MPIEXEC with: mpiexec -hostfile node7 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder7
+Running MPIEXEC with: mpiexec -hostfile node8 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder8
+Running MPIEXEC with: mpiexec -hostfile node9 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder9
+Running MPIEXEC with: mpiexec -hostfile node10 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder10
+Running MPIEXEC with: mpiexec -hostfile node11 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder11
+Running MPIEXEC with: mpiexec -hostfile node12 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder12
+Running MPIEXEC with: mpiexec -hostfile node13 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder13
+Running MPIEXEC with: mpiexec -hostfile node14 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder14
+Running MPIEXEC with: mpiexec -hostfile node15 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder15
+Running MPIEXEC with: mpiexec -hostfile node16 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder16
+Running MPIEXEC with: mpiexec -hostfile node17 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder17
+Running MPIEXEC with: mpiexec -hostfile node18 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder18
+Running MPIEXEC with: mpiexec -hostfile node19 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder19
+Running MPIEXEC with: mpiexec -hostfile node20 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder20
+Running MPIEXEC with: mpiexec -hostfile node21 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder21
+Running MPIEXEC with: mpiexec -hostfile node22 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder22
+Running MPIEXEC with: mpiexec -hostfile node23 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder23
+Running MPIEXEC with: mpiexec -hostfile node24 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder24
+Running MPIEXEC with: mpiexec -hostfile node25 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder25
+Running MPIEXEC with: mpiexec -hostfile node26 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder26
+Running MPIEXEC with: mpiexec -hostfile node27 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder27
+Running MPIEXEC with: mpiexec -hostfile node28 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder28
+Running MPIEXEC with: mpiexec -hostfile node29 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder29
+Running MPIEXEC with: mpiexec -hostfile node30 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder30
+time for TOUGH2obs_parallel is380.2306
+Finished computing HU in 1038.3646seconds
+21-Apr-2015 12:41:17...ANALYSIS/SMOOTHING Step .. 1
+The condition number of HPHT + R is
+     9.932637116491364e+06
+
+Aproximation of PSI error
+
+ans =
+
+     7.192314740122353e-09
+
+Step1 after analysis 0 are below zero
+Step1 after analysis 0 are above one
+21-Apr-2015 12:41:22 FORECAST Step ..  1
+
+phase =
+
+     1
+
+[Warning: File 'INFILE' not found.] 
+[> In TOUGH2update at 22
+  In exp3inv at 129] 
+[Warning: File 'GENER' not found.] 
+[> In TOUGH2update at 22
+  In exp3inv at 129] 
+[Warning: File 'TABLE' not found.] 
+[> In TOUGH2update at 22
+  In exp3inv at 129] 
+[Warning: File 'MESHA' not found.] 
+[> In TOUGH2update at 22
+  In exp3inv at 129] 
+[Warning: File 'MESHB' not found.] 
+[> In TOUGH2update at 22
+  In exp3inv at 129] 
+[Warning: File 'INCON' not found.] 
+[> In TOUGH2update at 22
+  In exp3inv at 129] 
+[Warning: File 'OUTPUT_DATA' not found.] 
+[> In TOUGH2update at 22
+  In exp3inv at 129] 
+[Warning: File 'OUTPUT' not found.] 
+[> In TOUGH2update at 22
+  In exp3inv at 129] 
+Modified file created
+[Warning: File 'MESHA' not found.] 
+[> In callTOUGH2 at 2
+  In TOUGH2update at 40
+  In exp3inv at 129] 
+[Warning: File 'MESHB' not found.] 
+[> In callTOUGH2 at 2
+  In TOUGH2update at 40
+  In exp3inv at 129] 
+[Warning: File 'GENER' not found.] 
+[> In callTOUGH2 at 2
+  In TOUGH2update at 40
+  In exp3inv at 129] 
+ ndk: RMesh1 NEL=       29806  NCON=       88865  MNCON=     8300000
+  nex2adj:: rank=           0  MNCON=NCON=       88865  MNEL=NEL=        29806
+ Calling METIS (Version5)METIS_Kway               
+ Runtime parameters:
+   Objective type: METIS_OBJTYPE_CUT
+   Coarsening type: METIS_CTYPE_SHEM
+   Initial partitioning type: METIS_IPTYPE_METISRB
+   Refinement type: METIS_RTYPE_GREEDY
+   Number of balancing constraints: 1
+   Number of refinement iterations: 10
+   Random number seed: -1
+   Number of partitions: 24
+   Number of cuts: 1
+   User-supplied ufactor: 50
+   Minimize connectivity: No
+   Create contigous partitions: No
+   Target partition weights: 
+        0=[4.17e-02]   1=[4.17e-02]   2=[4.17e-02]   3=[4.17e-02]   4=[4.17e-02]
+        5=[4.17e-02]   6=[4.17e-02]   7=[4.17e-02]   8=[4.17e-02]   9=[4.17e-02]
+       10=[4.17e-02]  11=[4.17e-02]  12=[4.17e-02]  13=[4.17e-02]  14=[4.17e-02]
+       15=[4.17e-02]  16=[4.17e-02]  17=[4.17e-02]  18=[4.17e-02]  19=[4.17e-02]
+       20=[4.17e-02]  21=[4.17e-02]  22=[4.17e-02]  23=[4.17e-02]
+   Allowed maximum load imbalance: 1.050 
+
+ 29806  177730     177730 [720] [     62: 29806 ]
+ 15567  122370     149254 [720] [     62: 29806 ]
+  8186   81078     125762 [720] [     62: 29806 ]
+  4270   48060     106708 [720] [     62: 29806 ]
+  2225   27004      90556 [720] [     62: 29806 ]
+  1160   14452      76488 [720] [     62: 29806 ]
+   597    7508      64418 [720] [     62: 29806 ]
+
+ gk_mcore statistics
+           coresize:       477912         nmops:         2048  cmop:      0
+        num_callocs:           39   num_hallocs:            0
+       size_callocs:      1026560  size_hallocs:            0
+        cur_callocs:            0   cur_hallocs:            0
+        max_callocs:       365864   max_hallocs:            0
+ nbrpool statistics
+        nbrpoolsize:            0   nbrpoolcpos:            0
+    nbrpoolreallocs:            0
+
+Initial 24-way partitioning cut: 0
+GRC: [  1193   1309]-[  1182   1304], Bal: 1.054, Nv-Nb[   597     89], Cut:   9492
+	[  1184   1307], Bal: 1.052, Nb:     88. Nmoves:     8, Cut:   9438, Vol:   1064
+	[  1184   1328], Bal: 1.069, Nb:     84. Nmoves:     6, Cut:   9338, Vol:   1055
+	[  1184   1328], Bal: 1.069, Nb:     84. Nmoves:     0, Cut:   9338, Vol:   1055
+GRC: [  1184   1328]-[  1182   1304], Bal: 1.069, Nv-Nb[  1160    130], Cut:   9338
+	[  1183   1317], Bal: 1.060, Nb:    102. Nmoves:    43, Cut:   8957, Vol:   1555
+	[  1183   1335], Bal: 1.075, Nb:     93. Nmoves:    14, Cut:   8812, Vol:   1538
+	[  1183   1335], Bal: 1.075, Nb:     93. Nmoves:     0, Cut:   8812, Vol:   1538
+GRC: [  1183   1335]-[  1182   1304], Bal: 1.075, Nv-Nb[  2225    195], Cut:   8812
+	[  1185   1316], Bal: 1.060, Nb:    150. Nmoves:    70, Cut:   8477, Vol:   2257
+	[  1182   1340], Bal: 1.079, Nb:    144. Nmoves:    11, Cut:   8420, Vol:   2240
+	[  1182   1340], Bal: 1.079, Nb:    145. Nmoves:     3, Cut:   8420, Vol:   2240
+GBC: [  1182   1340]-[  1182   1304], Bal: 1.079, Nv-Nb[  4270   2598], Cut:   8420
+	[  1183   1301], Bal: 1.048, Nb:   2531. Nmoves:   134, Cut:   8085, Vol:   3261
+GRC: [  1183   1301]-[  1182   1304], Bal: 1.048, Nv-Nb[  4270    221], Cut:   8085
+	[  1183   1310], Bal: 1.055, Nb:    195. Nmoves:    76, Cut:   7810, Vol:   3155
+	[  1183   1310], Bal: 1.055, Nb:    188. Nmoves:    22, Cut:   7763, Vol:   3143
+	[  1183   1310], Bal: 1.055, Nb:    191. Nmoves:     7, Cut:   7763, Vol:   3146
+GRC: [  1183   1310]-[  1182   1304], Bal: 1.055, Nv-Nb[  8186    436], Cut:   7763
+	[  1183   1298], Bal: 1.045, Nb:    290. Nmoves:   333, Cut:   7186, Vol:   4367
+	[  1184   1304], Bal: 1.050, Nb:    248. Nmoves:   118, Cut:   7030, Vol:   4320
+	[  1182   1295], Bal: 1.043, Nb:    243. Nmoves:    66, Cut:   7013, Vol:   4283
+	[  1182   1303], Bal: 1.049, Nb:    250. Nmoves:    60, Cut:   7006, Vol:   4290
+	[  1182   1302], Bal: 1.048, Nb:    245. Nmoves:    50, Cut:   7002, Vol:   4294
+	[  1182   1297], Bal: 1.044, Nb:    244. Nmoves:    44, Cut:   6996, Vol:   4286
+	[  1182   1303], Bal: 1.049, Nb:    240. Nmoves:    47, Cut:   6996, Vol:   4290
+GRC: [  1182   1303]-[  1182   1304], Bal: 1.049, Nv-Nb[ 15567    605], Cut:   6996
+	[  1191   1299], Bal: 1.046, Nb:    314. Nmoves:   547, Cut:   6391, Vol:   5919
+	[  1183   1302], Bal: 1.048, Nb:    247. Nmoves:   190, Cut:   6229, Vol:   5852
+	[  1182   1302], Bal: 1.048, Nb:    233. Nmoves:   112, Cut:   6200, Vol:   5821
+	[  1182   1302], Bal: 1.048, Nb:    226. Nmoves:    94, Cut:   6187, Vol:   5842
+	[  1182   1304], Bal: 1.050, Nb:    222. Nmoves:    84, Cut:   6170, Vol:   5816
+	[  1182   1303], Bal: 1.049, Nb:    223. Nmoves:    61, Cut:   6169, Vol:   5813
+	[  1182   1304], Bal: 1.050, Nb:    220. Nmoves:    70, Cut:   6163, Vol:   5826
+	[  1182   1304], Bal: 1.050, Nb:    212. Nmoves:    55, Cut:   6153, Vol:   5825
+	[  1182   1303], Bal: 1.049, Nb:    213. Nmoves:    51, Cut:   6142, Vol:   5814
+	[  1182   1304], Bal: 1.050, Nb:    216. Nmoves:    40, Cut:   6142, Vol:   5816
+GRC: [  1182   1304]-[  1182   1304], Bal: 1.050, Nv-Nb[ 29806    387], Cut:   6142
+	[  1182   1302], Bal: 1.048, Nb:    166. Nmoves:   428, Cut:   5872, Vol:  10004
+	[  1182   1302], Bal: 1.048, Nb:    113. Nmoves:   146, Cut:   5808, Vol:   9987
+	[  1182   1302], Bal: 1.048, Nb:     97. Nmoves:    68, Cut:   5781, Vol:   9995
+	[  1182   1302], Bal: 1.048, Nb:     95. Nmoves:    28, Cut:   5775, Vol:   9999
+	[  1182   1307], Bal: 1.052, Nb:     93. Nmoves:    27, Cut:   5769, Vol:   9991
+	[  1182   1307], Bal: 1.052, Nb:     91. Nmoves:    22, Cut:   5767, Vol:   9991
+	[  1182   1307], Bal: 1.052, Nb:     90. Nmoves:    24, Cut:   5766, Vol:   9996
+	[  1182   1307], Bal: 1.052, Nb:     97. Nmoves:    18, Cut:   5766, Vol:   9993
+GBC: [  1182   1307]-[  1182   1304], Bal: 1.052, Nv-Nb[ 29806   9104], Cut:   5766
+	[  1183   1302], Bal: 1.048, Nb:   9106. Nmoves:    85, Cut:   5760, Vol:   9995
+GRC: [  1183   1302]-[  1182   1304], Bal: 1.048, Nv-Nb[ 29806     94], Cut:   5760
+	[  1182   1302], Bal: 1.048, Nb:     72. Nmoves:    36, Cut:   5737, Vol:  10013
+	[  1182   1302], Bal: 1.048, Nb:     73. Nmoves:    12, Cut:   5737, Vol:  10010
+
+Timing Information -------------------------------------------------
+ Multilevel: 		   0.193
+     Coarsening: 		   0.043
+            Matching: 			   0.017
+            Contract: 			   0.019
+     Initial Partition: 	   0.057
+     Uncoarsening: 		   0.092
+          Refinement: 			   0.070
+          Projection: 			   0.007
+     Splitting: 		   0.000
+********************************************************************
+
+ gk_mcore statistics
+           coresize:       477912         nmops:         2048  cmop:      0
+        num_callocs:           86   num_hallocs:            0
+       size_callocs:      2015552  size_hallocs:            0
+        cur_callocs:            0   cur_hallocs:            0
+        max_callocs:       477280   max_hallocs:            0
+ nbrpool statistics
+        nbrpoolsize:        76018   nbrpoolcpos:        67003
+    nbrpoolreallocs:            4
+
+  rank=           0  done calling Metis istatus=           1  edgecut=
+        5737
+   0sending to pid=   1    1216   29807    1216    8787    8788    1215
+   1recving           1    1216   29807    1216    8787    8788    1215
+   0sending to pid=   2    1195   29807    1195    8187    8188    1194
+   2recving           2    1195   29807    1195    8187    8188    1194
+   0sending to pid=   3    1259   29807    1259    8673    8674    1258
+   3recving           3    1259   29807    1259    8673    8674    1258
+   0sending to pid=   4    1215   29807    1215    8422    8423    1214
+   4recving           4    1215   29807    1215    8422    8423    1214
+   0sending to pid=   5    1303   29807    1303    9065    9066    1302
+   5recving           5    1303   29807    1303    9065    9066    1302
+   0sending to pid=   6    1186   29807    1186    8067    8068    1185
+   6recving           6    1186   29807    1186    8067    8068    1185
+   0sending to pid=   7    1258   29807    1258    9097    9098    1257
+   7recving           7    1258   29807    1258    9097    9098    1257
+   0sending to pid=   8    1275   29807    1275    8697    8698    1274
+   8recving           8    1275   29807    1275    8697    8698    1274
+   0sending to pid=   9    1303   29807    1303    9080    9081    1302
+   9recving           9    1303   29807    1303    9080    9081    1302
+   0sending to pid=  10    1243   29807    1243    8623    8624    1242
+  10recving          10    1243   29807    1243    8623    8624    1242
+   0sending to pid=  11    1198   29807    1198    8262    8263    1197
+  11recving          11    1198   29807    1198    8262    8263    1197
+   0sending to pid=  12    1184   29807    1184    8224    8225    1183
+  12recving          12    1184   29807    1184    8224    8225    1183
+   0sending to pid=  13    1183   29807    1183    8117    8118    1182
+  13recving          13    1183   29807    1183    8117    8118    1182
+   0sending to pid=  14    1236   29807    1236    8437    8438    1235
+  14recving          14    1236   29807    1236    8437    8438    1235
+   0sending to pid=  15    1198   29807    1198    8310    8311    1197
+  15recving          15    1198   29807    1198    8310    8311    1197
+   0sending to pid=  16    1303   29807    1303    9094    9095    1302
+  16recving          16    1303   29807    1303    9094    9095    1302
+   0sending to pid=  17    1285   29807    1285    8952    8953    1284
+  17recving          17    1285   29807    1285    8952    8953    1284
+   0sending to pid=  18    1183   29807    1183    8156    8157    1182
+  18recving          18    1183   29807    1183    8156    8157    1182
+   0sending to pid=  19    1272   29807    1272    9119    9120    1271
+  19recving          19    1272   29807    1272    9119    9120    1271
+   0sending to pid=  20    1300   29807    1300    8944    8945    1299
+  20recving          20    1300   29807    1300    8944    8945    1299
+   0sending to pid=  21    1269   29807    1269    9088    9089    1268
+  21recving          21    1269   29807    1269    9088    9089    1268
+   0sending to pid=  22    1222   29807    1222    8809    8810    1221
+  22recving          22    1222   29807    1222    8809    8810    1221
+   0sending to pid=  23    1271   29807    1271    8676    8677    1270
+  23recving          23    1271   29807    1271    8676    8677    1270
+ time for preprocessing ---- including data input, partition, distribution:
+   12.4208300113678     
+ TEMPERATURE = 0.596822E+05  OUT OF RANGE IN SAT 
+  
+ Time performing model computation =    101.276713132858     
+   of which spent in lin. solv.    =    38.5372297763824     
+   and spent on other              =    62.7394833564758     
+  
+ Total number of time steps =           40
+ EEE Linear Solver Used: BICGSTAB
+ EEE Scaling method: Block Jacobi
+ EEE Preconditioner: Domain Decomposition
+ EEE    with overlap type: Standard
+ EEE    and size of overlap:           0
+ EEE    and subdomain solver: ILUT
+ EEE    without RCM reordering
+ EEE Residual norm: ||r||2 / ||b||2
+ EEE Max. number of iterations:         500
+ EEE Tolerance:  1.000000000000000E-006
+ Distribution + Calculation time =    112.680532932281     
+ Tough2-mp wall-clock times AVERAGE(seconds) Np=    24   : init=    3.11074E+00 solve=    1.12679E+02 all=    1.15790E+02
+ Tough2-mp wall-clock times RANK0  (seconds)             : init=    3.11063E+00 solve=    1.12679E+02 all=    1.15791E+02
+
+ans =
+
+     0
+
+[Warning: Duplicate data points have been detected and removed - corresponding
+values have been averaged.] 
+[> In griddata>useScatteredInterp at 188
+  In griddata at 125
+  In vec2mat at 34
+  In plotX1C at 47
+  In exp3inv at 131] 
+[Warning: Duplicate data points have been detected and removed - corresponding
+values have been averaged.] 
+[> In griddata>useScatteredInterp at 188
+  In griddata at 125
+  In vec2mat at 34
+  In plotX1C at 61
+  In exp3inv at 131] 
+[Warning: Duplicate data points have been detected and removed - corresponding
+values have been averaged.] 
+[> In griddata>useScatteredInterp at 188
+  In griddata at 125
+  In vec2mat at 34
+  In plotX1C at 72
+  In exp3inv at 131] 
+[Warning: Ignoring extra legend entries.] 
+[> In legend at 290
+  In plotres at 19
+  In exp3inv at 138] 
+21-Apr-2015 12:43:46... FU CALCULATION Step ..1
+Perturbed realization 1
+Perturbed realization 2
+Perturbed realization 3
+Perturbed realization 4
+Perturbed realization 5
+Perturbed realization 6
+Perturbed realization 7
+Perturbed realization 8
+Perturbed realization 9
+Perturbed realization 10
+Perturbed realization 11
+Perturbed realization 12
+Perturbed realization 13
+Perturbed realization 14
+Perturbed realization 15
+Perturbed realization 16
+Perturbed realization 17
+Perturbed realization 18
+Perturbed realization 19
+Perturbed realization 20
+Perturbed realization 21
+Perturbed realization 22
+Perturbed realization 23
+Perturbed realization 24
+Perturbed realization 25
+Perturbed realization 26
+Perturbed realization 27
+Perturbed realization 28
+Perturbed realization 29
+Perturbed realization 30
+
+ans =
+
+     0
+
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+[Warning: Directory already exists.] 
+[> In TOUGH2update_parallel>writePBSfile at 108
+  In TOUGH2update_parallel at 77
+  In JacobTOUGH2>forward at 66
+  In JacobTOUGH2 at 20
+  In exp3inv at 148] 
+PBSParallelPredict.sh is created successfully
+Running MPIEXEC with: mpiexec -hostfile node1 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder1
+Running MPIEXEC with: mpiexec -hostfile node2 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder2
+Running MPIEXEC with: mpiexec -hostfile node3 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder3
+Running MPIEXEC with: mpiexec -hostfile node4 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder4
+Running MPIEXEC with: mpiexec -hostfile node5 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder5
+Running MPIEXEC with: mpiexec -hostfile node6 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder6
+Running MPIEXEC with: mpiexec -hostfile node7 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder7
+Running MPIEXEC with: mpiexec -hostfile node8 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder8
+Running MPIEXEC with: mpiexec -hostfile node9 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder9
+Running MPIEXEC with: mpiexec -hostfile node10 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder10
+Running MPIEXEC with: mpiexec -hostfile node11 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder11
+Running MPIEXEC with: mpiexec -hostfile node12 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder12
+Running MPIEXEC with: mpiexec -hostfile node13 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder13
+Running MPIEXEC with: mpiexec -hostfile node14 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder14
+Running MPIEXEC with: mpiexec -hostfile node15 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder15
+Running MPIEXEC with: mpiexec -hostfile node16 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder16
+Running MPIEXEC with: mpiexec -hostfile node17 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder17
+Running MPIEXEC with: mpiexec -hostfile node18 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder18
+Running MPIEXEC with: mpiexec -hostfile node19 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder19
+Running MPIEXEC with: mpiexec -hostfile node20 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder20
+Running MPIEXEC with: mpiexec -hostfile node21 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder21
+Running MPIEXEC with: mpiexec -hostfile node22 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder22
+Running MPIEXEC with: mpiexec -hostfile node23 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder23
+Running MPIEXEC with: mpiexec -hostfile node24 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder24
+Running MPIEXEC with: mpiexec -hostfile node25 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder25
+Running MPIEXEC with: mpiexec -hostfile node26 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder26
+Running MPIEXEC with: mpiexec -hostfile node27 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder27
+Running MPIEXEC with: mpiexec -hostfile node28 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder28
+Running MPIEXEC with: mpiexec -hostfile node29 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder29
+Running MPIEXEC with: mpiexec -hostfile node30 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder30
+time for TOUGH2update_parallel is419.8183
+Extra time for incorporateing forward sims to eSols
+TOUGH2update_parallel finish in 651.6593
+Perturbed realization 1
+Perturbed realization 2
+Perturbed realization 3
+Perturbed realization 4
+Perturbed realization 5
+Perturbed realization 6
+Perturbed realization 7
+Perturbed realization 8
+Perturbed realization 9
+Perturbed realization 10
+Perturbed realization 11
+Perturbed realization 12
+Perturbed realization 13
+Perturbed realization 14
+Perturbed realization 15
+Perturbed realization 16
+Perturbed realization 17
+Perturbed realization 18
+Perturbed realization 19
+Perturbed realization 20
+Perturbed realization 21
+Perturbed realization 22
+Perturbed realization 23
+Perturbed realization 24
+Perturbed realization 25
+Perturbed realization 26
+Perturbed realization 27
+Perturbed realization 28
+Perturbed realization 29
+Perturbed realization 30
+
+ans =
+
+     0
+
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+[Warning: Directory already exists.] 
+[> In TOUGH2update_parallel>writePBSfile at 108
+  In TOUGH2update_parallel at 77
+  In JacobTOUGH2>forward at 66
+  In JacobTOUGH2 at 31
+  In exp3inv at 148] 
+PBSParallelPredict.sh is created successfully
+Running MPIEXEC with: mpiexec -hostfile node1 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder1
+Running MPIEXEC with: mpiexec -hostfile node2 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder2
+Running MPIEXEC with: mpiexec -hostfile node3 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder3
+Running MPIEXEC with: mpiexec -hostfile node4 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder4
+Running MPIEXEC with: mpiexec -hostfile node5 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder5
+Running MPIEXEC with: mpiexec -hostfile node6 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder6
+Running MPIEXEC with: mpiexec -hostfile node7 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder7
+Running MPIEXEC with: mpiexec -hostfile node8 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder8
+Running MPIEXEC with: mpiexec -hostfile node9 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder9
+Running MPIEXEC with: mpiexec -hostfile node10 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder10
+Running MPIEXEC with: mpiexec -hostfile node11 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder11
+Running MPIEXEC with: mpiexec -hostfile node12 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder12
+Running MPIEXEC with: mpiexec -hostfile node13 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder13
+Running MPIEXEC with: mpiexec -hostfile node14 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder14
+Running MPIEXEC with: mpiexec -hostfile node15 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder15
+Running MPIEXEC with: mpiexec -hostfile node16 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder16
+Running MPIEXEC with: mpiexec -hostfile node17 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder17
+Running MPIEXEC with: mpiexec -hostfile node18 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder18
+Running MPIEXEC with: mpiexec -hostfile node19 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder19
+Running MPIEXEC with: mpiexec -hostfile node20 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder20
+Running MPIEXEC with: mpiexec -hostfile node21 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder21
+Running MPIEXEC with: mpiexec -hostfile node22 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder22
+Running MPIEXEC with: mpiexec -hostfile node23 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder23
+Running MPIEXEC with: mpiexec -hostfile node24 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder24
+Running MPIEXEC with: mpiexec -hostfile node25 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder25
+Running MPIEXEC with: mpiexec -hostfile node26 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder26
+Running MPIEXEC with: mpiexec -hostfile node27 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder27
+Running MPIEXEC with: mpiexec -hostfile node28 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder28
+Running MPIEXEC with: mpiexec -hostfile node29 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder29
+Running MPIEXEC with: mpiexec -hostfile node30 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder30
+time for TOUGH2update_parallel is1122.2301
+Extra time for incorporateing forward sims to eSols
+TOUGH2update_parallel finish in 1332.6643
+Perturbed realization 1
+Perturbed realization 2
+Perturbed realization 3
+Perturbed realization 4
+Perturbed realization 5
+Perturbed realization 6
+Perturbed realization 7
+Perturbed realization 8
+Perturbed realization 9
+Perturbed realization 10
+Perturbed realization 11
+Perturbed realization 12
+Perturbed realization 13
+Perturbed realization 14
+Perturbed realization 15
+Perturbed realization 16
+Perturbed realization 17
+Perturbed realization 18
+Perturbed realization 19
+Perturbed realization 20
+Perturbed realization 21
+Perturbed realization 22
+Perturbed realization 23
+Perturbed realization 24
+Perturbed realization 25
+Perturbed realization 26
+Perturbed realization 27
+Perturbed realization 28
+Perturbed realization 29
+Perturbed realization 30
+
+ans =
+
+     0
+
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+[Warning: Directory already exists.] 
+[> In TOUGH2update_parallel>writePBSfile at 108
+  In TOUGH2update_parallel at 77
+  In JacobTOUGH2>forward at 66
+  In JacobTOUGH2 at 42
+  In exp3inv at 148] 
+PBSParallelPredict.sh is created successfully
+Running MPIEXEC with: mpiexec -hostfile node1 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder1
+Running MPIEXEC with: mpiexec -hostfile node2 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder2
+Running MPIEXEC with: mpiexec -hostfile node3 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder3
+Running MPIEXEC with: mpiexec -hostfile node4 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder4
+Running MPIEXEC with: mpiexec -hostfile node5 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder5
+Running MPIEXEC with: mpiexec -hostfile node6 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder6
+Running MPIEXEC with: mpiexec -hostfile node7 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder7
+Running MPIEXEC with: mpiexec -hostfile node8 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder8
+Running MPIEXEC with: mpiexec -hostfile node9 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder9
+Running MPIEXEC with: mpiexec -hostfile node10 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder10
+Running MPIEXEC with: mpiexec -hostfile node11 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder11
+Running MPIEXEC with: mpiexec -hostfile node12 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder12
+Running MPIEXEC with: mpiexec -hostfile node13 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder13
+Running MPIEXEC with: mpiexec -hostfile node14 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder14
+Running MPIEXEC with: mpiexec -hostfile node15 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder15
+Running MPIEXEC with: mpiexec -hostfile node16 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder16
+Running MPIEXEC with: mpiexec -hostfile node17 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder17
+Running MPIEXEC with: mpiexec -hostfile node18 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder18
+Running MPIEXEC with: mpiexec -hostfile node19 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder19
+Running MPIEXEC with: mpiexec -hostfile node20 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder20
+Running MPIEXEC with: mpiexec -hostfile node21 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder21
+Running MPIEXEC with: mpiexec -hostfile node22 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder22
+Running MPIEXEC with: mpiexec -hostfile node23 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder23
+Running MPIEXEC with: mpiexec -hostfile node24 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder24
+Running MPIEXEC with: mpiexec -hostfile node25 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder25
+Running MPIEXEC with: mpiexec -hostfile node26 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder26
+Running MPIEXEC with: mpiexec -hostfile node27 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder27
+Running MPIEXEC with: mpiexec -hostfile node28 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder28
+Running MPIEXEC with: mpiexec -hostfile node29 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder29
+Running MPIEXEC with: mpiexec -hostfile node30 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder30
+time for TOUGH2update_parallel is455.6323
+Extra time for incorporateing forward sims to eSols
+TOUGH2update_parallel finish in 661.556
+Finished computing FU in 3845.5917 seconds
+21-Apr-2015 13:47:52GETTING POSTERIOR COVARIANCE Step ..1
+%%%%%%...... PREPARATION FOR NEXT STEP ....%%%%%%%
+21-Apr-2015 13:48:00Forecast observation at step2
+Modified file created
+[Warning: File 'MESHA' not found.] 
+[> In callTOUGH2 at 2
+  In TOUGH2obs at 33
+  In exp3inv at 171] 
+[Warning: File 'MESHB' not found.] 
+[> In callTOUGH2 at 2
+  In TOUGH2obs at 33
+  In exp3inv at 171] 
+[Warning: File 'GENER' not found.] 
+[> In callTOUGH2 at 2
+  In TOUGH2obs at 33
+  In exp3inv at 171] 
+ ndk: RMesh1 NEL=       29806  NCON=       88865  MNCON=     8300000
+  nex2adj:: rank=           0  MNCON=NCON=       88865  MNEL=NEL=        29806
+ Calling METIS (Version5)METIS_Kway               
+ Runtime parameters:
+   Objective type: METIS_OBJTYPE_CUT
+   Coarsening type: METIS_CTYPE_SHEM
+   Initial partitioning type: METIS_IPTYPE_METISRB
+   Refinement type: METIS_RTYPE_GREEDY
+   Number of balancing constraints: 1
+   Number of refinement iterations: 10
+   Random number seed: -1
+   Number of partitions: 24
+   Number of cuts: 1
+   User-supplied ufactor: 50
+   Minimize connectivity: No
+   Create contigous partitions: No
+   Target partition weights: 
+        0=[4.17e-02]   1=[4.17e-02]   2=[4.17e-02]   3=[4.17e-02]   4=[4.17e-02]
+        5=[4.17e-02]   6=[4.17e-02]   7=[4.17e-02]   8=[4.17e-02]   9=[4.17e-02]
+       10=[4.17e-02]  11=[4.17e-02]  12=[4.17e-02]  13=[4.17e-02]  14=[4.17e-02]
+       15=[4.17e-02]  16=[4.17e-02]  17=[4.17e-02]  18=[4.17e-02]  19=[4.17e-02]
+       20=[4.17e-02]  21=[4.17e-02]  22=[4.17e-02]  23=[4.17e-02]
+   Allowed maximum load imbalance: 1.050 
+
+ 29806  177730     177730 [720] [     62: 29806 ]
+ 15567  122370     149254 [720] [     62: 29806 ]
+  8186   81078     125762 [720] [     62: 29806 ]
+  4270   48060     106708 [720] [     62: 29806 ]
+  2225   27004      90556 [720] [     62: 29806 ]
+  1160   14452      76488 [720] [     62: 29806 ]
+   597    7508      64418 [720] [     62: 29806 ]
+
+ gk_mcore statistics
+           coresize:       477912         nmops:         2048  cmop:      0
+        num_callocs:           39   num_hallocs:            0
+       size_callocs:      1026560  size_hallocs:            0
+        cur_callocs:            0   cur_hallocs:            0
+        max_callocs:       365864   max_hallocs:            0
+ nbrpool statistics
+        nbrpoolsize:            0   nbrpoolcpos:            0
+    nbrpoolreallocs:            0
+
+Initial 24-way partitioning cut: 0
+GRC: [  1193   1309]-[  1182   1304], Bal: 1.054, Nv-Nb[   597     89], Cut:   9492
+	[  1184   1307], Bal: 1.052, Nb:     88. Nmoves:     8, Cut:   9438, Vol:   1064
+	[  1184   1328], Bal: 1.069, Nb:     84. Nmoves:     6, Cut:   9338, Vol:   1055
+	[  1184   1328], Bal: 1.069, Nb:     84. Nmoves:     0, Cut:   9338, Vol:   1055
+GRC: [  1184   1328]-[  1182   1304], Bal: 1.069, Nv-Nb[  1160    130], Cut:   9338
+	[  1183   1317], Bal: 1.060, Nb:    102. Nmoves:    43, Cut:   8957, Vol:   1555
+	[  1183   1335], Bal: 1.075, Nb:     93. Nmoves:    14, Cut:   8812, Vol:   1538
+	[  1183   1335], Bal: 1.075, Nb:     93. Nmoves:     0, Cut:   8812, Vol:   1538
+GRC: [  1183   1335]-[  1182   1304], Bal: 1.075, Nv-Nb[  2225    195], Cut:   8812
+	[  1185   1316], Bal: 1.060, Nb:    150. Nmoves:    70, Cut:   8477, Vol:   2257
+	[  1182   1340], Bal: 1.079, Nb:    144. Nmoves:    11, Cut:   8420, Vol:   2240
+	[  1182   1340], Bal: 1.079, Nb:    145. Nmoves:     3, Cut:   8420, Vol:   2240
+GBC: [  1182   1340]-[  1182   1304], Bal: 1.079, Nv-Nb[  4270   2598], Cut:   8420
+	[  1183   1301], Bal: 1.048, Nb:   2531. Nmoves:   134, Cut:   8085, Vol:   3261
+GRC: [  1183   1301]-[  1182   1304], Bal: 1.048, Nv-Nb[  4270    221], Cut:   8085
+	[  1183   1310], Bal: 1.055, Nb:    195. Nmoves:    76, Cut:   7810, Vol:   3155
+	[  1183   1310], Bal: 1.055, Nb:    188. Nmoves:    22, Cut:   7763, Vol:   3143
+	[  1183   1310], Bal: 1.055, Nb:    191. Nmoves:     7, Cut:   7763, Vol:   3146
+GRC: [  1183   1310]-[  1182   1304], Bal: 1.055, Nv-Nb[  8186    436], Cut:   7763
+	[  1183   1298], Bal: 1.045, Nb:    290. Nmoves:   333, Cut:   7186, Vol:   4367
+	[  1184   1304], Bal: 1.050, Nb:    248. Nmoves:   118, Cut:   7030, Vol:   4320
+	[  1182   1295], Bal: 1.043, Nb:    243. Nmoves:    66, Cut:   7013, Vol:   4283
+	[  1182   1303], Bal: 1.049, Nb:    250. Nmoves:    60, Cut:   7006, Vol:   4290
+	[  1182   1302], Bal: 1.048, Nb:    245. Nmoves:    50, Cut:   7002, Vol:   4294
+	[  1182   1297], Bal: 1.044, Nb:    244. Nmoves:    44, Cut:   6996, Vol:   4286
+	[  1182   1303], Bal: 1.049, Nb:    240. Nmoves:    47, Cut:   6996, Vol:   4290
+GRC: [  1182   1303]-[  1182   1304], Bal: 1.049, Nv-Nb[ 15567    605], Cut:   6996
+	[  1191   1299], Bal: 1.046, Nb:    314. Nmoves:   547, Cut:   6391, Vol:   5919
+	[  1183   1302], Bal: 1.048, Nb:    247. Nmoves:   190, Cut:   6229, Vol:   5852
+	[  1182   1302], Bal: 1.048, Nb:    233. Nmoves:   112, Cut:   6200, Vol:   5821
+	[  1182   1302], Bal: 1.048, Nb:    226. Nmoves:    94, Cut:   6187, Vol:   5842
+	[  1182   1304], Bal: 1.050, Nb:    222. Nmoves:    84, Cut:   6170, Vol:   5816
+	[  1182   1303], Bal: 1.049, Nb:    223. Nmoves:    61, Cut:   6169, Vol:   5813
+	[  1182   1304], Bal: 1.050, Nb:    220. Nmoves:    70, Cut:   6163, Vol:   5826
+	[  1182   1304], Bal: 1.050, Nb:    212. Nmoves:    55, Cut:   6153, Vol:   5825
+	[  1182   1303], Bal: 1.049, Nb:    213. Nmoves:    51, Cut:   6142, Vol:   5814
+	[  1182   1304], Bal: 1.050, Nb:    216. Nmoves:    40, Cut:   6142, Vol:   5816
+GRC: [  1182   1304]-[  1182   1304], Bal: 1.050, Nv-Nb[ 29806    387], Cut:   6142
+	[  1182   1302], Bal: 1.048, Nb:    166. Nmoves:   428, Cut:   5872, Vol:  10004
+	[  1182   1302], Bal: 1.048, Nb:    113. Nmoves:   146, Cut:   5808, Vol:   9987
+	[  1182   1302], Bal: 1.048, Nb:     97. Nmoves:    68, Cut:   5781, Vol:   9995
+	[  1182   1302], Bal: 1.048, Nb:     95. Nmoves:    28, Cut:   5775, Vol:   9999
+	[  1182   1307], Bal: 1.052, Nb:     93. Nmoves:    27, Cut:   5769, Vol:   9991
+	[  1182   1307], Bal: 1.052, Nb:     91. Nmoves:    22, Cut:   5767, Vol:   9991
+	[  1182   1307], Bal: 1.052, Nb:     90. Nmoves:    24, Cut:   5766, Vol:   9996
+	[  1182   1307], Bal: 1.052, Nb:     97. Nmoves:    18, Cut:   5766, Vol:   9993
+GBC: [  1182   1307]-[  1182   1304], Bal: 1.052, Nv-Nb[ 29806   9104], Cut:   5766
+	[  1183   1302], Bal: 1.048, Nb:   9106. Nmoves:    85, Cut:   5760, Vol:   9995
+GRC: [  1183   1302]-[  1182   1304], Bal: 1.048, Nv-Nb[ 29806     94], Cut:   5760
+	[  1182   1302], Bal: 1.048, Nb:     72. Nmoves:    36, Cut:   5737, Vol:  10013
+	[  1182   1302], Bal: 1.048, Nb:     73. Nmoves:    12, Cut:   5737, Vol:  10010
+
+Timing Information -------------------------------------------------
+ Multilevel: 		   0.192
+     Coarsening: 		   0.044
+            Matching: 			   0.017
+            Contract: 			   0.020
+     Initial Partition: 	   0.056
+     Uncoarsening: 		   0.091
+          Refinement: 			   0.071
+          Projection: 			   0.006
+     Splitting: 		   0.000
+********************************************************************
+
+ gk_mcore statistics
+           coresize:       477912         nmops:         2048  cmop:      0
+        num_callocs:           86   num_hallocs:            0
+       size_callocs:      2015552  size_hallocs:            0
+        cur_callocs:            0   cur_hallocs:            0
+        max_callocs:       477280   max_hallocs:            0
+ nbrpool statistics
+        nbrpoolsize:        76018   nbrpoolcpos:        67003
+    nbrpoolreallocs:            4
+
+  rank=           0  done calling Metis istatus=           1  edgecut=
+        5737
+   0sending to pid=   1    1216   29807    1216    8787    8788    1215
+   1recving           1    1216   29807    1216    8787    8788    1215
+   0sending to pid=   2    1195   29807    1195    8187    8188    1194
+   2recving           2    1195   29807    1195    8187    8188    1194
+   0sending to pid=   3    1259   29807    1259    8673    8674    1258
+   3recving           3    1259   29807    1259    8673    8674    1258
+   0sending to pid=   4    1215   29807    1215    8422    8423    1214
+   4recving           4    1215   29807    1215    8422    8423    1214
+   0sending to pid=   5    1303   29807    1303    9065    9066    1302
+   5recving           5    1303   29807    1303    9065    9066    1302
+   0sending to pid=   6    1186   29807    1186    8067    8068    1185
+   6recving           6    1186   29807    1186    8067    8068    1185
+   0sending to pid=   7    1258   29807    1258    9097    9098    1257
+   7recving           7    1258   29807    1258    9097    9098    1257
+   0sending to pid=   8    1275   29807    1275    8697    8698    1274
+   8recving           8    1275   29807    1275    8697    8698    1274
+   0sending to pid=   9    1303   29807    1303    9080    9081    1302
+   9recving           9    1303   29807    1303    9080    9081    1302
+   0sending to pid=  10    1243   29807    1243    8623    8624    1242
+  10recving          10    1243   29807    1243    8623    8624    1242
+   0sending to pid=  11    1198   29807    1198    8262    8263    1197
+  11recving          11    1198   29807    1198    8262    8263    1197
+   0sending to pid=  12    1184   29807    1184    8224    8225    1183
+  12recving          12    1184   29807    1184    8224    8225    1183
+   0sending to pid=  13    1183   29807    1183    8117    8118    1182
+  13recving          13    1183   29807    1183    8117    8118    1182
+   0sending to pid=  14    1236   29807    1236    8437    8438    1235
+  14recving          14    1236   29807    1236    8437    8438    1235
+   0sending to pid=  15    1198   29807    1198    8310    8311    1197
+  15recving          15    1198   29807    1198    8310    8311    1197
+   0sending to pid=  16    1303   29807    1303    9094    9095    1302
+  16recving          16    1303   29807    1303    9094    9095    1302
+   0sending to pid=  17    1285   29807    1285    8952    8953    1284
+  17recving          17    1285   29807    1285    8952    8953    1284
+   0sending to pid=  18    1183   29807    1183    8156    8157    1182
+  18recving          18    1183   29807    1183    8156    8157    1182
+   0sending to pid=  19    1272   29807    1272    9119    9120    1271
+  19recving          19    1272   29807    1272    9119    9120    1271
+   0sending to pid=  20    1300   29807    1300    8944    8945    1299
+  20recving          20    1300   29807    1300    8944    8945    1299
+   0sending to pid=  21    1269   29807    1269    9088    9089    1268
+  21recving          21    1269   29807    1269    9088    9089    1268
+   0sending to pid=  22    1222   29807    1222    8809    8810    1221
+  22recving          22    1222   29807    1222    8809    8810    1221
+   0sending to pid=  23    1271   29807    1271    8676    8677    1270
+  23recving          23    1271   29807    1271    8676    8677    1270
+ time for preprocessing ---- including data input, partition, distribution:
+   12.1600410938263     
+  
+ Time performing model computation =    52.8779828548431     
+   of which spent in lin. solv.    =    23.2343714237213     
+   and spent on other              =    29.6436114311218     
+  
+ Total number of time steps =           27
+ EEE Linear Solver Used: BICGSTAB
+ EEE Scaling method: Block Jacobi
+ EEE Preconditioner: Domain Decomposition
+ EEE    with overlap type: Standard
+ EEE    and size of overlap:           0
+ EEE    and subdomain solver: ILUT
+ EEE    without RCM reordering
+ EEE Residual norm: ||r||2 / ||b||2
+ EEE Max. number of iterations:         500
+ EEE Tolerance:  1.000000000000000E-006
+ Distribution + Calculation time =    64.2740039825439     
+ Tough2-mp wall-clock times AVERAGE(seconds) Np=    24   : init=    3.01051E+00 solve=    6.42727E+01 all=    6.72832E+01
+ Tough2-mp wall-clock times RANK0  (seconds)             : init=    3.01040E+00 solve=    6.42727E+01 all=    6.72839E+01
+
+ans =
+
+     0
+
+
+Saving to: /home/amaliak/Tracer/INV/matlab.mat
+
+21-Apr-2015 13:49:37 Step 1 finished.
+--------------------------------------------------
+--------------------------------------------------
+21-Apr-2015 13:49:37 Step K = 2 started.
+21-Apr-2015 13:49:37... HU COMPUTATION Step ..2
+Perturbed realization 1
+Perturbed realization 2
+Perturbed realization 3
+Perturbed realization 4
+Perturbed realization 5
+Perturbed realization 6
+Perturbed realization 7
+Perturbed realization 8
+Perturbed realization 9
+Perturbed realization 10
+Perturbed realization 11
+Perturbed realization 12
+Perturbed realization 13
+Perturbed realization 14
+Perturbed realization 15
+Perturbed realization 16
+Perturbed realization 17
+Perturbed realization 18
+Perturbed realization 19
+Perturbed realization 20
+Perturbed realization 21
+Perturbed realization 22
+Perturbed realization 23
+Perturbed realization 24
+Perturbed realization 25
+Perturbed realization 26
+Perturbed realization 27
+Perturbed realization 28
+Perturbed realization 29
+Perturbed realization 30
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+[Warning: Directory already exists.] 
+[> In TOUGH2obs_parallel>writePBSfile at 76
+  In TOUGH2obs_parallel at 45
+  In JacobTOUGH2obs>observation1 at 86
+  In JacobTOUGH2obs at 22
+  In exp3inv at 96] 
+PBSParallel.sh is created successfully
+Running MPIEXEC with: mpiexec -hostfile node1 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder1
+Running MPIEXEC with: mpiexec -hostfile node2 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder2
+Running MPIEXEC with: mpiexec -hostfile node3 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder3
+Running MPIEXEC with: mpiexec -hostfile node4 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder4
+Running MPIEXEC with: mpiexec -hostfile node5 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder5
+Running MPIEXEC with: mpiexec -hostfile node6 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder6
+Running MPIEXEC with: mpiexec -hostfile node7 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder7
+Running MPIEXEC with: mpiexec -hostfile node8 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder8
+Running MPIEXEC with: mpiexec -hostfile node9 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder9
+Running MPIEXEC with: mpiexec -hostfile node10 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder10
+Running MPIEXEC with: mpiexec -hostfile node11 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder11
+Running MPIEXEC with: mpiexec -hostfile node12 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder12
+Running MPIEXEC with: mpiexec -hostfile node13 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder13
+Running MPIEXEC with: mpiexec -hostfile node14 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder14
+Running MPIEXEC with: mpiexec -hostfile node15 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder15
+Running MPIEXEC with: mpiexec -hostfile node16 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder16
+Running MPIEXEC with: mpiexec -hostfile node17 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder17
+Running MPIEXEC with: mpiexec -hostfile node18 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder18
+Running MPIEXEC with: mpiexec -hostfile node19 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder19
+Running MPIEXEC with: mpiexec -hostfile node20 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder20
+Running MPIEXEC with: mpiexec -hostfile node21 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder21
+Running MPIEXEC with: mpiexec -hostfile node22 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder22
+Running MPIEXEC with: mpiexec -hostfile node23 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder23
+Running MPIEXEC with: mpiexec -hostfile node24 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder24
+Running MPIEXEC with: mpiexec -hostfile node25 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder25
+Running MPIEXEC with: mpiexec -hostfile node26 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder26
+Running MPIEXEC with: mpiexec -hostfile node27 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder27
+Running MPIEXEC with: mpiexec -hostfile node28 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder28
+Running MPIEXEC with: mpiexec -hostfile node29 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder29
+Running MPIEXEC with: mpiexec -hostfile node30 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder30
+time for TOUGH2obs_parallel is293.6634
+Perturbed realization 1
+Perturbed realization 2
+Perturbed realization 3
+Perturbed realization 4
+Perturbed realization 5
+Perturbed realization 6
+Perturbed realization 7
+Perturbed realization 8
+Perturbed realization 9
+Perturbed realization 10
+Perturbed realization 11
+Perturbed realization 12
+Perturbed realization 13
+Perturbed realization 14
+Perturbed realization 15
+Perturbed realization 16
+Perturbed realization 17
+Perturbed realization 18
+Perturbed realization 19
+Perturbed realization 20
+Perturbed realization 21
+Perturbed realization 22
+Perturbed realization 23
+Perturbed realization 24
+Perturbed realization 25
+Perturbed realization 26
+Perturbed realization 27
+Perturbed realization 28
+Perturbed realization 29
+Perturbed realization 30
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+[Warning: Directory already exists.] 
+[> In TOUGH2obs_parallel>writePBSfile at 76
+  In TOUGH2obs_parallel at 45
+  In JacobTOUGH2obs>observation1 at 86
+  In JacobTOUGH2obs at 33
+  In exp3inv at 96] 
+PBSParallel.sh is created successfully
+Running MPIEXEC with: mpiexec -hostfile node1 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder1
+Running MPIEXEC with: mpiexec -hostfile node2 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder2
+Running MPIEXEC with: mpiexec -hostfile node3 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder3
+Running MPIEXEC with: mpiexec -hostfile node4 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder4
+Running MPIEXEC with: mpiexec -hostfile node5 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder5
+Running MPIEXEC with: mpiexec -hostfile node6 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder6
+Running MPIEXEC with: mpiexec -hostfile node7 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder7
+Running MPIEXEC with: mpiexec -hostfile node8 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder8
+Running MPIEXEC with: mpiexec -hostfile node9 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder9
+Running MPIEXEC with: mpiexec -hostfile node10 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder10
+Running MPIEXEC with: mpiexec -hostfile node11 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder11
+Running MPIEXEC with: mpiexec -hostfile node12 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder12
+Running MPIEXEC with: mpiexec -hostfile node13 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder13
+Running MPIEXEC with: mpiexec -hostfile node14 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder14
+Running MPIEXEC with: mpiexec -hostfile node15 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder15
+Running MPIEXEC with: mpiexec -hostfile node16 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder16
+Running MPIEXEC with: mpiexec -hostfile node17 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder17
+Running MPIEXEC with: mpiexec -hostfile node18 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder18
+Running MPIEXEC with: mpiexec -hostfile node19 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder19
+Running MPIEXEC with: mpiexec -hostfile node20 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder20
+Running MPIEXEC with: mpiexec -hostfile node21 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder21
+Running MPIEXEC with: mpiexec -hostfile node22 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder22
+Running MPIEXEC with: mpiexec -hostfile node23 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder23
+Running MPIEXEC with: mpiexec -hostfile node24 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder24
+Running MPIEXEC with: mpiexec -hostfile node25 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder25
+Running MPIEXEC with: mpiexec -hostfile node26 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder26
+Running MPIEXEC with: mpiexec -hostfile node27 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder27
+Running MPIEXEC with: mpiexec -hostfile node28 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder28
+Running MPIEXEC with: mpiexec -hostfile node29 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder29
+Running MPIEXEC with: mpiexec -hostfile node30 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder30
+time for TOUGH2obs_parallel is433.587
+Perturbed realization 1
+Perturbed realization 2
+Perturbed realization 3
+Perturbed realization 4
+Perturbed realization 5
+Perturbed realization 6
+Perturbed realization 7
+Perturbed realization 8
+Perturbed realization 9
+Perturbed realization 10
+Perturbed realization 11
+Perturbed realization 12
+Perturbed realization 13
+Perturbed realization 14
+Perturbed realization 15
+Perturbed realization 16
+Perturbed realization 17
+Perturbed realization 18
+Perturbed realization 19
+Perturbed realization 20
+Perturbed realization 21
+Perturbed realization 22
+Perturbed realization 23
+Perturbed realization 24
+Perturbed realization 25
+Perturbed realization 26
+Perturbed realization 27
+Perturbed realization 28
+Perturbed realization 29
+Perturbed realization 30
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+[Warning: Directory already exists.] 
+[> In TOUGH2obs_parallel>writePBSfile at 76
+  In TOUGH2obs_parallel at 45
+  In JacobTOUGH2obs>observation1 at 86
+  In JacobTOUGH2obs at 44
+  In exp3inv at 96] 
+PBSParallel.sh is created successfully
+Running MPIEXEC with: mpiexec -hostfile node1 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder1
+Running MPIEXEC with: mpiexec -hostfile node2 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder2
+Running MPIEXEC with: mpiexec -hostfile node3 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder3
+Running MPIEXEC with: mpiexec -hostfile node4 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder4
+Running MPIEXEC with: mpiexec -hostfile node5 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder5
+Running MPIEXEC with: mpiexec -hostfile node6 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder6
+Running MPIEXEC with: mpiexec -hostfile node7 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder7
+Running MPIEXEC with: mpiexec -hostfile node8 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder8
+Running MPIEXEC with: mpiexec -hostfile node9 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder9
+Running MPIEXEC with: mpiexec -hostfile node10 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder10
+Running MPIEXEC with: mpiexec -hostfile node11 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder11
+Running MPIEXEC with: mpiexec -hostfile node12 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder12
+Running MPIEXEC with: mpiexec -hostfile node13 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder13
+Running MPIEXEC with: mpiexec -hostfile node14 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder14
+Running MPIEXEC with: mpiexec -hostfile node15 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder15
+Running MPIEXEC with: mpiexec -hostfile node16 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder16
+Running MPIEXEC with: mpiexec -hostfile node17 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder17
+Running MPIEXEC with: mpiexec -hostfile node18 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder18
+Running MPIEXEC with: mpiexec -hostfile node19 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder19
+Running MPIEXEC with: mpiexec -hostfile node20 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder20
+Running MPIEXEC with: mpiexec -hostfile node21 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder21
+Running MPIEXEC with: mpiexec -hostfile node22 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder22
+Running MPIEXEC with: mpiexec -hostfile node23 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder23
+Running MPIEXEC with: mpiexec -hostfile node24 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder24
+Running MPIEXEC with: mpiexec -hostfile node25 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder25
+Running MPIEXEC with: mpiexec -hostfile node26 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder26
+Running MPIEXEC with: mpiexec -hostfile node27 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder27
+Running MPIEXEC with: mpiexec -hostfile node28 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder28
+Running MPIEXEC with: mpiexec -hostfile node29 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder29
+Running MPIEXEC with: mpiexec -hostfile node30 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/obsfolder30
+time for TOUGH2obs_parallel is322.0513
+Finished computing HU in 3000.9881seconds
+IdleTimeout has been reached.
+Parallel pool using the 'local' profile is shutting down.
+21-Apr-2015 14:39:39...ANALYSIS/SMOOTHING Step .. 2
+The condition number of HPHT + R is
+     7.928145661024498e+13
+
+Aproximation of PSI error
+
+ans =
+
+   0.433297503200118
+
+Step2 after analysis 8470 are below zero
+Step2 after analysis 1146 are above one
+21-Apr-2015 14:39:49 FORECAST Step ..  2
+
+phase =
+
+     2
+
+Modified file created
+[Warning: File 'MESHA' not found.] 
+[> In callTOUGH2 at 2
+  In TOUGH2update at 40
+  In exp3inv at 129] 
+[Warning: File 'MESHB' not found.] 
+[> In callTOUGH2 at 2
+  In TOUGH2update at 40
+  In exp3inv at 129] 
+[Warning: File 'GENER' not found.] 
+[> In callTOUGH2 at 2
+  In TOUGH2update at 40
+  In exp3inv at 129] 
+ ndk: RMesh1 NEL=       29806  NCON=       88865  MNCON=     8300000
+  nex2adj:: rank=           0  MNCON=NCON=       88865  MNEL=NEL=        29806
+ Calling METIS (Version5)METIS_Kway               
+ Runtime parameters:
+   Objective type: METIS_OBJTYPE_CUT
+   Coarsening type: METIS_CTYPE_SHEM
+   Initial partitioning type: METIS_IPTYPE_METISRB
+   Refinement type: METIS_RTYPE_GREEDY
+   Number of balancing constraints: 1
+   Number of refinement iterations: 10
+   Random number seed: -1
+   Number of partitions: 24
+   Number of cuts: 1
+   User-supplied ufactor: 50
+   Minimize connectivity: No
+   Create contigous partitions: No
+   Target partition weights: 
+        0=[4.17e-02]   1=[4.17e-02]   2=[4.17e-02]   3=[4.17e-02]   4=[4.17e-02]
+        5=[4.17e-02]   6=[4.17e-02]   7=[4.17e-02]   8=[4.17e-02]   9=[4.17e-02]
+       10=[4.17e-02]  11=[4.17e-02]  12=[4.17e-02]  13=[4.17e-02]  14=[4.17e-02]
+       15=[4.17e-02]  16=[4.17e-02]  17=[4.17e-02]  18=[4.17e-02]  19=[4.17e-02]
+       20=[4.17e-02]  21=[4.17e-02]  22=[4.17e-02]  23=[4.17e-02]
+   Allowed maximum load imbalance: 1.050 
+
+ 29806  177730     177730 [720] [     62: 29806 ]
+ 15567  122370     149254 [720] [     62: 29806 ]
+  8186   81078     125762 [720] [     62: 29806 ]
+  4270   48060     106708 [720] [     62: 29806 ]
+  2225   27004      90556 [720] [     62: 29806 ]
+  1160   14452      76488 [720] [     62: 29806 ]
+   597    7508      64418 [720] [     62: 29806 ]
+
+ gk_mcore statistics
+           coresize:       477912         nmops:         2048  cmop:      0
+        num_callocs:           39   num_hallocs:            0
+       size_callocs:      1026560  size_hallocs:            0
+        cur_callocs:            0   cur_hallocs:            0
+        max_callocs:       365864   max_hallocs:            0
+ nbrpool statistics
+        nbrpoolsize:            0   nbrpoolcpos:            0
+    nbrpoolreallocs:            0
+
+Initial 24-way partitioning cut: 0
+GRC: [  1193   1309]-[  1182   1304], Bal: 1.054, Nv-Nb[   597     89], Cut:   9492
+	[  1184   1307], Bal: 1.052, Nb:     88. Nmoves:     8, Cut:   9438, Vol:   1064
+	[  1184   1328], Bal: 1.069, Nb:     84. Nmoves:     6, Cut:   9338, Vol:   1055
+	[  1184   1328], Bal: 1.069, Nb:     84. Nmoves:     0, Cut:   9338, Vol:   1055
+GRC: [  1184   1328]-[  1182   1304], Bal: 1.069, Nv-Nb[  1160    130], Cut:   9338
+	[  1183   1317], Bal: 1.060, Nb:    102. Nmoves:    43, Cut:   8957, Vol:   1555
+	[  1183   1335], Bal: 1.075, Nb:     93. Nmoves:    14, Cut:   8812, Vol:   1538
+	[  1183   1335], Bal: 1.075, Nb:     93. Nmoves:     0, Cut:   8812, Vol:   1538
+GRC: [  1183   1335]-[  1182   1304], Bal: 1.075, Nv-Nb[  2225    195], Cut:   8812
+	[  1185   1316], Bal: 1.060, Nb:    150. Nmoves:    70, Cut:   8477, Vol:   2257
+	[  1182   1340], Bal: 1.079, Nb:    144. Nmoves:    11, Cut:   8420, Vol:   2240
+	[  1182   1340], Bal: 1.079, Nb:    145. Nmoves:     3, Cut:   8420, Vol:   2240
+GBC: [  1182   1340]-[  1182   1304], Bal: 1.079, Nv-Nb[  4270   2598], Cut:   8420
+	[  1183   1301], Bal: 1.048, Nb:   2531. Nmoves:   134, Cut:   8085, Vol:   3261
+GRC: [  1183   1301]-[  1182   1304], Bal: 1.048, Nv-Nb[  4270    221], Cut:   8085
+	[  1183   1310], Bal: 1.055, Nb:    195. Nmoves:    76, Cut:   7810, Vol:   3155
+	[  1183   1310], Bal: 1.055, Nb:    188. Nmoves:    22, Cut:   7763, Vol:   3143
+	[  1183   1310], Bal: 1.055, Nb:    191. Nmoves:     7, Cut:   7763, Vol:   3146
+GRC: [  1183   1310]-[  1182   1304], Bal: 1.055, Nv-Nb[  8186    436], Cut:   7763
+	[  1183   1298], Bal: 1.045, Nb:    290. Nmoves:   333, Cut:   7186, Vol:   4367
+	[  1184   1304], Bal: 1.050, Nb:    248. Nmoves:   118, Cut:   7030, Vol:   4320
+	[  1182   1295], Bal: 1.043, Nb:    243. Nmoves:    66, Cut:   7013, Vol:   4283
+	[  1182   1303], Bal: 1.049, Nb:    250. Nmoves:    60, Cut:   7006, Vol:   4290
+	[  1182   1302], Bal: 1.048, Nb:    245. Nmoves:    50, Cut:   7002, Vol:   4294
+	[  1182   1297], Bal: 1.044, Nb:    244. Nmoves:    44, Cut:   6996, Vol:   4286
+	[  1182   1303], Bal: 1.049, Nb:    240. Nmoves:    47, Cut:   6996, Vol:   4290
+GRC: [  1182   1303]-[  1182   1304], Bal: 1.049, Nv-Nb[ 15567    605], Cut:   6996
+	[  1191   1299], Bal: 1.046, Nb:    314. Nmoves:   547, Cut:   6391, Vol:   5919
+	[  1183   1302], Bal: 1.048, Nb:    247. Nmoves:   190, Cut:   6229, Vol:   5852
+	[  1182   1302], Bal: 1.048, Nb:    233. Nmoves:   112, Cut:   6200, Vol:   5821
+	[  1182   1302], Bal: 1.048, Nb:    226. Nmoves:    94, Cut:   6187, Vol:   5842
+	[  1182   1304], Bal: 1.050, Nb:    222. Nmoves:    84, Cut:   6170, Vol:   5816
+	[  1182   1303], Bal: 1.049, Nb:    223. Nmoves:    61, Cut:   6169, Vol:   5813
+	[  1182   1304], Bal: 1.050, Nb:    220. Nmoves:    70, Cut:   6163, Vol:   5826
+	[  1182   1304], Bal: 1.050, Nb:    212. Nmoves:    55, Cut:   6153, Vol:   5825
+	[  1182   1303], Bal: 1.049, Nb:    213. Nmoves:    51, Cut:   6142, Vol:   5814
+	[  1182   1304], Bal: 1.050, Nb:    216. Nmoves:    40, Cut:   6142, Vol:   5816
+GRC: [  1182   1304]-[  1182   1304], Bal: 1.050, Nv-Nb[ 29806    387], Cut:   6142
+	[  1182   1302], Bal: 1.048, Nb:    166. Nmoves:   428, Cut:   5872, Vol:  10004
+	[  1182   1302], Bal: 1.048, Nb:    113. Nmoves:   146, Cut:   5808, Vol:   9987
+	[  1182   1302], Bal: 1.048, Nb:     97. Nmoves:    68, Cut:   5781, Vol:   9995
+	[  1182   1302], Bal: 1.048, Nb:     95. Nmoves:    28, Cut:   5775, Vol:   9999
+	[  1182   1307], Bal: 1.052, Nb:     93. Nmoves:    27, Cut:   5769, Vol:   9991
+	[  1182   1307], Bal: 1.052, Nb:     91. Nmoves:    22, Cut:   5767, Vol:   9991
+	[  1182   1307], Bal: 1.052, Nb:     90. Nmoves:    24, Cut:   5766, Vol:   9996
+	[  1182   1307], Bal: 1.052, Nb:     97. Nmoves:    18, Cut:   5766, Vol:   9993
+GBC: [  1182   1307]-[  1182   1304], Bal: 1.052, Nv-Nb[ 29806   9104], Cut:   5766
+	[  1183   1302], Bal: 1.048, Nb:   9106. Nmoves:    85, Cut:   5760, Vol:   9995
+GRC: [  1183   1302]-[  1182   1304], Bal: 1.048, Nv-Nb[ 29806     94], Cut:   5760
+	[  1182   1302], Bal: 1.048, Nb:     72. Nmoves:    36, Cut:   5737, Vol:  10013
+	[  1182   1302], Bal: 1.048, Nb:     73. Nmoves:    12, Cut:   5737, Vol:  10010
+
+Timing Information -------------------------------------------------
+ Multilevel: 		   0.193
+     Coarsening: 		   0.044
+            Matching: 			   0.017
+            Contract: 			   0.020
+     Initial Partition: 	   0.057
+     Uncoarsening: 		   0.091
+          Refinement: 			   0.070
+          Projection: 			   0.007
+     Splitting: 		   0.000
+********************************************************************
+
+ gk_mcore statistics
+           coresize:       477912         nmops:         2048  cmop:      0
+        num_callocs:           86   num_hallocs:            0
+       size_callocs:      2015552  size_hallocs:            0
+        cur_callocs:            0   cur_hallocs:            0
+        max_callocs:       477280   max_hallocs:            0
+ nbrpool statistics
+        nbrpoolsize:        76018   nbrpoolcpos:        67003
+    nbrpoolreallocs:            4
+
+  rank=           0  done calling Metis istatus=           1  edgecut=
+        5737
+   0sending to pid=   1    1216   29807    1216    8787    8788    1215
+   1recving           1    1216   29807    1216    8787    8788    1215
+   0sending to pid=   2    1195   29807    1195    8187    8188    1194
+   2recving           2    1195   29807    1195    8187    8188    1194
+   0sending to pid=   3    1259   29807    1259    8673    8674    1258
+   3recving           3    1259   29807    1259    8673    8674    1258
+   0sending to pid=   4    1215   29807    1215    8422    8423    1214
+   4recving           4    1215   29807    1215    8422    8423    1214
+   0sending to pid=   5    1303   29807    1303    9065    9066    1302
+   5recving           5    1303   29807    1303    9065    9066    1302
+   0sending to pid=   6    1186   29807    1186    8067    8068    1185
+   6recving           6    1186   29807    1186    8067    8068    1185
+   0sending to pid=   7    1258   29807    1258    9097    9098    1257
+   7recving           7    1258   29807    1258    9097    9098    1257
+   0sending to pid=   8    1275   29807    1275    8697    8698    1274
+   8recving           8    1275   29807    1275    8697    8698    1274
+   0sending to pid=   9    1303   29807    1303    9080    9081    1302
+   9recving           9    1303   29807    1303    9080    9081    1302
+   0sending to pid=  10    1243   29807    1243    8623    8624    1242
+  10recving          10    1243   29807    1243    8623    8624    1242
+   0sending to pid=  11    1198   29807    1198    8262    8263    1197
+  11recving          11    1198   29807    1198    8262    8263    1197
+   0sending to pid=  12    1184   29807    1184    8224    8225    1183
+  12recving          12    1184   29807    1184    8224    8225    1183
+   0sending to pid=  13    1183   29807    1183    8117    8118    1182
+  13recving          13    1183   29807    1183    8117    8118    1182
+   0sending to pid=  14    1236   29807    1236    8437    8438    1235
+  14recving          14    1236   29807    1236    8437    8438    1235
+   0sending to pid=  15    1198   29807    1198    8310    8311    1197
+  15recving          15    1198   29807    1198    8310    8311    1197
+   0sending to pid=  16    1303   29807    1303    9094    9095    1302
+  16recving          16    1303   29807    1303    9094    9095    1302
+   0sending to pid=  17    1285   29807    1285    8952    8953    1284
+  17recving          17    1285   29807    1285    8952    8953    1284
+   0sending to pid=  18    1183   29807    1183    8156    8157    1182
+  18recving          18    1183   29807    1183    8156    8157    1182
+   0sending to pid=  19    1272   29807    1272    9119    9120    1271
+  19recving          19    1272   29807    1272    9119    9120    1271
+   0sending to pid=  20    1300   29807    1300    8944    8945    1299
+  20recving          20    1300   29807    1300    8944    8945    1299
+   0sending to pid=  21    1269   29807    1269    9088    9089    1268
+  21recving          21    1269   29807    1269    9088    9089    1268
+   0sending to pid=  22    1222   29807    1222    8809    8810    1221
+  22recving          22    1222   29807    1222    8809    8810    1221
+   0sending to pid=  23    1271   29807    1271    8676    8677    1270
+  23recving          23    1271   29807    1271    8676    8677    1270
+ time for preprocessing ---- including data input, partition, distribution:
+   12.2955141067505     
+  
+ Time performing model computation =    95.0864961147308     
+   of which spent in lin. solv.    =    41.4995441436768     
+   and spent on other              =    53.5869519710541     
+  
+ Total number of time steps =           35
+ EEE Linear Solver Used: BICGSTAB
+ EEE Scaling method: Block Jacobi
+ EEE Preconditioner: Domain Decomposition
+ EEE    with overlap type: Standard
+ EEE    and size of overlap:           0
+ EEE    and subdomain solver: ILUT
+ EEE    without RCM reordering
+ EEE Residual norm: ||r||2 / ||b||2
+ EEE Max. number of iterations:         500
+ EEE Tolerance:  1.000000000000000E-006
+ Distribution + Calculation time =    106.463732004166     
+ Tough2-mp wall-clock times AVERAGE(seconds) Np=    24   : init=    3.08703E+00 solve=    1.06462E+02 all=    1.09550E+02
+ Tough2-mp wall-clock times RANK0  (seconds)             : init=    3.08690E+00 solve=    1.06463E+02 all=    1.09550E+02
+
+ans =
+
+     0
+
+[Warning: Duplicate data points have been detected and removed - corresponding
+values have been averaged.] 
+[> In griddata>useScatteredInterp at 188
+  In griddata at 125
+  In vec2mat at 34
+  In plotX1C at 47
+  In exp3inv at 131] 
+[Warning: Duplicate data points have been detected and removed - corresponding
+values have been averaged.] 
+[> In griddata>useScatteredInterp at 188
+  In griddata at 125
+  In vec2mat at 34
+  In plotX1C at 61
+  In exp3inv at 131] 
+[Warning: Duplicate data points have been detected and removed - corresponding
+values have been averaged.] 
+[> In griddata>useScatteredInterp at 188
+  In griddata at 125
+  In vec2mat at 34
+  In plotX1C at 72
+  In exp3inv at 131] 
+[Warning: Ignoring extra legend entries.] 
+[> In legend at 290
+  In plotres at 19
+  In exp3inv at 138] 
+21-Apr-2015 14:42:08... FU CALCULATION Step ..2
+Perturbed realization 1
+Perturbed realization 2
+Perturbed realization 3
+Perturbed realization 4
+Perturbed realization 5
+Perturbed realization 6
+Perturbed realization 7
+Perturbed realization 8
+Perturbed realization 9
+Perturbed realization 10
+Perturbed realization 11
+Perturbed realization 12
+Perturbed realization 13
+Perturbed realization 14
+Perturbed realization 15
+Perturbed realization 16
+Perturbed realization 17
+Perturbed realization 18
+Perturbed realization 19
+Perturbed realization 20
+Perturbed realization 21
+Perturbed realization 22
+Perturbed realization 23
+Perturbed realization 24
+Perturbed realization 25
+Perturbed realization 26
+Perturbed realization 27
+Perturbed realization 28
+Perturbed realization 29
+Perturbed realization 30
+
+ans =
+
+     0
+
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+[Warning: Directory already exists.] 
+[> In TOUGH2update_parallel>writePBSfile at 108
+  In TOUGH2update_parallel at 77
+  In JacobTOUGH2>forward at 66
+  In JacobTOUGH2 at 20
+  In exp3inv at 148] 
+PBSParallelPredict.sh is created successfully
+Running MPIEXEC with: mpiexec -hostfile node1 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder1
+Running MPIEXEC with: mpiexec -hostfile node2 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder2
+Running MPIEXEC with: mpiexec -hostfile node3 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder3
+Running MPIEXEC with: mpiexec -hostfile node4 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder4
+Running MPIEXEC with: mpiexec -hostfile node5 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder5
+Running MPIEXEC with: mpiexec -hostfile node6 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder6
+Running MPIEXEC with: mpiexec -hostfile node7 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder7
+Running MPIEXEC with: mpiexec -hostfile node8 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder8
+Running MPIEXEC with: mpiexec -hostfile node9 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder9
+Running MPIEXEC with: mpiexec -hostfile node10 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder10
+Running MPIEXEC with: mpiexec -hostfile node11 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder11
+Running MPIEXEC with: mpiexec -hostfile node12 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder12
+Running MPIEXEC with: mpiexec -hostfile node13 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder13
+Running MPIEXEC with: mpiexec -hostfile node14 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder14
+Running MPIEXEC with: mpiexec -hostfile node15 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder15
+Running MPIEXEC with: mpiexec -hostfile node16 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder16
+Running MPIEXEC with: mpiexec -hostfile node17 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder17
+Running MPIEXEC with: mpiexec -hostfile node18 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder18
+Running MPIEXEC with: mpiexec -hostfile node19 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder19
+Running MPIEXEC with: mpiexec -hostfile node20 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder20
+Running MPIEXEC with: mpiexec -hostfile node21 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder21
+Running MPIEXEC with: mpiexec -hostfile node22 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder22
+Running MPIEXEC with: mpiexec -hostfile node23 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder23
+Running MPIEXEC with: mpiexec -hostfile node24 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder24
+Running MPIEXEC with: mpiexec -hostfile node25 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder25
+Running MPIEXEC with: mpiexec -hostfile node26 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder26
+Running MPIEXEC with: mpiexec -hostfile node27 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder27
+Running MPIEXEC with: mpiexec -hostfile node28 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder28
+Running MPIEXEC with: mpiexec -hostfile node29 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder29
+Running MPIEXEC with: mpiexec -hostfile node30 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder30
+time for TOUGH2update_parallel is390.2486
+Extra time for incorporateing forward sims to eSols
+TOUGH2update_parallel finish in 597.538
+Perturbed realization 1
+Perturbed realization 2
+Perturbed realization 3
+Perturbed realization 4
+Perturbed realization 5
+Perturbed realization 6
+Perturbed realization 7
+Perturbed realization 8
+Perturbed realization 9
+Perturbed realization 10
+Perturbed realization 11
+Perturbed realization 12
+Perturbed realization 13
+Perturbed realization 14
+Perturbed realization 15
+Perturbed realization 16
+Perturbed realization 17
+Perturbed realization 18
+Perturbed realization 19
+Perturbed realization 20
+Perturbed realization 21
+Perturbed realization 22
+Perturbed realization 23
+Perturbed realization 24
+Perturbed realization 25
+Perturbed realization 26
+Perturbed realization 27
+Perturbed realization 28
+Perturbed realization 29
+Perturbed realization 30
+
+ans =
+
+     0
+
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+[Warning: Directory already exists.] 
+[> In TOUGH2update_parallel>writePBSfile at 108
+  In TOUGH2update_parallel at 77
+  In JacobTOUGH2>forward at 66
+  In JacobTOUGH2 at 31
+  In exp3inv at 148] 
+PBSParallelPredict.sh is created successfully
+Running MPIEXEC with: mpiexec -hostfile node1 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder1
+Running MPIEXEC with: mpiexec -hostfile node2 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder2
+Running MPIEXEC with: mpiexec -hostfile node3 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder3
+Running MPIEXEC with: mpiexec -hostfile node4 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder4
+Running MPIEXEC with: mpiexec -hostfile node5 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder5
+Running MPIEXEC with: mpiexec -hostfile node6 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder6
+Running MPIEXEC with: mpiexec -hostfile node7 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder7
+Running MPIEXEC with: mpiexec -hostfile node8 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder8
+Running MPIEXEC with: mpiexec -hostfile node9 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder9
+Running MPIEXEC with: mpiexec -hostfile node10 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder10
+Running MPIEXEC with: mpiexec -hostfile node11 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder11
+Running MPIEXEC with: mpiexec -hostfile node12 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder12
+Running MPIEXEC with: mpiexec -hostfile node13 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder13
+Running MPIEXEC with: mpiexec -hostfile node14 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder14
+Running MPIEXEC with: mpiexec -hostfile node15 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder15
+Running MPIEXEC with: mpiexec -hostfile node16 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder16
+Running MPIEXEC with: mpiexec -hostfile node17 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder17
+Running MPIEXEC with: mpiexec -hostfile node18 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder18
+Running MPIEXEC with: mpiexec -hostfile node19 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder19
+Running MPIEXEC with: mpiexec -hostfile node20 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder20
+Running MPIEXEC with: mpiexec -hostfile node21 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder21
+Running MPIEXEC with: mpiexec -hostfile node22 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder22
+Running MPIEXEC with: mpiexec -hostfile node23 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder23
+Running MPIEXEC with: mpiexec -hostfile node24 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder24
+Running MPIEXEC with: mpiexec -hostfile node25 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder25
+Running MPIEXEC with: mpiexec -hostfile node26 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder26
+Running MPIEXEC with: mpiexec -hostfile node27 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder27
+Running MPIEXEC with: mpiexec -hostfile node28 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder28
+Running MPIEXEC with: mpiexec -hostfile node29 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder29
+Running MPIEXEC with: mpiexec -hostfile node30 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder30
+time for TOUGH2update_parallel is395.0845
+Extra time for incorporateing forward sims to eSols
+TOUGH2update_parallel finish in 602.4472
+Perturbed realization 1
+Perturbed realization 2
+Perturbed realization 3
+Perturbed realization 4
+Perturbed realization 5
+Perturbed realization 6
+Perturbed realization 7
+Perturbed realization 8
+Perturbed realization 9
+Perturbed realization 10
+Perturbed realization 11
+Perturbed realization 12
+Perturbed realization 13
+Perturbed realization 14
+Perturbed realization 15
+Perturbed realization 16
+Perturbed realization 17
+Perturbed realization 18
+Perturbed realization 19
+Perturbed realization 20
+Perturbed realization 21
+Perturbed realization 22
+Perturbed realization 23
+Perturbed realization 24
+Perturbed realization 25
+Perturbed realization 26
+Perturbed realization 27
+Perturbed realization 28
+Perturbed realization 29
+Perturbed realization 30
+
+ans =
+
+     0
+
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+Modified file created
+[Warning: Directory already exists.] 
+[> In TOUGH2update_parallel>writePBSfile at 108
+  In TOUGH2update_parallel at 77
+  In JacobTOUGH2>forward at 66
+  In JacobTOUGH2 at 42
+  In exp3inv at 148] 
+PBSParallelPredict.sh is created successfully
+Running MPIEXEC with: mpiexec -hostfile node1 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder1
+Running MPIEXEC with: mpiexec -hostfile node2 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder2
+Running MPIEXEC with: mpiexec -hostfile node3 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder3
+Running MPIEXEC with: mpiexec -hostfile node4 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder4
+Running MPIEXEC with: mpiexec -hostfile node5 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder5
+Running MPIEXEC with: mpiexec -hostfile node6 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder6
+Running MPIEXEC with: mpiexec -hostfile node7 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder7
+Running MPIEXEC with: mpiexec -hostfile node8 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder8
+Running MPIEXEC with: mpiexec -hostfile node9 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder9
+Running MPIEXEC with: mpiexec -hostfile node10 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder10
+Running MPIEXEC with: mpiexec -hostfile node11 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder11
+Running MPIEXEC with: mpiexec -hostfile node12 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder12
+Running MPIEXEC with: mpiexec -hostfile node13 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder13
+Running MPIEXEC with: mpiexec -hostfile node14 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder14
+Running MPIEXEC with: mpiexec -hostfile node15 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder15
+Running MPIEXEC with: mpiexec -hostfile node16 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder16
+Running MPIEXEC with: mpiexec -hostfile node17 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder17
+Running MPIEXEC with: mpiexec -hostfile node18 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder18
+Running MPIEXEC with: mpiexec -hostfile node19 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder19
+Running MPIEXEC with: mpiexec -hostfile node20 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder20
+Running MPIEXEC with: mpiexec -hostfile node21 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder21
+Running MPIEXEC with: mpiexec -hostfile node22 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder22
+Running MPIEXEC with: mpiexec -hostfile node23 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder23
+Running MPIEXEC with: mpiexec -hostfile node24 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder24
+Running MPIEXEC with: mpiexec -hostfile node25 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder25
+Running MPIEXEC with: mpiexec -hostfile node26 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder26
+Running MPIEXEC with: mpiexec -hostfile node27 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder27
+Running MPIEXEC with: mpiexec -hostfile node28 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder28
+Running MPIEXEC with: mpiexec -hostfile node29 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder29
+Running MPIEXEC with: mpiexec -hostfile node30 -env MV2_ENABLE_AFFINITY=0 /home/amaliak/eos1/tough2-mp-eos1.debug in directory /home/amaliak/Tracer/INV/testfolder30
+time for TOUGH2update_parallel is397.3308
+Extra time for incorporateing forward sims to eSols
+TOUGH2update_parallel finish in 605.0833
+Finished computing FU in 3013.3533 seconds
+21-Apr-2015 15:32:21GETTING POSTERIOR COVARIANCE Step ..2
+%%%%%%...... PREPARATION FOR NEXT STEP ....%%%%%%%
+21-Apr-2015 15:32:31Forecast observation at step3
+Modified file created
+[Warning: File 'MESHA' not found.] 
+[> In callTOUGH2 at 2
+  In TOUGH2obs at 33
+  In exp3inv at 171] 
+[Warning: File 'MESHB' not found.] 
+[> In callTOUGH2 at 2
+  In TOUGH2obs at 33
+  In exp3inv at 171] 
+[Warning: File 'GENER' not found.] 
+[> In callTOUGH2 at 2
+  In TOUGH2obs at 33
+  In exp3inv at 171] 
+ ndk: RMesh1 NEL=       29806  NCON=       88865  MNCON=     8300000
+  nex2adj:: rank=           0  MNCON=NCON=       88865  MNEL=NEL=        29806
+ Calling METIS (Version5)METIS_Kway               
+ Runtime parameters:
+   Objective type: METIS_OBJTYPE_CUT
+   Coarsening type: METIS_CTYPE_SHEM
+   Initial partitioning type: METIS_IPTYPE_METISRB
+   Refinement type: METIS_RTYPE_GREEDY
+   Number of balancing constraints: 1
+   Number of refinement iterations: 10
+   Random number seed: -1
+   Number of partitions: 24
+   Number of cuts: 1
+   User-supplied ufactor: 50
+   Minimize connectivity: No
+   Create contigous partitions: No
+   Target partition weights: 
+        0=[4.17e-02]   1=[4.17e-02]   2=[4.17e-02]   3=[4.17e-02]   4=[4.17e-02]
+        5=[4.17e-02]   6=[4.17e-02]   7=[4.17e-02]   8=[4.17e-02]   9=[4.17e-02]
+       10=[4.17e-02]  11=[4.17e-02]  12=[4.17e-02]  13=[4.17e-02]  14=[4.17e-02]
+       15=[4.17e-02]  16=[4.17e-02]  17=[4.17e-02]  18=[4.17e-02]  19=[4.17e-02]
+       20=[4.17e-02]  21=[4.17e-02]  22=[4.17e-02]  23=[4.17e-02]
+   Allowed maximum load imbalance: 1.050 
+
+ 29806  177730     177730 [720] [     62: 29806 ]
+ 15567  122370     149254 [720] [     62: 29806 ]
+  8186   81078     125762 [720] [     62: 29806 ]
+  4270   48060     106708 [720] [     62: 29806 ]
+  2225   27004      90556 [720] [     62: 29806 ]
+  1160   14452      76488 [720] [     62: 29806 ]
+   597    7508      64418 [720] [     62: 29806 ]
+
+ gk_mcore statistics
+           coresize:       477912         nmops:         2048  cmop:      0
+        num_callocs:           39   num_hallocs:            0
+       size_callocs:      1026560  size_hallocs:            0
+        cur_callocs:            0   cur_hallocs:            0
+        max_callocs:       365864   max_hallocs:            0
+ nbrpool statistics
+        nbrpoolsize:            0   nbrpoolcpos:            0
+    nbrpoolreallocs:            0
+
+Initial 24-way partitioning cut: 0
+GRC: [  1193   1309]-[  1182   1304], Bal: 1.054, Nv-Nb[   597     89], Cut:   9492
+	[  1184   1307], Bal: 1.052, Nb:     88. Nmoves:     8, Cut:   9438, Vol:   1064
+	[  1184   1328], Bal: 1.069, Nb:     84. Nmoves:     6, Cut:   9338, Vol:   1055
+	[  1184   1328], Bal: 1.069, Nb:     84. Nmoves:     0, Cut:   9338, Vol:   1055
+GRC: [  1184   1328]-[  1182   1304], Bal: 1.069, Nv-Nb[  1160    130], Cut:   9338
+	[  1183   1317], Bal: 1.060, Nb:    102. Nmoves:    43, Cut:   8957, Vol:   1555
+	[  1183   1335], Bal: 1.075, Nb:     93. Nmoves:    14, Cut:   8812, Vol:   1538
+	[  1183   1335], Bal: 1.075, Nb:     93. Nmoves:     0, Cut:   8812, Vol:   1538
+GRC: [  1183   1335]-[  1182   1304], Bal: 1.075, Nv-Nb[  2225    195], Cut:   8812
+	[  1185   1316], Bal: 1.060, Nb:    150. Nmoves:    70, Cut:   8477, Vol:   2257
+	[  1182   1340], Bal: 1.079, Nb:    144. Nmoves:    11, Cut:   8420, Vol:   2240
+	[  1182   1340], Bal: 1.079, Nb:    145. Nmoves:     3, Cut:   8420, Vol:   2240
+GBC: [  1182   1340]-[  1182   1304], Bal: 1.079, Nv-Nb[  4270   2598], Cut:   8420
+	[  1183   1301], Bal: 1.048, Nb:   2531. Nmoves:   134, Cut:   8085, Vol:   3261
+GRC: [  1183   1301]-[  1182   1304], Bal: 1.048, Nv-Nb[  4270    221], Cut:   8085
+	[  1183   1310], Bal: 1.055, Nb:    195. Nmoves:    76, Cut:   7810, Vol:   3155
+	[  1183   1310], Bal: 1.055, Nb:    188. Nmoves:    22, Cut:   7763, Vol:   3143
+	[  1183   1310], Bal: 1.055, Nb:    191. Nmoves:     7, Cut:   7763, Vol:   3146
+GRC: [  1183   1310]-[  1182   1304], Bal: 1.055, Nv-Nb[  8186    436], Cut:   7763
+	[  1183   1298], Bal: 1.045, Nb:    290. Nmoves:   333, Cut:   7186, Vol:   4367
+	[  1184   1304], Bal: 1.050, Nb:    248. Nmoves:   118, Cut:   7030, Vol:   4320
+	[  1182   1295], Bal: 1.043, Nb:    243. Nmoves:    66, Cut:   7013, Vol:   4283
+	[  1182   1303], Bal: 1.049, Nb:    250. Nmoves:    60, Cut:   7006, Vol:   4290
+	[  1182   1302], Bal: 1.048, Nb:    245. Nmoves:    50, Cut:   7002, Vol:   4294
+	[  1182   1297], Bal: 1.044, Nb:    244. Nmoves:    44, Cut:   6996, Vol:   4286
+	[  1182   1303], Bal: 1.049, Nb:    240. Nmoves:    47, Cut:   6996, Vol:   4290
+GRC: [  1182   1303]-[  1182   1304], Bal: 1.049, Nv-Nb[ 15567    605], Cut:   6996
+	[  1191   1299], Bal: 1.046, Nb:    314. Nmoves:   547, Cut:   6391, Vol:   5919
+	[  1183   1302], Bal: 1.048, Nb:    247. Nmoves:   190, Cut:   6229, Vol:   5852
+	[  1182   1302], Bal: 1.048, Nb:    233. Nmoves:   112, Cut:   6200, Vol:   5821
+	[  1182   1302], Bal: 1.048, Nb:    226. Nmoves:    94, Cut:   6187, Vol:   5842
+	[  1182   1304], Bal: 1.050, Nb:    222. Nmoves:    84, Cut:   6170, Vol:   5816
+	[  1182   1303], Bal: 1.049, Nb:    223. Nmoves:    61, Cut:   6169, Vol:   5813
+	[  1182   1304], Bal: 1.050, Nb:    220. Nmoves:    70, Cut:   6163, Vol:   5826
+	[  1182   1304], Bal: 1.050, Nb:    212. Nmoves:    55, Cut:   6153, Vol:   5825
+	[  1182   1303], Bal: 1.049, Nb:    213. Nmoves:    51, Cut:   6142, Vol:   5814
+	[  1182   1304], Bal: 1.050, Nb:    216. Nmoves:    40, Cut:   6142, Vol:   5816
+GRC: [  1182   1304]-[  1182   1304], Bal: 1.050, Nv-Nb[ 29806    387], Cut:   6142
+	[  1182   1302], Bal: 1.048, Nb:    166. Nmoves:   428, Cut:   5872, Vol:  10004
+	[  1182   1302], Bal: 1.048, Nb:    113. Nmoves:   146, Cut:   5808, Vol:   9987
+	[  1182   1302], Bal: 1.048, Nb:     97. Nmoves:    68, Cut:   5781, Vol:   9995
+	[  1182   1302], Bal: 1.048, Nb:     95. Nmoves:    28, Cut:   5775, Vol:   9999
+	[  1182   1307], Bal: 1.052, Nb:     93. Nmoves:    27, Cut:   5769, Vol:   9991
+	[  1182   1307], Bal: 1.052, Nb:     91. Nmoves:    22, Cut:   5767, Vol:   9991
+	[  1182   1307], Bal: 1.052, Nb:     90. Nmoves:    24, Cut:   5766, Vol:   9996
+	[  1182   1307], Bal: 1.052, Nb:     97. Nmoves:    18, Cut:   5766, Vol:   9993
+GBC: [  1182   1307]-[  1182   1304], Bal: 1.052, Nv-Nb[ 29806   9104], Cut:   5766
+	[  1183   1302], Bal: 1.048, Nb:   9106. Nmoves:    85, Cut:   5760, Vol:   9995
+GRC: [  1183   1302]-[  1182   1304], Bal: 1.048, Nv-Nb[ 29806     94], Cut:   5760
+	[  1182   1302], Bal: 1.048, Nb:     72. Nmoves:    36, Cut:   5737, Vol:  10013
+	[  1182   1302], Bal: 1.048, Nb:     73. Nmoves:    12, Cut:   5737, Vol:  10010
+
+Timing Information -------------------------------------------------
+ Multilevel: 		   0.194
+     Coarsening: 		   0.044
+            Matching: 			   0.016
+            Contract: 			   0.020
+     Initial Partition: 	   0.057
+     Uncoarsening: 		   0.092
+          Refinement: 			   0.069
+          Projection: 			   0.008
+     Splitting: 		   0.000
+********************************************************************
+
+ gk_mcore statistics
+           coresize:       477912         nmops:         2048  cmop:      0
+        num_callocs:           86   num_hallocs:            0
+       size_callocs:      2015552  size_hallocs:            0
+        cur_callocs:            0   cur_hallocs:            0
+        max_callocs:       477280   max_hallocs:            0
+ nbrpool statistics
+        nbrpoolsize:        76018   nbrpoolcpos:        67003
+    nbrpoolreallocs:            4
+
+  rank=           0  done calling Metis istatus=           1  edgecut=
+        5737
+   0sending to pid=   1    1216   29807    1216    8787    8788    1215
+   1recving           1    1216   29807    1216    8787    8788    1215
+   0sending to pid=   2    1195   29807    1195    8187    8188    1194
+   2recving           2    1195   29807    1195    8187    8188    1194
+   0sending to pid=   3    1259   29807    1259    8673    8674    1258
+   3recving           3    1259   29807    1259    8673    8674    1258
+   0sending to pid=   4    1215   29807    1215    8422    8423    1214
+   4recving           4    1215   29807    1215    8422    8423    1214
+   0sending to pid=   5    1303   29807    1303    9065    9066    1302
+   5recving           5    1303   29807    1303    9065    9066    1302
+   0sending to pid=   6    1186   29807    1186    8067    8068    1185
+   6recving           6    1186   29807    1186    8067    8068    1185
+   0sending to pid=   7    1258   29807    1258    9097    9098    1257
+   7recving           7    1258   29807    1258    9097    9098    1257
+   0sending to pid=   8    1275   29807    1275    8697    8698    1274
+   8recving           8    1275   29807    1275    8697    8698    1274
+   0sending to pid=   9    1303   29807    1303    9080    9081    1302
+   9recving           9    1303   29807    1303    9080    9081    1302
+   0sending to pid=  10    1243   29807    1243    8623    8624    1242
+  10recving          10    1243   29807    1243    8623    8624    1242
+   0sending to pid=  11    1198   29807    1198    8262    8263    1197
+  11recving          11    1198   29807    1198    8262    8263    1197
+   0sending to pid=  12    1184   29807    1184    8224    8225    1183
+  12recving          12    1184   29807    1184    8224    8225    1183
+   0sending to pid=  13    1183   29807    1183    8117    8118    1182
+  13recving          13    1183   29807    1183    8117    8118    1182
+   0sending to pid=  14    1236   29807    1236    8437    8438    1235
+  14recving          14    1236   29807    1236    8437    8438    1235
+   0sending to pid=  15    1198   29807    1198    8310    8311    1197
+  15recving          15    1198   29807    1198    8310    8311    1197
+   0sending to pid=  16    1303   29807    1303    9094    9095    1302
+  16recving          16    1303   29807    1303    9094    9095    1302
+   0sending to pid=  17    1285   29807    1285    8952    8953    1284
+  17recving          17    1285   29807    1285    8952    8953    1284
+   0sending to pid=  18    1183   29807    1183    8156    8157    1182
+  18recving          18    1183   29807    1183    8156    8157    1182
+   0sending to pid=  19    1272   29807    1272    9119    9120    1271
+  19recving          19    1272   29807    1272    9119    9120    1271
+   0sending to pid=  20    1300   29807    1300    8944    8945    1299
+  20recving          20    1300   29807    1300    8944    8945    1299
+   0sending to pid=  21    1269   29807    1269    9088    9089    1268
+  21recving          21    1269   29807    1269    9088    9089    1268
+   0sending to pid=  22    1222   29807    1222    8809    8810    1221
+  22recving          22    1222   29807    1222    8809    8810    1221
+   0sending to pid=  23    1271   29807    1271    8676    8677    1270
+  23recving          23    1271   29807    1271    8676    8677    1270
+ time for preprocessing ---- including data input, partition, distribution:
+   12.2953357696533     
+  
+ Time performing model computation =    64.4207658767700     
+   of which spent in lin. solv.    =    29.2789592742920     
+   and spent on other              =    35.1418066024780     
+  
+ Total number of time steps =           28
+ EEE Linear Solver Used: BICGSTAB
+ EEE Scaling method: Block Jacobi
+ EEE Preconditioner: Domain Decomposition
+ EEE    with overlap type: Standard
+ EEE    and size of overlap:           0
+ EEE    and subdomain solver: ILUT
+ EEE    without RCM reordering
+ EEE Residual norm: ||r||2 / ||b||2
+ EEE Max. number of iterations:         500
+ EEE Tolerance:  1.000000000000000E-006
+ Distribution + Calculation time =    75.7916209697723     
+ Tough2-mp wall-clock times AVERAGE(seconds) Np=    24   : init=    3.12557E+00 solve=    7.57903E+01 all=    7.89159E+01
+ Tough2-mp wall-clock times RANK0  (seconds)             : init=    3.12545E+00 solve=    7.57904E+01 all=    7.89166E+01
+
+ans =
+
+     0
+
+
+Saving to: /home/amaliak/Tracer/INV/matlab.mat
+
+21-Apr-2015 15:34:22 Step 2 finished.
+--------------------------------------------------
+--------------------------------------------------
+
+time_KF =
+
+     1.193011052400000e+04
+
+21-Apr-2015 15:34:23All 2 steps finished
+>> [Warning: Objects of graph2d.lineseries class exist - not clearing this class or
+any of its superclasses] 
+[Warning: Objects of scribe.legend class exist - not clearing this class or any
+of its superclasses] 
+[Warning: Objects of scribe.colorbar class exist - not clearing this class or
+any of its superclasses] 
+[Warning: Objects of scribe.legendinfo class exist - not clearing this class or
+any of its superclasses] 
+[Warning: Objects of scribe.legendinfochild class exist - not clearing this
+class or any of its superclasses] 
+[Warning: Objects of graphics.panbehavior class exist - not clearing this class
+or any of its superclasses] 
+[Warning: Objects of graphics.zoombehavior class exist - not clearing this class
+or any of its superclasses] 
+[Warning: Objects of graphics.rotate3dbehavior class exist - not clearing this
+class or any of its superclasses] 
+[Warning: Objects of graphics.datacursorbehavior class exist - not clearing this
+class or any of its superclasses] 
+[Warning: Objects of graphics.ploteditbehavior class exist - not clearing this
+class or any of its superclasses] 
+[Warning: Objects of graphics.datacursormanager class exist - not clearing this
+class or any of its superclasses] 
+[Warning: Objects of specgraph.contourgroup class exist - not clearing this
+class or any of its superclasses] 
+[Warning: Objects of uitools.uimodemanager class exist - not clearing this class
+or any of its superclasses] 
+[Warning: Objects of uitools.uimode class exist - not clearing this class or any
+of its superclasses] 
