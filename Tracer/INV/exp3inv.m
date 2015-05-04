@@ -3,6 +3,7 @@
 % AMALIA KOKKINAKI, JUDITH YUE LI, PETER KITANIDIS,  STANFORD UNIVERSITY
 % 
 % Modified for inversion of tracer test
+% Added to git (05/03/2015)
 
 clear all;
 %dbstop if error
